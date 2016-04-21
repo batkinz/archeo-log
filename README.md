@@ -1,2 +1,4 @@
-# archeo-log
+ArcheoLog
+=========
+
 Thesis project
