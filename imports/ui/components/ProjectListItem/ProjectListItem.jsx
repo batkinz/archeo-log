@@ -28,20 +28,24 @@ MenuButton.propTypes = {
 MenuButton = Radium(MenuButton);
 
 
-const Header = (props) => {
-    return (
-        <div>
-            <span style={props.style.name}>{props.name}</span>
-            <span style={props.style.location}>{props.location}</span>
-        </div>
-    );
-};
+class Header extends Component {
+    render() {
+        return (
+            <div>
+                <span style={this.props.style.name}>{this.props.name}</span>
+                <span style={this.props.style.location}>{this.props.location}</span>
+            </div>
+        );
+    }
+}
 
 Header.propTypes = {
     name: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     style: PropTypes.object.isRequired,
 };
+
+Header = Radium(Header);
 
 
 class ActionButtons extends Component {

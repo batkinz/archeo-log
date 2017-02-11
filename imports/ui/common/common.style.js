@@ -9,6 +9,7 @@ export const CommonStyle = {
         common: {
             rounding: { borderRadius: 3 },
             table: {
+                marginTop: 11,
                 // display: 'table',
                 width: '100%',
             },

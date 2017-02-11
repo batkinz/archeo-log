@@ -32,6 +32,7 @@
     "arrow-body-style": ["error", "always"],
     "max-len": ["error", 120],
     "new-cap": ["error", { "capIsNewExceptions": ["Radium"] }],
-    "react/jsx-closing-bracket-location": [1, { "selfClosing": "props-aligned", "nonEmpty": "after-props"}]
+    "react/jsx-closing-bracket-location": [1, { "selfClosing": "props-aligned", "nonEmpty": "after-props"}],
+    "react/prefer-stateless-function": [0]
   }
 }
