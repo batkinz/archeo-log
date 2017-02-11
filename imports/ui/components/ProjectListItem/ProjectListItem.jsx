@@ -1,0 +1,193 @@
+import React, { Component, PropTypes } from 'react';
+import { createContainer } from 'meteor/react-meteor-data';
+import Radium from 'radium';
+
+import { Styles } from '/imports/api/styles/styles.collection.js';
+import { ProjectListItemStyle } from './ProjectListItem.style.js';
+import { CommonStyle } from '/imports/ui/common/common.style.js';
+
+
+class MenuButton extends Component {
+    render() {
+        return (
+            <button
+              type="button"
+              className="btn btn-default btn-lg"
+              key="projectListItemMenuButton"
+              style={this.props.style}>
+                <span className="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+        );
+    }
+}
+
+MenuButton.propTypes = {
+    style: PropTypes.object.isRequired,
+};
+
+MenuButton = Radium(MenuButton);
+
+
+const Header = (props) => {
+    return (
+        <div>
+            <span style={props.style.name}>{props.name}</span>
+            <span style={props.style.location}>{props.location}</span>
+        </div>
+    );
+};
+
+Header.propTypes = {
+    name: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    style: PropTypes.object.isRequired,
+};
+
+
+class ActionButtons extends Component {
+    render() {
+        return (
+            <div className="row" style={this.props.style.container}>
+                <div className="col-md-4" style={this.props.style.cols}>
+                    <button
+                      type="button"
+                      className="btn btn-default btn-lg"
+                      key="projectListItemDetailsButton"
+                      style={[
+                          this.props.style.common,
+                          this.props.style.detailsButton,
+                      ]}>
+                    </button>
+                </div>
+                <div className="col-md-4" style={this.props.style.cols}>
+                    <button
+                      type="button"
+                      className="btn btn-default btn-lg"
+                      key="projectListItemDoneButton"
+                      style={[
+                          this.props.style.common,
+                          this.props.style.doneButton,
+                      ]}>
+                    </button>
+                </div>
+                <div className="col-md-4" style={this.props.style.cols}>
+                    <button
+                      type="button"
+                      className="btn btn-default btn-lg"
+                      key="projectListItemDeleteButton"
+                      style={[
+                          this.props.style.common,
+                          this.props.style.deleteButton,
+                      ]}>
+                    </button>
+                </div>
+            </div>
+        );
+    }
+}
+
+ActionButtons.propTypes = {
+    style: PropTypes.object.isRequired,
+};
+
+ActionButtons = Radium(ActionButtons);
+
+
+class DateDisplay extends Component {
+    constructor(props) {
+        super(props);
+
+        this.year = props.date.getFullYear();
+        this.month = props.date.getMonth();
+        this.day = props.date.getDate();
+    }
+
+    render() {
+        return (
+            <div style={this.props.style}>
+                <span>{this.day} {this.month} {this.year}</span>
+            </div>
+        );
+    }
+}
+
+DateDisplay.propTypes = {
+    style: PropTypes.object.isRequired,
+    date: PropTypes.object.isRequired,
+};
+
+DateDisplay = Radium(DateDisplay);
+
+
+class ProjectListItem extends Component {
+    render() {
+        if (!this.props.loading) {
+            return (
+                <div
+                  className="panel panel-default"
+                  style={[
+                      this.props.style.common.rounding,
+                      this.props.style.common.table,
+                      this.props.style.common.height68]}>
+                    <div
+                      className="panel-body"
+                      style={[
+                          this.props.style.common.height68,
+                          this.props.style.panelBody]}>
+                        <div className="row" style={[this.props.style.common.height46, this.props.style.row]}>
+                            <div
+                              className="col-sm-1"
+                              style={[
+                                  this.props.style.common.tableCell,
+                                  this.props.style.buttonCell]}>
+                                <MenuButton style={this.props.style.menuButton} />
+                            </div>
+                            <div className="col-sm-5" style={[this.props.style.common.tableCell]}>
+                                <Header
+                                  name={this.props.name} location={this.props.location}
+                                  style={this.props.style.header} />
+                            </div>
+                            <div className="col-sm-3" style={[this.props.style.common.tableCell]}>
+                                <DateDisplay style={this.props.style.date} date={this.props.date} />
+                            </div>
+                            <div
+                              className="col-sm-3"
+                              style={[
+                                  this.props.style.common.tableCell,
+                                  this.props.style.actionButtonsCell]}>
+                                <ActionButtons
+                                  style={this.props.style.actionButtons} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        return (
+            <div>Loading...</div>
+        );
+    }
+}
+
+ProjectListItem.propTypes = {
+    name: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    date: PropTypes.object.isRequired,
+    style: PropTypes.object.isRequired,
+    loading: PropTypes.bool.isRequired,
+};
+
+export default createContainer(() => {
+    const subHandle = Meteor.subscribe('styles');
+
+    // const commonStyles = Styles.findOne({ targetComponent: 'Common' }) || CommonStyle;
+    // const localStyles = Styles.findOne({ targetComponent: 'ProjectListItem' }) || ProjectListItemStyle;
+
+    const commonStyles = CommonStyle;
+    const localStyles = ProjectListItemStyle;
+    return {
+        loading: !subHandle.ready(),
+        style: Object.assign({}, commonStyles.style, localStyles.style),
+        date: new Date(2017, 2, 10),
+    };
+}, Radium(ProjectListItem));

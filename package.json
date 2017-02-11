@@ -5,7 +5,15 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "meteor-node-stubs": "~0.2.0"
+    "babel-runtime": "^6.22.0",
+    "color": "^1.0.3",
+    "eslint-import-resolver-meteor": "0.0.6",
+    "meteor-node-stubs": "~0.2.0",
+    "radium": "^0.18.1",
+    "react": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "simpl-schema": "^0.1.1"
   },
   "devDependencies": {
     "eslint-plugin-react": "~5.0.1",
