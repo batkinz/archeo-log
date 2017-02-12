@@ -14,6 +14,7 @@ export const AppStyle = {
             backgroundColor: CommonStyle.style.common.colors.lightestGray.backgroundColor,
             opacity: 0.5,
             color: '#000',
+            userSelect: 'none',
         },
 
     },
