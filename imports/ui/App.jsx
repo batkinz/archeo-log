@@ -13,7 +13,7 @@ import ProjectListItem from './components/ProjectListItem/ProjectListItem.jsx';
 const App = (props) => {
     return (
         <div className="container" style={props.style}>
-            <ProjectListItem name="My Little Pony2" location="Far Faraway Straße 1324" />
+            <ProjectListItem name="My Little Pony3" location="Far Faraway Straße 1324" />
         </div>
     );
 };
