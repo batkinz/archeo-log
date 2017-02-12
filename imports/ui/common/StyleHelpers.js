@@ -16,7 +16,7 @@ class DefaultStylesContainerClass {
 const DEVEL = false;
 
 export const getStyle = (databaseStyle, localRadiumObject) => {
-    return DEVEL ? localRadiumObject : databaseStyle;
+    return DEVEL ? (localRadiumObject || databaseStyle) : (databaseStyle || localRadiumObject);
 };
 
 export const DefaultStylesContainer = new DefaultStylesContainerClass();
