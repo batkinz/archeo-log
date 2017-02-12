@@ -1,7 +1,7 @@
 /**
  * Created by bence on 2017.02.10..
  */
-import { DefaultStylesContainer } from '../../ui/common/DefaultStylesContainer.js';
+import { DefaultStylesContainer } from '../../ui/common/StyleHelpers.js';
 
 // here come all the style files
 import '/imports/ui/components/ProjectListItem/ProjectListItem.style.js';

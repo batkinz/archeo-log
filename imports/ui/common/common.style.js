@@ -1,7 +1,7 @@
 /**
  * Created by bence on 2017.02.10..
  */
-import { DefaultStylesContainer } from '/imports/ui/common/DefaultStylesContainer.js';
+import { DefaultStylesContainer } from '/imports/ui/common/StyleHelpers.js';
 
 export const CommonStyle = {
     targetComponent: 'Common',
@@ -45,6 +45,9 @@ export const CommonStyle = {
                 },
                 turquoise: {
                     backgroundColor: '#00f2ae',
+                },
+                white: {
+                    backgroundColor: '#ffffff',
                 },
             },
         },

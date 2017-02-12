@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
 import Radium from 'radium';
 
+import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { Styles } from '/imports/api/styles/styles.collection.js';
 import { ProjectListItemStyle } from './ProjectListItem.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
@@ -60,7 +61,8 @@ class ActionButtons extends Component {
                       style={[
                           this.props.style.common,
                           this.props.style.detailsButton,
-                      ]}>
+                      ]}
+                      onClick={this.props.detailsCallback}>
                     </button>
                 </div>
                 <div className="col-md-4" style={this.props.style.cols}>
@@ -71,7 +73,8 @@ class ActionButtons extends Component {
                       style={[
                           this.props.style.common,
                           this.props.style.doneButton,
-                      ]}>
+                      ]}
+                      onClick={this.props.doneCallback}>
                     </button>
                 </div>
                 <div className="col-md-4" style={this.props.style.cols}>
@@ -82,7 +85,8 @@ class ActionButtons extends Component {
                       style={[
                           this.props.style.common,
                           this.props.style.deleteButton,
-                      ]}>
+                      ]}
+                      onClick={this.props.deleteCallback}>
                     </button>
                 </div>
             </div>
@@ -92,6 +96,9 @@ class ActionButtons extends Component {
 
 ActionButtons.propTypes = {
     style: PropTypes.object.isRequired,
+    detailsCallback: React.PropTypes.func,
+    doneCallback: React.PropTypes.func,
+    deleteCallback: React.PropTypes.func,
 };
 
 ActionButtons = Radium(ActionButtons);
@@ -124,6 +131,25 @@ DateDisplay = Radium(DateDisplay);
 
 
 class ProjectListItem extends Component {
+    constructor(props) {
+        super(props);
+        this.handleDetailsButton = this.handleDetailsButton.bind(this);
+        this.handleDoneButton = this.handleDoneButton.bind(this);
+        this.handleDeleteButton = this.handleDeleteButton.bind(this);
+    }
+
+    handleDetailsButton() {
+        console.log('DetailsButton handler');
+    }
+
+    handleDoneButton() {
+        console.log('DoneButton handler');
+    }
+
+    handleDeleteButton() {
+        console.log('DeleteButton handler');
+    }
+
     render() {
         if (!this.props.loading) {
             return (
@@ -160,7 +186,10 @@ class ProjectListItem extends Component {
                                   this.props.style.common.tableCell,
                                   this.props.style.actionButtonsCell]}>
                                 <ActionButtons
-                                  style={this.props.style.actionButtons} />
+                                  style={this.props.style.actionButtons}
+                                  detailsCallback={this.handleDetailsButton}
+                                  doneCallback={this.handleDoneButton}
+                                  deleteCallback={this.handleDeleteButton} />
                             </div>
                         </div>
                     </div>
@@ -184,11 +213,8 @@ ProjectListItem.propTypes = {
 export default createContainer(() => {
     const subHandle = Meteor.subscribe('styles');
 
-    // const commonStyles = Styles.findOne({ targetComponent: 'Common' }) || CommonStyle;
-    // const localStyles = Styles.findOne({ targetComponent: 'ProjectListItem' }) || ProjectListItemStyle;
-
-    const commonStyles = CommonStyle;
-    const localStyles = ProjectListItemStyle;
+    const commonStyles = getStyle(Styles.findOne({ targetComponent: 'Common' }), CommonStyle);
+    const localStyles = getStyle(Styles.findOne({ targetComponent: 'ProjectListItem' }), ProjectListItemStyle);
     return {
         loading: !subHandle.ready(),
         style: Object.assign({}, commonStyles.style, localStyles.style),

@@ -1,7 +1,7 @@
 /**
  * Created by bence on 2017.02.10..
  */
-import { DefaultStylesContainer } from '/imports/ui/common/DefaultStylesContainer.js';
+import { DefaultStylesContainer } from '/imports/ui/common/StyleHelpers.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
 export const ProjectListItemStyle = {
@@ -34,6 +34,11 @@ export const ProjectListItemStyle = {
             borderRadius: 22,
             ':focus': {
                 outline: 0,
+                backgroundColor: CommonStyle.style.common.colors.white.backgroundColor,
+            },
+            ':hover': {
+                outline: 0,
+                backgroundColor: CommonStyle.style.common.colors.white.backgroundColor,
             },
         },
         panelBody: {

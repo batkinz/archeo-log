@@ -1,4 +1,4 @@
-import { DefaultStylesContainer } from '/imports/ui/common/DefaultStylesContainer.js';
+import { DefaultStylesContainer } from '/imports/ui/common/StyleHelpers.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
 export const AppStyle = {
