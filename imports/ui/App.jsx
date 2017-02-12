@@ -10,13 +10,38 @@ import { CommonStyle } from '/imports/ui/common/common.style.js';
 import ProjectListItem from './components/ProjectListItem/ProjectListItem.jsx';
 
 // App component - represents the whole app
-const App = (props) => {
-    return (
-        <div className="container" style={props.style}>
-            <ProjectListItem name="Sometownnaghme6" location="Far Faraway Straße 1324" />
-        </div>
-    );
-};
+class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.getVersion = this.getVersion.bind(this);
+        this.setVersion = this.setVersion.bind(this);
+        this.version = '';
+    }
+
+    getVersion() {
+        Meteor.call('getVersion', this.setVersion);
+    }
+
+    setVersion(error, result) {
+        if (!error) {
+            this.version = result;
+        } else {
+            console.log(error);
+        }
+    }
+
+    render() {
+        this.getVersion();
+
+        return (
+            <div className="container" style={this.props.style.container}>
+                <span style={this.props.style.version}>{this.version}</span>
+                <ProjectListItem name="Sometownnaghme" location="Far Faraway Straße 1324" />
+            </div>
+        );
+    }
+}
 
 App.propTypes = {
     style: PropTypes.object.isRequired,
