@@ -53,7 +53,7 @@ class ActionButtons extends Component {
     render() {
         return (
             <div className="row" style={this.props.style.container}>
-                <div className="col-md-4" style={this.props.style.cols}>
+                <div style={this.props.style.cols}>
                     <button
                       type="button"
                       className="btn btn-default btn-lg"
@@ -65,7 +65,7 @@ class ActionButtons extends Component {
                       onClick={this.props.detailsCallback}>
                     </button>
                 </div>
-                <div className="col-md-4" style={this.props.style.cols}>
+                <div style={this.props.style.cols}>
                     <button
                       type="button"
                       className="btn btn-default btn-lg"
@@ -77,7 +77,7 @@ class ActionButtons extends Component {
                       onClick={this.props.doneCallback}>
                     </button>
                 </div>
-                <div className="col-md-4" style={this.props.style.cols}>
+                <div style={this.props.style.cols}>
                     <button
                       type="button"
                       className="btn btn-default btn-lg"
@@ -166,22 +166,26 @@ class ProjectListItem extends Component {
                           this.props.style.panelBody]}>
                         <div className="row" style={[this.props.style.common.height46, this.props.style.row]}>
                             <div
-                              className="col-sm-1"
                               style={[
                                   this.props.style.common.tableCell,
-                                  this.props.style.buttonCell]}>
+                                  this.props.style.menuButtonCell]}>
                                 <MenuButton style={this.props.style.menuButton} />
                             </div>
-                            <div className="col-sm-5" style={[this.props.style.common.tableCell]}>
+                            <div
+                              style={[
+                                  this.props.style.common.tableCell,
+                                  this.props.style.titleCell]}>
                                 <Header
                                   name={this.props.name} location={this.props.location}
                                   style={this.props.style.header} />
                             </div>
-                            <div className="col-sm-3" style={[this.props.style.common.tableCell]}>
+                            <div
+                              style={[
+                                  this.props.style.common.tableCell,
+                                  this.props.style.dateCell]}>
                                 <DateDisplay style={this.props.style.date} date={this.props.date} />
                             </div>
                             <div
-                              className="col-sm-3"
                               style={[
                                   this.props.style.common.tableCell,
                                   this.props.style.actionButtonsCell]}>

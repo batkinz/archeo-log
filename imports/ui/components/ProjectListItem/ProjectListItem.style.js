@@ -7,6 +7,30 @@ import { CommonStyle } from '/imports/ui/common/common.style.js';
 export const ProjectListItemStyle = {
     targetComponent: 'ProjectListItem',
     style: {
+        panelBody: {
+            paddingTop: 11,
+            paddingRight: 11,
+            paddingBotton: 11,
+            paddingLeft: 11,
+        },
+        row: {
+            whiteSpace: 'nowrap',
+            overflow: 'overflow-x',
+        },
+        menuButtonCell: {
+            paddingLeft: 11,
+            paddingRight: 11,
+            width: 68,
+        },
+        titleCell: {
+            width: '40%',
+        },
+        dateCell: {
+            width: '30%',
+        },
+        actionButtonsCell: {
+            width: '20%',
+        },
         header: {
             name: {
                 fontSize: 24,
@@ -41,26 +65,8 @@ export const ProjectListItemStyle = {
                 backgroundColor: CommonStyle.style.common.colors.white.backgroundColor,
             },
         },
-        panelBody: {
-            paddingTop: 11,
-            paddingRight: 11,
-            paddingBotton: 11,
-            paddingLeft: 11,
-        },
-        row: {
-            whiteSpace: 'nowrap',
-            overflow: 'overflow-x',
-        },
-        buttonCell: {
-            paddingLeft: 11,
-            paddingRight: 11,
-            width: 68,
-        },
         date: {
             fontSize: '24pt',
-        },
-        actionButtonsCell: {
-            // width: 204,
         },
         actionButtons: {
             common: {
@@ -76,6 +82,8 @@ export const ProjectListItemStyle = {
             cols: {
                 paddingLeft: 11,
                 paddingRight: 11,
+                width: '33.33%',
+                display: 'inline-block',
             },
             detailsButton: {
                 backgroundColor: CommonStyle.style.common.colors.red.backgroundColor,
