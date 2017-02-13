@@ -2,7 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:regular,bold,light,medium&subset=latin,latin-ext');
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Quicksand';
     background-color: #cccccc;
+    height: 100%;
+}
+
+#render-target {
+    height: 100%;
 }

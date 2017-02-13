@@ -6,6 +6,7 @@ export const AppStyle = {
     style: {
         container: {
             width: 846,
+            height: '100%',
         },
         version: {
             position: 'absolute',

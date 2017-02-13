@@ -3,7 +3,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 // route components
 import App from '/imports/ui/App.jsx';
-import ProjectListItem from '/imports/ui/components/ProjectListItem/ProjectListItem.jsx';
+import NotFound from '/imports/ui/components/NotFound/NotFound.jsx';
 
 export const renderRoutes = () => {
     return (
@@ -14,6 +14,7 @@ export const renderRoutes = () => {
                  <Route path="about" component={About} />
                  <Route path="inbox" component={Inbox} />
                  */}
+                <Route path="*" component={NotFound} />
             </Route>
         </Router>
     );
