@@ -16,7 +16,6 @@ export const AppStyle = {
             color: '#000',
             userSelect: 'none',
         },
-
     },
 };
 

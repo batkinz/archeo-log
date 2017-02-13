@@ -38,6 +38,7 @@ class App extends Component {
             <div className="container" style={this.props.style.container}>
                 <span style={this.props.style.version}>{this.version}</span>
                 <ProjectListItem name="Sometownnaghme" location="Far Faraway Straße 1324" />
+                {this.props.children}
             </div>
         );
     }
@@ -45,6 +46,7 @@ class App extends Component {
 
 App.propTypes = {
     style: PropTypes.object.isRequired,
+    children: PropTypes.object,
 };
 
 export default createContainer(() => {
