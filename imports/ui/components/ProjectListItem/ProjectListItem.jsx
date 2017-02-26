@@ -135,7 +135,7 @@ class ProjectListItem extends Component {
         super(props);
         this.handleDetailsButton = this.handleDetailsButton.bind(this);
         this.handleDoneButton = this.handleDoneButton.bind(this);
-        this.handleDeleteButton = this.handleDeleteButton.bind(this);
+        this.handleDeleteButton = this.handleDeleteButton.bind(this);        
     }
 
     handleDetailsButton() {
@@ -151,77 +151,61 @@ class ProjectListItem extends Component {
     }
 
     render() {
-        if (!this.props.loading) {
-            return (
+        const style = getStyle(this.props.style, ProjectListItemStyle.style);
+
+        return (
+            <div
+              className="panel panel-default"
+              style={[
+                  style.common.rounding,
+                  style.common.table,
+                  style.common.height68]}>
                 <div
-                  className="panel panel-default"
+                  className="panel-body"
                   style={[
-                      this.props.style.common.rounding,
-                      this.props.style.common.table,
-                      this.props.style.common.height68]}>
-                    <div
-                      className="panel-body"
-                      style={[
-                          this.props.style.common.height68,
-                          this.props.style.panelBody]}>
-                        <div className="row" style={[this.props.style.common.height46, this.props.style.row]}>
-                            <div
-                              style={[
-                                  this.props.style.common.tableCell,
-                                  this.props.style.menuButtonCell]}>
-                                <MenuButton style={this.props.style.menuButton} />
-                            </div>
-                            <div
-                              style={[
-                                  this.props.style.common.tableCell,
-                                  this.props.style.titleCell]}>
-                                <Header
-                                  name={this.props.name} location={this.props.location}
-                                  style={this.props.style.header} />
-                            </div>
-                            <div
-                              style={[
-                                  this.props.style.common.tableCell,
-                                  this.props.style.dateCell]}>
-                                <DateDisplay style={this.props.style.date} date={this.props.date} />
-                            </div>
-                            <div
-                              style={[
-                                  this.props.style.common.tableCell,
-                                  this.props.style.actionButtonsCell]}>
-                                <ActionButtons
-                                  style={this.props.style.actionButtons}
-                                  detailsCallback={this.handleDetailsButton}
-                                  doneCallback={this.handleDoneButton}
-                                  deleteCallback={this.handleDeleteButton} />
-                            </div>
+                      style.common.height68,
+                      style.panelBody]}>
+                    <div className="row" style={[style.common.height46, style.row]}>
+                        <div
+                          style={[
+                              style.common.tableCell,
+                              style.menuButtonCell]}>
+                            <MenuButton style={style.menuButton} />
+                        </div>
+                        <div
+                          style={[
+                              style.common.tableCell,
+                              style.titleCell]}>
+                            <Header
+                              name={this.props.project.name} location={this.props.project.location}
+                              style={style.header} />
+                        </div>
+                        <div
+                          style={[
+                              style.common.tableCell,
+                              style.dateCell]}>
+                            <DateDisplay style={style.date} date={this.props.project.date} />
+                        </div>
+                        <div
+                          style={[
+                              style.common.tableCell,
+                              style.actionButtonsCell]}>
+                            <ActionButtons
+                              style={style.actionButtons}
+                              detailsCallback={this.handleDetailsButton}
+                              doneCallback={this.handleDoneButton}
+                              deleteCallback={this.handleDeleteButton} />
                         </div>
                     </div>
                 </div>
-            );
-        }
-        return (
-            <div>Loading...</div>
+            </div>
         );
     }
 }
 
 ProjectListItem.propTypes = {
-    name: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    date: PropTypes.object.isRequired,
-    style: PropTypes.object.isRequired,
-    loading: PropTypes.bool.isRequired,
+    project: PropTypes.object.isRequired,
+    style: PropTypes.object,
 };
 
-export default createContainer(() => {
-    const subHandle = Meteor.subscribe('styles');
-
-    const commonStyles = getStyle(Styles.findOne({ targetComponent: 'Common' }), CommonStyle);
-    const localStyles = getStyle(Styles.findOne({ targetComponent: 'ProjectListItem' }), ProjectListItemStyle);
-    return {
-        loading: !subHandle.ready(),
-        style: Object.assign({}, commonStyles.style, localStyles.style),
-        date: new Date(2017, 2, 10),
-    };
-}, Radium(ProjectListItem));
+export default Radium(ProjectListItem);

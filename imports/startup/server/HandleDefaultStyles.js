@@ -6,6 +6,8 @@ import { DefaultStylesContainer } from '../../ui/common/StyleHelpers.js';
 // here come all the style files
 import '/imports/ui/common/common.style.js';
 import '/imports/ui/components/ProjectListItem/ProjectListItem.style.js';
+import '/imports/ui/components/ProjectList/ProjectList.style.js';
+import '/imports/ui/App.style.js';
 import '/imports/ui/components/NotFound/NotFound.style.js';
 
 import { Styles } from '/imports/api/styles/styles.collection.js';

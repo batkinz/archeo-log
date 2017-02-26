@@ -21,3 +21,7 @@ shell-server
 aldeed:collection2-core
 twbs:bootstrap
 react-meteor-data
+practicalmeteor:mocha
+xolvio:cleaner
+dburles:factory
+hwillson:stub-collections
