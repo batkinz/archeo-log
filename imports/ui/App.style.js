@@ -4,7 +4,13 @@ import { CommonStyle } from '/imports/ui/common/common.style.js';
 export const AppStyle = {
     targetComponent: 'App',
     style: {
-        container: {
+        appContainer: {
+            paddingLeft: 0,
+            paddingRight: 0,
+            margin: 'auto',
+            width: 1024,
+        },
+        pageContainer: {
             width: 846,
             height: '100%',
         },

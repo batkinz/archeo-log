@@ -3,10 +3,10 @@ import { createContainer } from 'meteor/react-meteor-data';
 import Radium from 'radium';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
-import { Styles } from '/imports/api/styles/styles.collection.js';
 import { AppStyle } from './App.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
+import MainMenu from './components/MainMenu/MainMenu.jsx';
 import ProjectList from './components/ProjectList/ProjectList.jsx';
 
 // App component - represents the whole app
@@ -67,9 +67,14 @@ class App extends Component {
 
         if (!this.props.loading) {
             return (
-                <div className="container" style={this.props.style.container}>
+                <div className="container" style={this.props.style.appContainer}>
                     <span style={this.props.style.version}>{this.version}</span>
-                    <ProjectList projects={projects} style={{}} itemStyle={this.props.pliStyles} />
+
+                    <MainMenu />
+
+                    <div className="container" style={this.props.style.pageContainer}>
+                        <ProjectList projects={projects} style={{}} />
+                    </div>
                     {this.props.children}
                 </div>
             );
@@ -84,6 +89,7 @@ class App extends Component {
 App.propTypes = {
     style: PropTypes.object.isRequired,
     pliStyles: PropTypes.object,
+    menuStyle: PropTypes.object,
     children: PropTypes.object,
     loading: PropTypes.bool,
 };
@@ -92,12 +98,11 @@ export default createContainer(() => {
     const subHandle = Meteor.subscribe('styles');
     const styleReady = !subHandle.ready();
 
-    const commonStyles = getStyle(Styles.findOne({ targetComponent: 'Common' }), CommonStyle);
-    const localStyles = getStyle(Styles.findOne({ targetComponent: 'App' }), AppStyle);
-    const projectListItemStyles = Styles.findOne({ targetComponent: 'ProjectListItem' }) || {};
+    const commonStyles = getStyle('Common', CommonStyle.style);
+    const localStyles = getStyle('App', AppStyle.style);
+
     return {
         loading: styleReady,
-        style: Object.assign({}, commonStyles.style, localStyles.style),
-        pliStyles: Object.assign({}, commonStyles.style, projectListItemStyles.style),
+        style: Object.assign({}, commonStyles, localStyles),
     };
 }, Radium(App));

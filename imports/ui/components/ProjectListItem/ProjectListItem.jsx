@@ -3,7 +3,6 @@ import { createContainer } from 'meteor/react-meteor-data';
 import Radium from 'radium';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
-import { Styles } from '/imports/api/styles/styles.collection.js';
 import { ProjectListItemStyle } from './ProjectListItem.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
@@ -135,7 +134,7 @@ class ProjectListItem extends Component {
         super(props);
         this.handleDetailsButton = this.handleDetailsButton.bind(this);
         this.handleDoneButton = this.handleDoneButton.bind(this);
-        this.handleDeleteButton = this.handleDeleteButton.bind(this);        
+        this.handleDeleteButton = this.handleDeleteButton.bind(this);
     }
 
     handleDetailsButton() {
@@ -151,7 +150,8 @@ class ProjectListItem extends Component {
     }
 
     render() {
-        const style = getStyle(this.props.style, ProjectListItemStyle.style);
+        const localStyle = Object.assign({}, ProjectListItemStyle.style, CommonStyle.style);
+        const style = getStyle(this.props.style, localStyle);
 
         return (
             <div
@@ -208,4 +208,11 @@ ProjectListItem.propTypes = {
     style: PropTypes.object,
 };
 
-export default Radium(ProjectListItem);
+export default createContainer(() => {
+    const commonStyles = getStyle('Common', CommonStyle.style) || {};
+    const projectListItemStyles = getStyle('ProjectListItem', ProjectListItemStyle.style) || {};
+
+    return {
+        style: Object.assign({}, commonStyles, projectListItemStyles),
+    };
+}, Radium(ProjectListItem));
