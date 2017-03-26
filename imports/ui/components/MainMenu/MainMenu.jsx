@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Radium from 'radium';
 import { createContainer } from 'meteor/react-meteor-data';
+import { Textfit } from 'react-textfit';
 
 import Button from '/imports/ui/components/Button/Button.jsx';
 
@@ -20,6 +21,27 @@ Separator.propTypes = {
 };
 
 Separator = Radium(Separator);
+
+
+class UserNameContainer extends Component {
+    render() {
+        return (
+            <div style={this.props.style.div}>
+                <Textfit mode="single" forceSingleModeWidth={false}>
+                    {this.props.firstName}<br />{this.props.lastName}
+                </Textfit>
+            </div>
+        );
+    }
+}
+
+UserNameContainer.propTypes = {
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    style: PropTypes.object.isRequired,
+};
+
+UserNameContainer = Radium(UserNameContainer);
 
 
 class MainMenu extends Component {
@@ -69,6 +91,12 @@ class MainMenu extends Component {
                           yellow: true,
                           dropdown: true,
                           dropdownItems: langDropdownItems }} />
+                </div>
+                <div style={this.props.style.userNameContainer}>
+                    <UserNameContainer
+                      firstName="Géza"
+                      lastName="Mézga"
+                      style={this.props.style.subStyles.userNameContainer} />
                 </div>
             </div>
         );

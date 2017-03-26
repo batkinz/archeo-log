@@ -76,6 +76,21 @@ export const MainMenuStyle = {
             top: 17,
             left: 201,
         },
+        userNameContainer: {
+            float: 'left',
+            position: 'relative',
+            top: 20,
+            left: 223,
+        },
+        subStyles: {
+            userNameContainer: {
+                div: {
+                    margin: -5,
+                    fontSize: 19,
+                    width: 80,
+                },
+            },
+        },
     },
 };
 
