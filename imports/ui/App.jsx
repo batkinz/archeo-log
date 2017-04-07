@@ -7,6 +7,7 @@ import { AppStyle } from './App.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
 import MainMenu from './components/MainMenu/MainMenu.jsx';
+import FilteringMenu from './components/FilteringMenu/FIlteringMenu.jsx';
 import ProjectList from './components/ProjectList/ProjectList.jsx';
 
 // App component - represents the whole app
@@ -73,6 +74,7 @@ class App extends Component {
                     <MainMenu />
 
                     <div className="container" style={this.props.style.pageContainer}>
+                        <FilteringMenu />
                         <ProjectList projects={projects} style={{}} />
                     </div>
                     {this.props.children}

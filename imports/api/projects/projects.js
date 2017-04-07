@@ -1,33 +1,47 @@
-/* globals ProjectSchema: true, Projects: true */
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-ProjectSchema = new SimpleSchema({
+const ProjectSchema = new SimpleSchema({
     name: {
         type: String,
+        editable: true,
     },
-    megbizas_id: {
+    feltarasi_hely: {
+        type: String,
+        editable: true,
+    },
+    asatasKezdete: {
+        type: Date,
+        editable: true,
+    },
+    adatrogzito_szemely_id: {
         type: String,
         regEx: SimpleSchema.RegEx.Id,
-        optional: true,
-    },
-    feltarasi_hely_id: {
-        type: String,
-        regEx: SimpleSchema.RegEx.Id,
-        optional: true,
-    },
-    zarojelentes: {
-        type: Object,
-        optional: true,
     },
     timestamp: {
         type: Date,
         defaultValue: new Date(),
     },
-    active: {
-        type: Boolean,
-        defaultValue: true,
+});
+
+const Projects = new Meteor.Collection('projektek');
+Projects.attachSchema(ProjectSchema);
+
+const whitelist = _.filter(_.keys(ProjectSchema), (property) => {
+    return ProjectSchema[property].editable;
+});
+
+Projects.allow({
+    insert(userId, doc) {
+        return userId;
+    },
+    update(userId, doc, fieldNames, modifier) {
+        if (userId && doc.userId === userId && _.difference(fieldNames, whitelist).length === 0) {
+            return true;
+        }
+    },
+    remove(userId, doc) {
+        return userId === doc.adatrogzito_szemely_id;
     },
 });
 
-Projects = new Meteor.Collection('projektek');
-Projects.attachSchema(ProjectSchema);
+export default Projects;
