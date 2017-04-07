@@ -1,4 +1,5 @@
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
 
 const Artefacts = new Meteor.Collection('leletek');
 
@@ -8,18 +9,18 @@ const ArtefactSchema = new SimpleSchema({
         unique: false,
         index: false,
         custom() {
-            if (Meteor.isClient) {
-                const objektumId = Router.current().params.objektum_id;
-                const leletId = Router.current().params.lelet_id;
-                if (leletId && Artefacts.find({ _id: { $not: leletId },
-                        objektum_id: objektumId,
-                        lelet_szam: this.value }).count() > 0) {
-                    return 'notAllowed';
-                } else if (!leletId
-                    && Artefacts.find({ objektum_id: objektumId, lelet_szam: this.value }).count() > 0) {
-                    return 'notAllowed';
-                }
-            }
+            // if (Meteor.isClient) {
+            //     const objektumId = Router.current().params.objektum_id;
+            //     const leletId = Router.current().params.lelet_id;
+            //     if (leletId && Artefacts.find({ _id: { $not: leletId },
+            //             objektum_id: objektumId,
+            //             lelet_szam: this.value }).count() > 0) {
+            //         return 'notAllowed';
+            //     } else if (!leletId
+            //         && Artefacts.find({ objektum_id: objektumId, lelet_szam: this.value }).count() > 0) {
+            //         return 'notAllowed';
+            //     }
+            // }
             return true;
         },
     },
@@ -38,7 +39,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('anyag');
+                return StaticFormOptionProvider.get('anyag');
             },
         },
     },
@@ -54,7 +55,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('leletcsoport_alt');
+                return StaticFormOptionProvider.get('leletcsoport_alt');
             },
         },
     },
@@ -63,7 +64,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('lelet_megnevezese');
+                return StaticFormOptionProvider.get('lelet_megnevezese');
             },
         },
     },
@@ -84,7 +85,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('lelet_elhelyezkedese');
+                return StaticFormOptionProvider.get('lelet_elhelyezkedese');
             },
         },
     },
@@ -107,7 +108,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('tisztitas_eszkoze');
+                return StaticFormOptionProvider.get('tisztitas_eszkoze');
             },
         },
     },
@@ -116,7 +117,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('szaritas_modja');
+                return StaticFormOptionProvider.get('szaritas_modja');
             },
         },
     },
@@ -125,7 +126,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('anyagcsoport');
+                return StaticFormOptionProvider.get('anyagcsoport');
             },
         },
     },
@@ -134,7 +135,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('koztes_tarolas_modja');
+                return StaticFormOptionProvider.get('koztes_tarolas_modja');
             },
         },
     },

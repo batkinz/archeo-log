@@ -1,0 +1,1713 @@
+{
+    "alapszin": {
+        "alapszin_0": {
+            "de": "schwarz"
+        },
+        "alapszin_1": {
+            "de": "weiß"
+        },
+        "alapszin_2": {
+            "de": "blau"
+        },
+        "alapszin_3": {
+            "de": "braun"
+        },
+        "alapszin_4": {
+            "de": "gelb"
+        },
+        "alapszin_5": {
+            "de": "grün"
+        },
+        "alapszin_6": {
+            "de": "rot"
+        },
+        "alapszin_7": {
+            "de": "grau"
+        },
+        "alapszin_8": {
+            "de": "violett"
+        },
+        "alapszin_9": {
+            "de": "orange"
+        },
+        "alapszin_10": {
+            "de": "ocker"
+        }
+    },
+    "geologia_szin": {
+        "geologia_szin_0": {
+            "de": "braun"
+        },
+        "geologia_szin_1": {
+            "de": "gelb"
+        },
+        "geologia_szin_2": {
+            "de": "grün"
+        },
+        "geologia_szin_3": {
+            "de": "grau"
+        },
+        "geologia_szin_4": {
+            "de": "schwarz"
+        },
+        "geologia_szin_5": {
+            "de": "weiss"
+        },
+        "geologia_szin_6": {
+            "de": "violett"
+        },
+        "geologia_szin_7": {
+            "de": "orange"
+        },
+        "geologia_szin_8": {
+            "de": "oliv"
+        },
+        "geologia_szin_9": {
+            "de": "ocker"
+        }
+    },
+    "allag": {
+        "allag_0": {
+            "de": "sehr hart"
+        },
+        "allag_1": {
+            "de": "hart"
+        },
+        "allag_2": {
+            "de": "fest"
+        },
+        "allag_3": {
+            "de": "mittelfest"
+        },
+        "allag_4": {
+            "de": "weich"
+        },
+        "allag_5": {
+            "de": "sehr weich"
+        },
+        "allag_6": {
+            "de": "flüssig"
+        }
+    },
+    "anyag": {
+        "anyag_egyeb": {
+            "de": "anderes, und zwar"
+        },
+        "anyag_1": {
+            "de": "Knochen (menschlich)"
+        },
+        "anyag_2": {
+            "de": "Knochen (tierisch)"
+        },
+        "anyag_3": {
+            "de": "Knochen (k.a.)"
+        },
+        "anyag_4": {
+            "de": "Keramik"
+        },
+        "anyag_5": {
+            "de": "Stein"
+        },
+        "anyag_6": {
+            "de": "Holz"
+        },
+        "anyag_7": {
+            "de": "Glas"
+        },
+        "anyag_8": {
+            "de": "Metall"
+        },
+        "anyag_9": {
+            "de": "Edelmetall"
+        },
+        "anyag_10": {
+            "de": "Leder"
+        },
+        "anyag_11": {
+            "de": "Stoff"
+        },
+        "anyag_12": {
+            "de": "Holzkohle"
+        }
+    },
+    "anyagcsoport": {
+        "anyagcsoport_0": {
+            "de": "mineralische Materialien"
+        },
+        "anyagcsoport_1": {
+            "de": "Metalle"
+        },
+        "anyagcsoport_2": {
+            "de": "organische und artverwandte Materialien"
+        }
+    },
+    "arnyalat": {
+        "arnyalat_0": {
+            "de": "sehr hell"
+        },
+        "arnyalat_1": {
+            "de": "hell"
+        },
+        "arnyalat_2": {
+            "de": "mittel"
+        },
+        "arnyalat_3": {
+            "de": "dunkel"
+        },
+        "arnyalat_4": {
+            "de": "sehr dunkel"
+        },
+        "arnyalat_5": {
+            "de": "leuchtend"
+        },
+        "arnyalat_6": {
+            "de": "blass"
+        },
+        "arnyalat_7": {
+            "de": "fahl"
+        },
+        "arnyalat_8": {
+            "de": "schmutzig"
+        }
+    },
+    "asatasi_modszer": {
+        "asatasi_modszer_0": {
+            "de": "nach künstlichen Schichten"
+        },
+        "asatasi_modszer_1": {
+            "de": "nach natürlichen Schichten"
+        }
+    },
+    "bazis_formaja": {
+        "bazis_formaja_0": {
+            "de": "horizontal"
+        },
+        "bazis_formaja_1": {
+            "de": "geneigt nach unten"
+        },
+        "bazis_formaja_2": {
+            "de": "geneigt nach oben"
+        },
+        "bazis_formaja_3": {
+            "de": "konvex"
+        },
+        "bazis_formaja_4": {
+            "de": "konkav"
+        },
+        "bazis_formaja_5": {
+            "de": "wellig"
+        },
+        "bazis_formaja_6": {
+            "de": "tropfenförmig"
+        }
+    },
+    "durva_talajosszetetel": {
+        "durva_talajosszetetel_0": {
+            "de": "Feinkies"
+        },
+        "durva_talajosszetetel_1": {
+            "de": "Mittelkies"
+        },
+        "durva_talajosszetetel_2": {
+            "de": "Grobkies"
+        },
+        "durva_talajosszetetel_3": {
+            "de": "runde Steine"
+        },
+        "durva_talajosszetetel_4": {
+            "de": "runde Blöcke"
+        },
+        "durva_talajosszetetel_5": {
+            "de": "runde Großblöcke"
+        },
+        "durva_talajosszetetel_6": {
+            "de": "Feingrus"
+        },
+        "durva_talajosszetetel_7": {
+            "de": "Mittelgrus"
+        },
+        "durva_talajosszetetel_8": {
+            "de": "Grobrus"
+        },
+        "durva_talajosszetetel_9": {
+            "de": "Bruchstein"
+        },
+        "durva_talajosszetetel_10": {
+            "de": "kantige Blöcke"
+        },
+        "durva_talajosszetetel_11": {
+            "de": "kantige Großblöcke"
+        },
+        "durva_talajosszetetel_12": {
+            "de": "Ziegel"
+        },
+        "durva_talajosszetetel_13": {
+            "de": "Schutt"
+        }
+    },
+    "eddigi_terulethasznalat": {
+        "eddigi_terulethasznalat_0": {
+            "de": "Ackerland"
+        },
+        "eddigi_terulethasznalat_1": {
+            "de": "Grünland"
+        },
+        "eddigi_terulethasznalat_2": {
+            "de": "Sonderkultur"
+        },
+        "eddigi_terulethasznalat_3": {
+            "de": "Wald"
+        },
+        "eddigi_terulethasznalat_4": {
+            "de": "Brachfläche"
+        },
+        "eddigi_terulethasznalat_5": {
+            "de": "Sportplatz, Park"
+        },
+        "eddigi_terulethasznalat_6": {
+            "de": "Auftragsflächen (z.B. Bauschutt)"
+        },
+        "eddigi_terulethasznalat_7": {
+            "de": "keine Angaben"
+        }
+    },
+    "elozetes_kormeghatarozas": {
+        "elozetes_kormeghatarozas_0": {
+            "de": "Neuzeit"
+        },
+        "elozetes_kormeghatarozas_1": {
+            "de": "Spät-MA"
+        },
+        "elozetes_kormeghatarozas_2": {
+            "de": "Hoch-MA"
+        },
+        "elozetes_kormeghatarozas_3": {
+            "de": "Früh-MA"
+        },
+        "elozetes_kormeghatarozas_4": {
+            "de": "Späte Völkerwanderung"
+        },
+        "elozetes_kormeghatarozas_5": {
+            "de": "frühe Völkerwanderung"
+        },
+        "elozetes_kormeghatarozas_6": {
+            "de": "jüngere röm. Kaiserzeit"
+        },
+        "elozetes_kormeghatarozas_7": {
+            "de": "ältere röm. Kaiserzeit"
+        },
+        "elozetes_kormeghatarozas_8": {
+            "de": "jüngere EZ (Latenezeit)"
+        },
+        "elozetes_kormeghatarozas_9": {
+            "de": "ältere EZ (Hallstiattzeit)"
+        },
+        "elozetes_kormeghatarozas_10": {
+            "de": "Jüngst-BZ (Hallsiattzeit)"
+        },
+        "elozetes_kormeghatarozas_11": {
+            "de": "Jung-BZ (Urnenfelder-BZ)"
+        },
+        "elozetes_kormeghatarozas_12": {
+            "de": "Mittel-BZ (Hügelgräber-BZ) "
+        },
+        "elozetes_kormeghatarozas_13": {
+            "de": "Früh-BZ"
+        },
+        "elozetes_kormeghatarozas_14": {
+            "de": "Neolithikum"
+        },
+        "elozetes_kormeghatarozas_15": {
+            "de": "Mesolithikum"
+        },
+        "elozetes_kormeghatarozas_16": {
+            "de": "Paläolithikum"
+        }
+    },
+    "famaradvany_allapota": {
+        "famaradvany_allapota_0": {
+            "de": "verbrannt"
+        },
+        "famaradvany_allapota_1": {
+            "de": "verkohlt"
+        },
+        "famaradvany_allapota_2": {
+            "de": "vergammelt"
+        }
+    },
+    "famaradvany_kidolgozasa": {
+        "famaradvany_kidolgozasa_0": {
+            "de": "gesägt"
+        },
+        "famaradvany_kidolgozasa_1": {
+            "de": "geschlagen"
+        },
+        "famaradvany_kidolgozasa_2": {
+            "de": "gespalten"
+        },
+        "famaradvany_kidolgozasa_3": {
+            "de": "unbearbeitet"
+        },
+        "famaradvany_kidolgozasa_4": {
+            "de": "keine Angabe"
+        }
+    },
+    "famaradvany_rogzites_fogazat": {
+        "famaradvany_rogzites_fogazat_0": {
+            "de": "Verblattung"
+        },
+        "famaradvany_rogzites_fogazat_1": {
+            "de": "Verzapfung"
+        },
+        "famaradvany_rogzites_fogazat_2": {
+            "de": "Verklemmung"
+        },
+        "famaradvany_rogzites_fogazat_3": {
+            "de": "gefügt"
+        },
+        "famaradvany_rogzites_fogazat_4": {
+            "de": "gestülpt"
+        },
+        "famaradvany_rogzites_fogazat_5": {
+            "de": "gefalzt"
+        },
+        "famaradvany_rogzites_fogazat_6": {
+            "de": "gerollt"
+        },
+        "famaradvany_rogzites_fogazat_7": {
+            "de": "gespundet"
+        },
+        "famaradvany_rogzites_fogazat_8": {
+            "de": "gespundet mit Fase"
+        },
+        "famaradvany_rogzites_fogazat_9": {
+            "de": "Nut und Feder"
+        },
+        "famaradvany_rogzites_fogazat_10": {
+            "de": "gedübelt"
+        },
+        "famaradvany_rogzites_fogazat_11": {
+            "de": "überschobene Bretter gespundet"
+        },
+        "famaradvany_rogzites_fogazat_12": {
+            "de": "keine Angabe"
+        }
+    },
+    "nev": {
+        "nev_0": {
+            "de": "de"
+        },
+        "nev_1": {
+            "de": "de"
+        },
+        "nev_2": {
+            "de": "de"
+        },
+        "nev_3": {
+            "de": "de"
+        }
+    },
+    "falforma": {
+        "falforma_0": {
+            "de": "vertikal, senkrecht"
+        },
+        "falforma_1": {
+            "de": "schräg (um 45°)"
+        },
+        "falforma_2": {
+            "de": "flachschräg (10-45°)"
+        },
+        "falforma_3": {
+            "de": "steilschräg (50-80°)"
+        },
+        "falforma_4": {
+            "de": "steilschräg, überkippt"
+        },
+        "falforma_5": {
+            "de": "nach außen gebogen"
+        },
+        "falforma_6": {
+            "de": "eingezogen"
+        },
+        "falforma_7": {
+            "de": "gestuft"
+        }
+    },
+    "falmaradvany_anyaga": {
+        "falmaradvany_anyaga_egyeb": {
+            "de": "gebrannter Ziegel"
+        },
+        "falmaradvany_anyaga_1": {
+            "de": "Lehm"
+        },
+        "falmaradvany_anyaga_2": {
+            "de": "Lehmziegel"
+        },
+        "falmaradvany_anyaga_3": {
+            "de": "Stein"
+        },
+        "falmaradvany_anyaga_4": {
+            "de": "Beton"
+        },
+        "falmaradvany_anyaga_5": {
+            "de": "anderes, und zwar"
+        }
+    },
+    "falmaradvany_kidolgozasa": {
+        "falmaradvany_kidolgozasa_0": {
+            "de": "Lesestein"
+        },
+        "falmaradvany_kidolgozasa_1": {
+            "de": "Bruchstein"
+        },
+        "falmaradvany_kidolgozasa_2": {
+            "de": "Haustein"
+        },
+        "falmaradvany_kidolgozasa_3": {
+            "de": "Werkstein"
+        },
+        "falmaradvany_kidolgozasa_4": {
+            "de": "bruchrau"
+        },
+        "falmaradvany_kidolgozasa_5": {
+            "de": "gespitzt"
+        },
+        "falmaradvany_kidolgozasa_6": {
+            "de": "gestockt"
+        },
+        "falmaradvany_kidolgozasa_7": {
+            "de": "bossiert"
+        },
+        "falmaradvany_kidolgozasa_8": {
+            "de": "scharriert"
+        }
+    },
+    "falmaradvany_nezeti_oldal": {
+        "falmaradvany_nezeti_oldal_0": {
+            "de": "regellos, nicht lagenhaft"
+        },
+        "falmaradvany_nezeti_oldal_1": {
+            "de": "partiell lagenhaft"
+        },
+        "falmaradvany_nezeti_oldal_2": {
+            "de": "ungleichmäßige Lagen"
+        },
+        "falmaradvany_nezeti_oldal_3": {
+            "de": "lagenhaft"
+        },
+        "falmaradvany_nezeti_oldal_4": {
+            "de": "regelmäßig, lagenhaft"
+        }
+    },
+    "falmaradvany_tipus": {
+        "falmaradvany_tipus_egyeb": {
+            "de": "anderes, und zwar"
+        },
+        "falmaradvany_tipus_1": {
+            "de": "Mauer"
+        },
+        "falmaradvany_tipus_2": {
+            "de": "Fundament"
+        },
+        "falmaradvany_tipus_3": {
+            "de": "Ofenbefund"
+        },
+        "falmaradvany_tipus_4": {
+            "de": "Latrine (gemauert)"
+        },
+        "falmaradvany_tipus_5": {
+            "de": "Brunnen (gemauert)"
+        },
+        "falmaradvany_tipus_6": {
+            "de": "Zisterne (gemauert)"
+        },
+        "falmaradvany_tipus_7": {
+            "de": "Gewölbe"
+        },
+        "falmaradvany_tipus_8": {
+            "de": "Steinsetzung"
+        }
+    },
+    "famaradvany_forma": {
+        "famaradvany_forma_0": {
+            "de": "Hälbling"
+        },
+        "famaradvany_forma_1": {
+            "de": "Balken / Kantholz"
+        },
+        "famaradvany_forma_2": {
+            "de": "Bohle / Brett"
+        },
+        "famaradvany_forma_3": {
+            "de": "Spältling"
+        },
+        "famaradvany_forma_4": {
+            "de": "Spaltbohle"
+        },
+        "famaradvany_forma_5": {
+            "de": "länglich"
+        },
+        "famaradvany_forma_6": {
+            "de": "oval"
+        },
+        "famaradvany_forma_7": {
+            "de": "kantig"
+        },
+        "famaradvany_forma_8": {
+            "de": "unregelmäßig"
+        }
+    },
+    "famaradvany_keresztmetszet": {
+        "famaradvany_keresztmetszet_0": {
+            "de": "rund"
+        },
+        "famaradvany_keresztmetszet_1": {
+            "de": "quadratisch"
+        },
+        "famaradvany_keresztmetszet_2": {
+            "de": "rechteckig"
+        },
+        "famaradvany_keresztmetszet_3": {
+            "de": "ringporig"
+        },
+        "famaradvany_keresztmetszet_4": {
+            "de": "halbringporig"
+        },
+        "famaradvany_keresztmetszet_5": {
+            "de": "zerstreutporig"
+        },
+        "famaradvany_keresztmetszet_6": {
+            "de": "keine Gefäße erkennbar"
+        },
+        "famaradvany_keresztmetszet_7": {
+            "de": "keine Angabe"
+        }
+    },
+    "famaradvany_tipus": {
+        "famaradvany_tipus_egyeb": {
+            "de": "anderes, und zwar"
+        },
+        "famaradvany_tipus_1": {
+            "de": "Pfosten"
+        },
+        "famaradvany_tipus_2": {
+            "de": "Schwellbalken"
+        },
+        "famaradvany_tipus_3": {
+            "de": "Holzboden"
+        },
+        "famaradvany_tipus_4": {
+            "de": "Einzelhölzer"
+        },
+        "famaradvany_tipus_5": {
+            "de": "Brunnen (Holz)"
+        },
+        "famaradvany_tipus_6": {
+            "de": "Zisterne (Holz)"
+        },
+        "famaradvany_tipus_7": {
+            "de": "Latrine (Holz)"
+        }
+    },
+    "fekves_a_domborzatban": {
+        "fekves_a_domborzatban_0": {
+            "de": "Oberhang"
+        },
+        "fekves_a_domborzatban_1": {
+            "de": "Mittelhang"
+        },
+        "fekves_a_domborzatban_2": {
+            "de": "Unterhang"
+        },
+        "fekves_a_domborzatban_3": {
+            "de": "Hangschulter"
+        },
+        "fekves_a_domborzatban_4": {
+            "de": "Hangfuß"
+        },
+        "fekves_a_domborzatban_5": {
+            "de": "Ebene"
+        },
+        "fekves_a_domborzatban_6": {
+            "de": "keine Angaben"
+        }
+    },
+    "finom_talajosszetetel": {
+        "finom_talajosszetetel_0": {
+            "de": "Sand (0,063-2,0 mm)"
+        },
+        "finom_talajosszetetel_1": {
+            "de": "Grobsand"
+        },
+        "finom_talajosszetetel_2": {
+            "de": "mittelfeiner Sand"
+        },
+        "finom_talajosszetetel_3": {
+            "de": "Feinsand"
+        },
+        "finom_talajosszetetel_4": {
+            "de": "Feinstsand"
+        },
+        "finom_talajosszetetel_5": {
+            "de": "schluffiger Sand"
+        },
+        "finom_talajosszetetel_6": {
+            "de": "toniger Sand"
+        },
+        "finom_talajosszetetel_7": {
+            "de": "lehmiger Sand"
+        },
+        "finom_talajosszetetel_8": {
+            "de": "Schluff (0,002-0,063 mm)"
+        },
+        "finom_talajosszetetel_9": {
+            "de": "sandiger Schluff"
+        },
+        "finom_talajosszetetel_10": {
+            "de": "lehmiger Schluff"
+        },
+        "finom_talajosszetetel_11": {
+            "de": "toniger Schluff"
+        },
+        "finom_talajosszetetel_12": {
+            "de": "Ton (< 0,002 mm)"
+        },
+        "finom_talajosszetetel_13": {
+            "de": "sandiger Ton"
+        },
+        "finom_talajosszetetel_14": {
+            "de": "schluffiger Ton"
+        },
+        "finom_talajosszetetel_15": {
+            "de": "lehmiger Ton"
+        },
+        "finom_talajosszetetel_16": {
+            "de": "Lehm (Sand- / Schluff- / Tongemenge)"
+        },
+        "finom_talajosszetetel_17": {
+            "de": "sandiger Lehm"
+        },
+        "finom_talajosszetetel_18": {
+            "de": "schluffiger Lehm"
+        },
+        "finom_talajosszetetel_19": {
+            "de": "toniger Lehm"
+        }
+    },
+    "forma_1": {
+        "forma_1_0": {
+            "de": "regelmäßig"
+        },
+        "forma_1_1": {
+            "de": "unregelmäßig"
+        }
+    },
+    "forma_2": {
+        "forma_2_0": {
+            "de": "kreisförmig"
+        },
+        "forma_2_1": {
+            "de": "oval"
+        },
+        "forma_2_2": {
+            "de": "langoval"
+        },
+        "forma_2_3": {
+            "de": "trapezförmig"
+        },
+        "forma_2_4": {
+            "de": "dreieckig"
+        },
+        "forma_2_5": {
+            "de": "rechteckig"
+        },
+        "forma_2_6": {
+            "de": "linear"
+        },
+        "forma_2_7": {
+            "de": "halbmondförmig"
+        },
+        "forma_2_8": {
+            "de": "formlos"
+        },
+        "forma_2_9": {
+            "de": "mit gerundeten Ecken"
+        }
+    },
+    "habarcs_vakolat": {
+        "habarcs_vakolat_0": {
+            "de": "Mörtel"
+        },
+        "habarcs_vakolat_1": {
+            "de": "Putz"
+        },
+        "habarcs_vakolat_2": {
+            "de": "Kalk"
+        },
+        "habarcs_vakolat_3": {
+            "de": "Gips"
+        },
+        "habarcs_vakolat_4": {
+            "de": "Lehm"
+        },
+        "habarcs_vakolat_5": {
+            "de": "Farbspuren"
+        },
+        "habarcs_vakolat_6": {
+            "de": "Fresken"
+        },
+        "habarcs_vakolat_7": {
+            "de": "Einschläge"
+        },
+        "habarcs_vakolat_8": {
+            "de": "nicht vorhanden"
+        }
+    },
+    "hasznalat": {
+        "hasznalat_0": {
+            "de": "Ackerland"
+        },
+        "hasznalat_1": {
+            "de": "Grünland"
+        },
+        "hasznalat_2": {
+            "de": "Sonderkultur"
+        },
+        "hasznalat_3": {
+            "de": "Wald"
+        },
+        "hasznalat_4": {
+            "de": "Brachfläche"
+        },
+        "hasznalat_5": {
+            "de": "Sportplatz, Park"
+        },
+        "hasznalat_6": {
+            "de": "Auftragsflächen (z.B. Bauschutt)"
+        },
+        "hasznalat_7": {
+            "de": "keine Angaben"
+        }
+    },
+    "hatar_lathatosaga": {
+        "hatar_lathatosaga_0": {
+            "de": "sehr deutlich"
+        },
+        "hatar_lathatosaga_1": {
+            "de": "deutlich"
+        },
+        "hatar_lathatosaga_2": {
+            "de": "erkennbar"
+        },
+        "hatar_lathatosaga_3": {
+            "de": "diffus"
+        },
+        "hatar_lathatosaga_4": {
+            "de": "undeutlich"
+        },
+        "hatar_lathatosaga_5": {
+            "de": "erahnbar"
+        },
+        "hatar_lathatosaga_6": {
+            "de": "unklar"
+        }
+    },
+    "hatarok": {
+        "hatarok_0": {
+            "de": "scharf"
+        },
+        "hatarok_1": {
+            "de": "etwas verwaschen"
+        },
+        "hatarok_2": {
+            "de": "verwaschen"
+        },
+        "hatarok_3": {
+            "de": "fließend"
+        }
+    },
+    "hatarvonal": {
+        "hatarvonal_0": {
+            "de": "eben"
+        },
+        "hatarvonal_1": {
+            "de": "uneben"
+        },
+        "hatarvonal_2": {
+            "de": "regelmäßig"
+        },
+        "hatarvonal_3": {
+            "de": "unregelmäßig"
+        },
+        "hatarvonal_4": {
+            "de": "wellig"
+        },
+        "hatarvonal_5": {
+            "de": "gezackt"
+        }
+    },
+    "hivatallal_leegyeztetve": {
+        "hivatallal_leegyeztetve_0": {
+            "de": "Freigegeben"
+        },
+        "hivatallal_leegyeztetve_1": {
+            "de": "mündliche Freigabe"
+        },
+        "hivatallal_leegyeztetve_2": {
+            "de": "Teilfreigabe erteilt"
+        }
+    },
+    "karok_elhelyezkedes": {
+        "karok_elhelyezkedes_0": {
+            "de": "Arme seitlich anliegend"
+        },
+        "karok_elhelyezkedes_1": {
+            "de": "Arme gekreuzt über Becken"
+        },
+        "karok_elhelyezkedes_2": {
+            "de": "Arme gekreuzt über Bauch"
+        },
+        "karok_elhelyezkedes_3": {
+            "de": "Arme gekreuzt über Brust"
+        },
+        "karok_elhelyezkedes_4": {
+            "de": "Hände am Kinn"
+        },
+        "karok_elhelyezkedes_5": {
+            "de": "ungleichmäßige Armhaltung"
+        }
+    },
+    "kormeghatarozas_alapja": {
+        "kormeghatarozas_alapja_0": {
+            "de": "Funde"
+        },
+        "kormeghatarozas_alapja_1": {
+            "de": "Statigrafie"
+        }
+    },
+    "kornyezeti_adottsagok": {
+        "kornyezeti_adottsagok_egyeb": {
+            "de": "sonsitges, und zwar"
+        },
+        "kornyezeti_adottsagok_0": {
+            "de": "Aue"
+        },
+        "kornyezeti_adottsagok_1": {
+            "de": "Terrasse"
+        },
+        "kornyezeti_adottsagok_2": {
+            "de": "Löss-Hochfläche"
+        },
+        "kornyezeti_adottsagok_3": {
+            "de": "Mittelgebirge"
+        },
+        "kornyezeti_adottsagok_4": {
+            "de": "Alp"
+        }
+    },
+    "koztes_tarolas_modja": {
+        "koztes_tarolas_modja_0": {
+            "de": "ausgelegt"
+        },
+        "koztes_tarolas_modja_1": {
+            "de": "in Kisten"
+        }
+    },
+    "labak_elhelyezkedes": {
+        "labak_elhelyezkedes_0": {
+            "de": "gestreckte Beinhaltung"
+        },
+        "labak_elhelyezkedes_1": {
+            "de": "gekreuzte Beinhaltung"
+        },
+        "labak_elhelyezkedes_2": {
+            "de": "Hocker"
+        },
+        "labak_elhelyezkedes_3": {
+            "de": "Beinhocker"
+        },
+        "labak_elhelyezkedes_4": {
+            "de": "Extremhocker"
+        }
+    },
+    "laza_kozet": {
+        "laza_kozet_0": {
+            "de": "Kies (rund)"
+        },
+        "laza_kozet_1": {
+            "de": "Schutt (eckig)"
+        },
+        "laza_kozet_2": {
+            "de": "Sand"
+        },
+        "laza_kozet_3": {
+            "de": "Löss"
+        },
+        "laza_kozet_4": {
+            "de": "Geschiebemergel / -lehm / -sand"
+        },
+        "laza_kozet_5": {
+            "de": "Torf"
+        },
+        "laza_kozet_6": {
+            "de": "nicht aufgeschlossen"
+        },
+        "laza_kozet_7": {
+            "de": "keine Angabe"
+        }
+    },
+    "lejtes_formaja": {
+        "lejtes_formaja_0": {
+            "de": "konkav"
+        },
+        "lejtes_formaja_1": {
+            "de": "konvex"
+        },
+        "lejtes_formaja_2": {
+            "de": "keine Angaben"
+        }
+    },
+    "lelet_elhelyezkedese": {
+        "lelet_elhelyezkedese_0": {
+            "de": "Oberflächenfund"
+        },
+        "lelet_elhelyezkedese_1": {
+            "de": "Anlage Profil"
+        },
+        "lelet_elhelyezkedese_2": {
+            "de": "Entnahme Restbefund"
+        },
+        "lelet_elhelyezkedese_3": {
+            "de": "Streufund"
+        }
+    },
+    "lelet_megnevezese": {
+        "lelet_megnevezese_0": {
+            "de": "Wandscherbe"
+        },
+        "lelet_megnevezese_1": {
+            "de": "Bodenscherbe"
+        },
+        "lelet_megnevezese_2": {
+            "de": "Randscherbe"
+        },
+        "lelet_megnevezese_3": {
+            "de": "Keramikbruch"
+        },
+        "lelet_megnevezese_4": {
+            "de": "Spinnwirtel"
+        },
+        "lelet_megnevezese_5": {
+            "de": "Webgewicht"
+        },
+        "lelet_megnevezese_6": {
+            "de": "Beil"
+        },
+        "lelet_megnevezese_7": {
+            "de": "Dechsel"
+        },
+        "lelet_megnevezese_8": {
+            "de": "Axt"
+        },
+        "lelet_megnevezese_9": {
+            "de": "Meißel"
+        },
+        "lelet_megnevezese_10": {
+            "de": "Flachhacke"
+        },
+        "lelet_megnevezese_11": {
+            "de": "Schuhleistenkeil"
+        },
+        "lelet_megnevezese_12": {
+            "de": "Schleifstein"
+        },
+        "lelet_megnevezese_13": {
+            "de": "Klopfstein"
+        },
+        "lelet_megnevezese_14": {
+            "de": "Pfeilschaftgletter"
+        },
+        "lelet_megnevezese_15": {
+            "de": "Keule"
+        },
+        "lelet_megnevezese_16": {
+            "de": "Rillenstein"
+        },
+        "lelet_megnevezese_17": {
+            "de": "Geröllgeräte mit Schaftungsrille"
+        },
+        "lelet_megnevezese_18": {
+            "de": "Politeur / Glettstein"
+        },
+        "lelet_megnevezese_19": {
+            "de": "Netzsenker"
+        },
+        "lelet_megnevezese_20": {
+            "de": "Gewichte"
+        },
+        "lelet_megnevezese_21": {
+            "de": "Anhänger"
+        },
+        "lelet_megnevezese_22": {
+            "de": "Mahlstein"
+        },
+        "lelet_megnevezese_23": {
+            "de": "Silexklinge"
+        },
+        "lelet_megnevezese_24": {
+            "de": "Silexkern"
+        },
+        "lelet_megnevezese_25": {
+            "de": "Abschlag"
+        },
+        "lelet_megnevezese_26": {
+            "de": "Silexwerkzeug"
+        },
+        "lelet_megnevezese_27": {
+            "de": "Fibel"
+        },
+        "lelet_megnevezese_28": {
+            "de": "Nadel"
+        },
+        "lelet_megnevezese_29": {
+            "de": "Pfeilspitze"
+        },
+        "lelet_megnevezese_30": {
+            "de": "Gürtelschnalle"
+        },
+        "lelet_megnevezese_egyeb": {
+            "de": "anderes, und zwar"
+        }
+    },
+    "leletcsoport": {
+        "leletcsoport_0": {
+            "de": "Funde"
+        },
+        "leletcsoport_1": {
+            "de": "menschliche Knochen"
+        },
+        "leletcsoport_2": {
+            "de": "tierische Reste"
+        },
+        "leletcsoport_3": {
+            "de": "Proben"
+        }
+    },
+    "leletcsoport_alt": {
+        "leletcsoport_alt_0": {
+            "de": "Funde"
+        },
+        "leletcsoport_alt_1": {
+            "de": "menschl. Knochen"
+        },
+        "leletcsoport_alt_2": {
+            "de": "tierische Reste"
+        },
+        "leletcsoport_alt_3": {
+            "de": "Proben"
+        }
+    },
+    "magaba_foglalt_leletek_1": {
+        "magaba_foglalt_leletek_1_0": {
+            "de": "Partikel"
+        },
+        "magaba_foglalt_leletek_1_1": {
+            "de": "Flitter"
+        },
+        "magaba_foglalt_leletek_1_2": {
+            "de": "Brocken"
+        },
+        "magaba_foglalt_leletek_1_3": {
+            "de": "Linsen"
+        },
+        "magaba_foglalt_leletek_1_4": {
+            "de": "Schichten"
+        },
+        "magaba_foglalt_leletek_1_5": {
+            "de": "Bänder"
+        },
+        "magaba_foglalt_leletek_1_6": {
+            "de": "Flecken"
+        },
+        "magaba_foglalt_leletek_1_7": {
+            "de": "Nester"
+        },
+        "magaba_foglalt_leletek_1_8": {
+            "de": "Adern"
+        },
+        "magaba_foglalt_leletek_1_9": {
+            "de": "Keile"
+        }
+    },
+    "magaba_foglalt_leletek_2": {
+        "magaba_foglalt_leletek_2_egyeb": {
+            "de": "anderes, und zwar"
+        },
+        "magaba_foglalt_leletek_2_1": {
+            "de": "Holz"
+        },
+        "magaba_foglalt_leletek_2_2": {
+            "de": "Holzkohle"
+        },
+        "magaba_foglalt_leletek_2_3": {
+            "de": "gebrannter Lehm"
+        },
+        "magaba_foglalt_leletek_2_4": {
+            "de": "Rotlehm"
+        },
+        "magaba_foglalt_leletek_2_5": {
+            "de": "Hüttenlehm"
+        },
+        "magaba_foglalt_leletek_2_6": {
+            "de": "Mörtelresten"
+        },
+        "magaba_foglalt_leletek_2_7": {
+            "de": "Ziegelresten"
+        },
+        "magaba_foglalt_leletek_2_8": {
+            "de": "Steinen"
+        },
+        "magaba_foglalt_leletek_2_9": {
+            "de": "Keramik"
+        },
+        "magaba_foglalt_leletek_2_10": {
+            "de": "Knochen"
+        },
+        "magaba_foglalt_leletek_2_11": {
+            "de": "Konkretionen"
+        },
+        "magaba_foglalt_leletek_2_12": {
+            "de": "Oxyde"
+        }
+    },
+    "profil_forma": {
+        "profil_forma_0": {
+            "de": "rechteckig / kastenförmig"
+        },
+        "profil_forma_1": {
+            "de": "kesselförmig"
+        },
+        "profil_forma_2": {
+            "de": "trapezförmig schräg"
+        },
+        "profil_forma_3": {
+            "de": "trichterförmig schräg"
+        },
+        "profil_forma_4": {
+            "de": "trapezförmig überkippt"
+        },
+        "profil_forma_5": {
+            "de": "trichterförmig überkippt"
+        },
+        "profil_forma_6": {
+            "de": "wannenförmig"
+        },
+        "profil_forma_7": {
+            "de": "keilförmig"
+        },
+        "profil_forma_8": {
+            "de": "linsenförmig"
+        },
+        "profil_forma_9": {
+            "de": "U-förmig"
+        },
+        "profil_forma_10": {
+            "de": "V-förmig"
+        },
+        "profil_forma_11": {
+            "de": "sanduhrförmig"
+        },
+        "profil_forma_12": {
+            "de": "unregelmäßig"
+        }
+    },
+    "reteghatarok_formaja": {
+        "reteghatarok_formaja_0": {
+            "de": "glatt"
+        },
+        "reteghatarok_formaja_1": {
+            "de": "wellig"
+        },
+        "reteghatarok_formaja_2": {
+            "de": "keilförmig"
+        },
+        "reteghatarok_formaja_3": {
+            "de": "zungen-, taschenförmig"
+        },
+        "reteghatarok_formaja_4": {
+            "de": "unregelmäßiger Fleck"
+        }
+    },
+    "sarokforma": {
+        "sarokforma_0": {
+            "de": "fließend, keine Ecken"
+        },
+        "sarokforma_1": {
+            "de": "gerundet"
+        },
+        "sarokforma_2": {
+            "de": "scharf"
+        }
+    },
+    "sirforma": {
+        "sirforma_0": {
+            "de": "Flachgrab"
+        },
+        "sirforma_1": {
+            "de": "Megalithgrab"
+        },
+        "sirforma_2": {
+            "de": "Hügelgrab"
+        },
+        "sirforma_3": {
+            "de": "Felsgrab"
+        }
+    },
+    "stratigrafiai_kapcsolat": {
+        "stratigrafiai_kapcsolat_0": {
+            "de": "gehört zu"
+        },
+        "stratigrafiai_kapcsolat_1": {
+            "de": "liegt über"
+        },
+        "stratigrafiai_kapcsolat_2": {
+            "de": "liegt unter"
+        },
+        "stratigrafiai_kapcsolat_3": {
+            "de": "schneidet"
+        },
+        "stratigrafiai_kapcsolat_4": {
+            "de": "verfüllt"
+        },
+        "stratigrafiai_kapcsolat_5": {
+            "de": "verfüllt durch"
+        },
+        "stratigrafiai_kapcsolat_6": {
+            "de": "wird geschnitten von"
+        },
+        "stratigrafiai_kapcsolat_7": {
+            "de": "zeitgleich mit"
+        }
+    },
+    "szaritas_modja": {
+        "szaritas_modja_0": {
+            "de": "im Freien"
+        },
+        "szaritas_modja_1": {
+            "de": "im geschlossenen Raum"
+        }
+    },
+    "szerepek": {
+        "szerepek_0": {
+            "de": "Grabungstechniker"
+        },
+        "szerepek_1": {
+            "de": "Zeichner"
+        },
+        "szerepek_2": {
+            "de": "Arbeiter / Hilfskräfte"
+        }
+    },
+    "szilard_kozet": {
+        "szilard_kozet_0": {
+            "de": "Sedimentgestein (Sand- / Schluff- / Ton- / Kalkstein usw)"
+        },
+        "szilard_kozet_1": {
+            "de": "Magmatit (Tiefengestein: Granit / Gabbro, Vulkanit usw.)"
+        },
+        "szilard_kozet_2": {
+            "de": "Metamorphit (kristalliner Schiefer / Tonschiefer usw.)"
+        },
+        "szilard_kozet_3": {
+            "de": "nicht aufgeschlossen"
+        },
+        "szilard_kozet_4": {
+            "de": "keine Angaben"
+        }
+    },
+    "szin_tendencia": {
+        "szin_tendencia_0": {
+            "de": "blau-"
+        },
+        "szin_tendencia_1": {
+            "de": "braun-"
+        },
+        "szin_tendencia_2": {
+            "de": "gelb-"
+        },
+        "szin_tendencia_3": {
+            "de": "grün-"
+        },
+        "szin_tendencia_4": {
+            "de": "rot-"
+        },
+        "szin_tendencia_5": {
+            "de": "grau-"
+        },
+        "szin_tendencia_6": {
+            "de": "violett-"
+        },
+        "szin_tendencia_7": {
+            "de": "orange-"
+        },
+        "szin_tendencia_8": {
+            "de": "oliv-"
+        },
+        "szin_tendencia_9": {
+            "de": "türkis-"
+        },
+        "szin_tendencia_10": {
+            "de": "ocker-"
+        }
+    },
+    "szinmegoszlas": {
+        "szinmegoszlas_0": {
+            "de": "marmoriert"
+        },
+        "szinmegoszlas_1": {
+            "de": "fleckig"
+        },
+        "szinmegoszlas_2": {
+            "de": "gebändert"
+        },
+        "szinmegoszlas_3": {
+            "de": "gestreift, geadert"
+        }
+    },
+    "szintkulonbseg": {
+        "szintkulonbseg_0": {
+            "de": "eben (<1°)"
+        },
+        "szintkulonbseg_1": {
+            "de": "schwach-mittel (1-10°)"
+        },
+        "szintkulonbseg_2": {
+            "de": "stark geneigt (10-20°)"
+        },
+        "szintkulonbseg_3": {
+            "de": "steil (>20°)"
+        },
+        "szintkulonbseg_4": {
+            "de": "keine Angaben"
+        }
+    },
+    "temetkezesi_forma": {
+        "temetkezesi_forma_0": {
+            "de": "Einzelbestattung"
+        },
+        "temetkezesi_forma_1": {
+            "de": "Doppelbesttatung"
+        },
+        "temetkezesi_forma_2": {
+            "de": "Mehrpersonenbestattung"
+        },
+        "temetkezesi_forma_3": {
+            "de": "Massengrab"
+        },
+        "temetkezesi_forma_4": {
+            "de": "Kollektivbestattung"
+        },
+        "temetkezesi_forma_5": {
+            "de": "Urnengrab"
+        },
+        "temetkezesi_forma_6": {
+            "de": "Brandschüttungsgrab"
+        },
+        "temetkezesi_forma_7": {
+            "de": "Brandgrubengrab"
+        },
+        "temetkezesi_forma_8": {
+            "de": "Leichenbrandnest"
+        },
+        "temetkezesi_forma_9": {
+            "de": "Ossuar"
+        },
+        "temetkezesi_forma_10": {
+            "de": "Kenotaph"
+        },
+        "temetkezesi_forma_11": {
+            "de": "Grabdeponat"
+        }
+    },
+    "temetkezesi_szokas": {
+        "temetkezesi_szokas_0": {
+            "de": "Körperbestattung"
+        },
+        "temetkezesi_szokas_1": {
+            "de": "Brandbestattung"
+        },
+        "temetkezesi_szokas_2": {
+            "de": "birituelle Bestattung"
+        },
+        "temetkezesi_szokas_3": {
+            "de": "mehrstufige Bestattung / Sekundärbestattung"
+        }
+    },
+    "termeszetes_lerakodas": {
+        "termeszetes_lerakodas_0": {
+            "de": "ja"
+        },
+        "termeszetes_lerakodas_1": {
+            "de": "nein"
+        },
+        "termeszetes_lerakodas_2": {
+            "de": "keine Angaben"
+        }
+    },
+    "test_elhelyezkedes": {
+        "test_elhelyezkedes_0": {
+            "de": "Rückenlage"
+        },
+        "test_elhelyezkedes_1": {
+            "de": "Bauchlage"
+        },
+        "test_elhelyezkedes_2": {
+            "de": "Seitenlage links"
+        },
+        "test_elhelyezkedes_3": {
+            "de": "Seitenlage rechts"
+        }
+    },
+    "tisztitas_eszkoze": {
+        "tisztitas_eszkoze_0": {
+            "de": "Schwamm"
+        },
+        "tisztitas_eszkoze_1": {
+            "de": "weiche Bürste"
+        }
+    },
+    "topografia": {
+        "topografia_0": {
+            "de": "Aue"
+        },
+        "topografia_1": {
+            "de": "Terrasse"
+        },
+        "topografia_2": {
+            "de": "Löss-Hochfläche"
+        },
+        "topografia_3": {
+            "de": "Mittelgebirge"
+        },
+        "topografia_4": {
+            "de": "Alp"
+        },
+        "topografia_egyeb": {
+            "de": "sonstiges, und zwar"
+        }
+    },
+    "visszaigazolas": {
+        "visszaigazolas_0": {
+            "de": "vorgelegt"
+        },
+        "visszaigazolas_1": {
+            "de": "vorhanden / zugesagt"
+        }
+    },
+    "vizsgalt_terulet": {
+        "vizsgalt_terulet_0": {
+            "de": "ganze Parzelle"
+        },
+        "vizsgalt_terulet_1": {
+            "de": "Baufenster"
+        },
+        "vizsgalt_terulet_2": {
+            "de": "Teilfläche"
+        }
+    },
+    "zavaras_emberi_beavatkozas": {
+        "zavaras_emberi_beavatkozas_0": {
+            "de": "profilverändernde Maßnahme (z.B. Tiefenlockerung, Drainage)"
+        },
+        "zavaras_emberi_beavatkozas_1": {
+            "de": "Bodenauftrag (z.B. Kulturschicht, humoser Oberbode)"
+        },
+        "zavaras_emberi_beavatkozas_2": {
+            "de": "Bodenabtrag (z.B. Abgrabung)"
+        }
+    },
+    "szerep_a_projektben": {
+        "szerep_a_projektben_0": {
+            "de": "Wissenschaftler"
+        },
+        "szerep_a_projektben_1": {
+            "de": "Techniker/Technischer Assistent"
+        },
+        "szerep_a_projektben_2": {
+            "de": "Zeichner"
+        },
+        "szerep_a_projektben_3": {
+            "de": "Fachkraft"
+        },
+        "szerep_a_projektben_4": {
+            "de": "Hilfskraft"
+        }
+    },
+    "objektum_jellege": {
+        "objektum_jellege_0": {
+            "de": "Positivbefund"
+        },
+        "objektum_jellege_1": {
+            "de": "Negativbefund"
+        },
+        "objektum_jellege_2": {
+            "de": "Holzbefund"
+        },
+        "objektum_jellege_3": {
+            "de": "Mauerbefund"
+        },
+        "objektum_jellege_4": {
+            "de": "Grab"
+        },
+        "objektum_jellege_egyeb": {
+            "de": "anderes"
+        }
+    },
+    "objektum_pozitiv": {
+        "objektum_pozitiv_0": {
+            "de": "Abbruchhorizont"
+        },
+        "objektum_pozitiv_1": {
+            "de": "Bauhorizont"
+        },
+        "objektum_pozitiv_2": {
+            "de": "Brandschicht/Brandstelle"
+        },
+        "objektum_pozitiv_3": {
+            "de": "Erdbefund"
+        },
+        "objektum_pozitiv_4": {
+            "de": "Fußboden"
+        },
+        "objektum_pozitiv_5": {
+            "de": "Pfostenverfüllung"
+        },
+        "objektum_pozitiv_6": {
+            "de": "Humusschicht"
+        },
+        "objektum_pozitiv_7": {
+            "de": "Estrich"
+        },
+        "objektum_pozitiv_8": {
+            "de": "Stampflehm"
+        },
+        "objektum_pozitiv_9": {
+            "de": "Straßenbelag"
+        },
+        "objektum_pozitiv_10": {
+            "de": "Laufhorizont"
+        },
+        "objektum_pozitiv_11": {
+            "de": "Bauschicht"
+        },
+        "objektum_pozitiv_12": {
+            "de": "Bauschuttschicht"
+        },
+        "objektum_pozitiv_13": {
+            "de": "Planierschicht"
+        },
+        "objektum_pozitiv_14": {
+            "de": "Brandschuttschicht"
+        },
+        "objektum_pozitiv_15": {
+            "de": "Planierschicht"
+        },
+        "objektum_pozitiv_16": {
+            "de": "Einfüllschicht"
+        },
+        "objektum_pozitiv_17": {
+            "de": "geologischer Befund"
+        },
+        "objektum_pozitiv_18": {
+            "de": "biologischer Befund"
+        },
+        "objektum_pozitiv_19": {
+            "de": "Störung"
+        },
+        "objektum_pozitiv_egyeb": {
+            "de": "anderes, und zwar"
+        }
+    },
+    "objektum_negativ": {
+        "objektum_negativ_0": {
+            "de": "Baugrube"
+        },
+        "objektum_negativ_1": {
+            "de": "Ausbruchgraben"
+        },
+        "objektum_negativ_2": {
+            "de": "Pfostenloch"
+        },
+        "objektum_negativ_3": {
+            "de": "Pfostengräbchen"
+        },
+        "objektum_negativ_4": {
+            "de": "Balkengräbchen"
+        },
+        "objektum_negativ_5": {
+            "de": "Grab"
+        },
+        "objektum_negativ_6": {
+            "de": "Grube"
+        },
+        "objektum_negativ_7": {
+            "de": "Grubenkomplex"
+        },
+        "objektum_negativ_8": {
+            "de": "Grubenhaus"
+        },
+        "objektum_negativ_9": {
+            "de": "Graben"
+        },
+        "objektum_negativ_10": {
+            "de": "Grabengrube"
+        },
+        "objektum_negativ_11": {
+            "de": "Latrine"
+        },
+        "objektum_negativ_12": {
+            "de": "Wandgräbchen"
+        },
+        "objektum_negativ_13": {
+            "de": "geologischer Befund"
+        },
+        "objektum_negativ_14": {
+            "de": "biologischer Befund"
+        },
+        "objektum_negativ_15": {
+            "de": "Störung"
+        },
+        "objektum_negativ_egyeb": {
+            "de": "anderes, und zwar"
+        }
+    },
+    "megszolitas": {
+        "megszolitas_0": {
+            "de": "Frau"
+        },
+        "megszolitas_1": {
+            "de": "Herr"
+        }
+    },
+    "titulus": {
+        "titulus_0": {
+            "de": "Prof."
+        },
+        "titulus_1": {
+            "de": "Mag."
+        },
+        "titulus_2": {
+            "de": "Dr."
+        }
+    },
+    "kapcsolt_ceg_tipus": {
+        "tipus_0": {
+            "de": "Auftraggeber",
+            "hu": "Megbízó"
+        },
+        "tipus_1": {
+            "de": "Lieferant",
+            "hu": "Beszállító"
+        }
+    }
+}
