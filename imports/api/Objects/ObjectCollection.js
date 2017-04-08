@@ -1,5 +1,6 @@
-/* globals __, Regesz */
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import SimpleSchema from 'simpl-schema';
+import Artefacts from  '../Artefacts/ArtefactCollection.js';
+import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
 
 const Objects = new Meteor.Collection('objektum');
 
@@ -16,7 +17,7 @@ const ObjectSchema = new SimpleSchema({
                 projekt_id: this.field('projekt_id').value,
                 objektum_szam: this.value,
             });
-            return (objectsWithSameNumberIter.count() === 0) ? true : 'notAllowed';
+            return (objectsWithSameNumberIter.count() === 0) || 'notAllowed';
         },
     },
     telepules: {
@@ -27,12 +28,12 @@ const ObjectSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select("objektum_jellege");
+                return StaticFormOptionProvider.get('objektum_jellege');
             },
         },
     },
     objektum_pozitiv: {
-        type: [String],
+        type: Array,
         optional: true,
         custom() {
             if (this.field('objektum_jellege').value !==
@@ -42,15 +43,21 @@ const ObjectSchema = new SimpleSchema({
             return true;
         },
     },
+    'objektum_pozitiv.$': {
+        type: String,
+    },
     objektum_pozitiv_egyeb: {
-        type: [String],
+        type: Array,
         optional: true,
         custom() {
-            return Regesz.validate_egyeb(this, 'objektum_pozitiv', 'objektum_pozitiv');
+            // return Regesz.validate_egyeb(this, 'objektum_pozitiv', 'objektum_pozitiv');
         },
     },
+    'objektum_pozitiv_egyeb.$': {
+        type: String,
+    },
     objektum_negativ: {
-        type: [String],
+        type: Array,
         optional: true,
         custom() {
             if (this.field('objektum_jellege').value !==
@@ -61,16 +68,22 @@ const ObjectSchema = new SimpleSchema({
         },
         autoform: {
             options() {
-                return Regesz.static_string_select('objektum_negativ');
+                return StaticFormOptionProvider.get('objektum_negativ');
             },
         },
     },
+    'objektum_negativ.$': {
+        type: String,
+    },
     objektum_negativ_egyeb: {
-        type: [String],
+        type: Array,
         optional: true,
         custom() {
-            return Regesz.validate_egyeb(this, 'objektum_negativ', 'objektum_negativ');
+            // return Regesz.validate_egyeb(this, 'objektum_negativ', 'objektum_negativ');
         },
+    },
+    'objektum_negativ_egyeb.$': {
+        type: String,
     },
     elozetes_ertelmezes: {
         type: String,
@@ -85,7 +98,7 @@ const ObjectSchema = new SimpleSchema({
         optional: true,
         autoform: {
             options() {
-                return Regesz.static_string_select('kormeghatarozas_alapja');
+                return StaticFormOptionProvider.get('kormeghatarozas_alapja');
             },
         },
     },
@@ -103,9 +116,11 @@ const ObjectSchema = new SimpleSchema({
         },
         autoform: {
             options() {
-                const objectId = Router.current().params.objektum_id;
-                const leletek = Regesz.lelet_select(objectId);
-                return leletek;
+                // Artefacts.find({ projekt_id: this.field('projekt_id') });
+                //
+                // const objectId = Router.current().params.objektum_id;
+                // const leletek = Regesz.lelet_select(objectId);
+                // return leletek;
             },
         },
     },
@@ -122,9 +137,9 @@ const ObjectSchema = new SimpleSchema({
         },
         autoform: {
             options() {
-                const projectId = Router.current().params.projectId;
-                const objektumok = Regesz.objektum_select(projectId);
-                return objektumok;
+                // const projectId = Router.current().params.projectId;
+                // const objektumok = Regesz.objektum_select(projectId);
+                // return objektumok;
             },
         },
     },

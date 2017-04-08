@@ -1,8 +1,6 @@
 /**
  * Created by bence on 2017.04.06..
  */
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import SimpleSchema from 'simpl-schema';
 
-SimpleSchema.extendOptions({
-    editable: Match.Optional(Boolean),
-});
+SimpleSchema.extendOptions(['autoform', 'editable']);

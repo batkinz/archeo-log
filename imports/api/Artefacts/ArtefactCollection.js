@@ -1,4 +1,4 @@
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import SimpleSchema from 'simpl-schema';
 import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
 
 const Artefacts = new Meteor.Collection('leletek');
@@ -27,15 +27,15 @@ const ArtefactSchema = new SimpleSchema({
     megtalalo_id: {
         type: String,
         custom() {
-            return Regesz.autocomplete_validate(this.value);
+            // return Regesz.autocomplete_validate(this.value);
         },
     },
     raktari_lada_szama: {
         type: Number,
-        optional: true
+        optional: true,
     },
     anyag: {
-        type: [String],
+        type: Array,
         optional: true,
         autoform: {
             options() {
@@ -43,12 +43,18 @@ const ArtefactSchema = new SimpleSchema({
             },
         },
     },
+    'anyag.$': {
+        type: String,
+    },
     anyag_egyeb: {
-        type: [String],
+        type: Array,
         optional: true,
         custom() {
-            return Regesz.validate_egyeb(this, 'anyag', 'anyag');
+            // return Regesz.validate_egyeb(this, 'anyag', 'anyag');
         },
+    },
+    'anyag_egyeb.$': {
+        type: String,
     },
     leletcsoport: {
         type: String,
@@ -60,7 +66,7 @@ const ArtefactSchema = new SimpleSchema({
         },
     },
     lelet_megnevezese: {
-        type: [String],
+        type: Array,
         optional: true,
         autoform: {
             options() {
@@ -68,12 +74,18 @@ const ArtefactSchema = new SimpleSchema({
             },
         },
     },
+    'lelet_megnevezese.$': {
+        type: String,
+    },
     lelet_megnevezese_egyeb: {
-        type: [String],
+        type: Array,
         optional: true,
         custom() {
-            return Regesz.validate_egyeb(this, 'lelet_megnevezese', 'lelet_megnevezese');
+            // return Regesz.validate_egyeb(this, 'lelet_megnevezese', 'lelet_megnevezese');
         },
+    },
+    'lelet_megnevezese_egyeb.$': {
+        type: String,
     },
     darabszam: {
         type: Number,
@@ -91,12 +103,10 @@ const ArtefactSchema = new SimpleSchema({
     },
     legmagasabb_pont: {
         type: Number,
-        decimal: true,
         optional: true,
     },
     legalacsonyabb_pont: {
         type: Number,
-        decimal: true,
         optional: true,
     },
     tisztitas_datuma: {
@@ -104,7 +114,7 @@ const ArtefactSchema = new SimpleSchema({
         optional: true,
     },
     tisztitas_eszkoze: {
-        type: [String],
+        type: Array,
         optional: true,
         autoform: {
             options() {
@@ -112,14 +122,20 @@ const ArtefactSchema = new SimpleSchema({
             },
         },
     },
+    'tisztitas_eszkoze.$': {
+        type: String,
+    },
     szaritas_modja: {
-        type: [String],
+        type: Array,
         optional: true,
         autoform: {
             options() {
                 return StaticFormOptionProvider.get('szaritas_modja');
             },
         },
+    },
+    'szaritas_modja.$': {
+        type: String,
     },
     anyagcsoport: {
         type: String,
@@ -131,13 +147,16 @@ const ArtefactSchema = new SimpleSchema({
         },
     },
     koztes_tarolas_modja: {
-        type: [String],
+        type: Array,
         optional: true,
         autoform: {
             options() {
                 return StaticFormOptionProvider.get('koztes_tarolas_modja');
             },
         },
+    },
+    'koztes_tarolas_modja.$': {
+        type: String,
     },
     megjegyzes: {
         type: String,
@@ -168,5 +187,3 @@ Artefacts.allow({
         return false;
     },
 });
-
-

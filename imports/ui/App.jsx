@@ -10,6 +10,8 @@ import MainMenu from './components/MainMenu/MainMenu.jsx';
 import FilteringMenu from './components/FilteringMenu/FIlteringMenu.jsx';
 import ProjectList from './components/ProjectList/ProjectList.jsx';
 
+import ProjectForm from './components/Project/ProjectForm/ProjectForm.jsx';
+
 // App component - represents the whole app
 class App extends Component {
     constructor(props) {
@@ -74,8 +76,9 @@ class App extends Component {
                     <MainMenu />
 
                     <div className="container" style={this.props.style.pageContainer}>
-                        <FilteringMenu />
-                        <ProjectList projects={projects} style={{}} />
+                        {/* <FilteringMenu />
+                         <ProjectList projects={projects} style={{}} /> */}
+                        <ProjectForm />
                     </div>
                     {this.props.children}
                 </div>
