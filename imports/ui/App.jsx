@@ -100,14 +100,14 @@ App.propTypes = {
 };
 
 export default createContainer(() => {
-    const subHandle = Meteor.subscribe('styles');
-    const styleReady = !subHandle.ready();
+    const subHandle2 = Meteor.subscribe('styles');
+    const ready = subHandle2.ready();
 
     const commonStyles = getStyle('Common', CommonStyle.style);
     const localStyles = getStyle('App', AppStyle.style);
 
     return {
-        loading: styleReady,
+        loading: !ready,
         style: Object.assign({}, commonStyles, localStyles),
     };
 }, Radium(App));
