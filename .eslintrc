@@ -29,7 +29,7 @@
     "no-underscore-dangle": ["error", { "allow": ["_id"] }],
     "react/jsx-indent": [2, 4],
     "indent": ["error", 4],
-    "arrow-body-style": ["error", "always"],
+    "arrow-body-style": [0],
     "max-len": ["error", 120],
     "new-cap": ["error", { "capIsNewExceptions": ["Radium"] }],
     "react/jsx-closing-bracket-location": [1, { "selfClosing": "after-props", "nonEmpty": "after-props"}],

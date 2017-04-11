@@ -4,6 +4,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Textfit } from 'react-textfit';
 
 import Button from '/imports/ui/components/Button/Button.jsx';
+import ProjectsButton from './ProjectsButton/ProjectsButton.jsx';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { MainMenuStyle } from './MainMenu.style.js';
@@ -46,12 +47,6 @@ UserNameContainer = Radium(UserNameContainer);
 
 class MainMenu extends Component {
     render() {
-        const handleProjectsClick = () => { console.log('Projects'); };
-        const projectDropdownItems = [
-            { id: 1, text: 'Action 1' },
-            { id: 2, text: 'Action 2' },
-            { id: 3, text: 'Action 3' }];
-
         const langDropdownItems = [
             { id: 1, text: 'HU' },
             { id: 2, text: 'DE' },
@@ -63,15 +58,7 @@ class MainMenu extends Component {
                 <div style={this.props.style.leftSeparatorContainer}>
                     <Separator style={this.props.style.separator} />
                 </div>
-                <div style={this.props.style.projectsButtonContainer}>
-                    <Button
-                      text="Projects"
-                      handleClick={handleProjectsClick}
-                      type={{
-                          yellow: true,
-                          dropdown: true,
-                          dropdownItems: projectDropdownItems }} />
-                </div>
+                <ProjectsButton style={this.props.style.projectsButtonContainer} />
                 <div style={this.props.style.settingsButtonContainer}>
                     <Button text="Settings" />
                 </div>

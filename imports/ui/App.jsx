@@ -1,16 +1,21 @@
 import React, { Component, PropTypes } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
 import Radium from 'radium';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { AppStyle } from './App.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
 import MainMenu from './components/MainMenu/MainMenu.jsx';
-import FilteringMenu from './components/FilteringMenu/FIlteringMenu.jsx';
+import FilteringMenu from './components/FilteringMenu/FilteringMenu.jsx';
 import ProjectList from './components/ProjectList/ProjectList.jsx';
 
-import ProjectForm from './components/Project/ProjectForm/ProjectForm.jsx';
+import Project from './components/Project/Project.jsx';
 
 // App component - represents the whole app
 class App extends Component {
@@ -34,9 +39,8 @@ class App extends Component {
         }
     }
 
-    render() {
-        this.getVersion();
-        const projects = [
+    getFakeProjects() {
+        return [
             {
                 _id: 0,
                 name: 'Sometownnaghme',
@@ -67,21 +71,28 @@ class App extends Component {
                 location: 'Far Faraway Straße 1324',
                 date: new Date(2017, 2, 10),
             }];
+    }
+
+    render() {
+        this.getVersion();
+        const projects = this.getFakeProjects();
 
         if (!this.props.loading) {
             return (
-                <div className="container" style={this.props.style.appContainer}>
-                    <span style={this.props.style.version}>{this.version}</span>
+                <Router>
+                    <div className="container" style={this.props.style.appContainer}>
+                        <span style={this.props.style.version}>{this.version}</span>
 
-                    <MainMenu />
+                        <MainMenu />
 
-                    <div className="container" style={this.props.style.pageContainer}>
-                        {/* <FilteringMenu />
-                         <ProjectList projects={projects} style={{}} /> */}
-                        <ProjectForm />
+                        <div className="container" style={this.props.style.pageContainer}>
+                            {/* <FilteringMenu />
+                             <ProjectList projects={projects} style={{}} /> */}
+                            <Route path="/project" component={Project} />
+                        </div>
+                        {this.props.children}
                     </div>
-                    {this.props.children}
-                </div>
+                </Router>
             );
         }
 
