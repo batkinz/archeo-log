@@ -8,17 +8,13 @@ import Button from '/imports/ui/components/Button/Button.jsx';
 
 class ProjectsButton extends Component {
     render() {
-        const handleProjectsClick = () => { console.log('Projects'); };
-
         return (
             <div style={this.props.style}>
                 <Button
-                  text="Projects"
-                  handleClick={handleProjectsClick}
-                  type={{
-                      yellow: true,
-                      dropdown: true,
-                      dropdownItems: this.props.items }} />
+                  text="Projektek"
+                  dropdown
+                  dropdownItems={this.props.items}
+                  type={{ yellow: true }} />
             </div>
         );
     }
@@ -27,12 +23,9 @@ class ProjectsButton extends Component {
 ProjectsButton.propTypes = {
     style: PropTypes.object,
     items: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.number,
-        ]).isRequired,
-        text: PropTypes.string.isRequired,
+        text: PropTypes.string,
         href: PropTypes.string,
+        separator: PropTypes.bool,
     })),
 };
 
@@ -42,12 +35,17 @@ export default createContainer(() => {
     const projectDropdownItems = Projects.find({}, {
         transform(doc) {
             return {
-                id: doc._id,
                 text: doc.name,
                 href: `/project/${doc._id}`,
             };
         },
     }).fetch();
+
+    projectDropdownItems.unshift({ separator: true });
+    projectDropdownItems.unshift({
+        text: 'Új...',
+        href: '/project/add',
+    });
 
     return {
         items: projectDropdownItems,

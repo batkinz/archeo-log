@@ -3,6 +3,8 @@ import Radium from 'radium';
 import classNames from 'classnames';
 import { createContainer } from 'meteor/react-meteor-data';
 
+import DropdownItem from './DropdownItem/DropdownItem.jsx';
+
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { ButtonStyle } from './Button.style.js';
 
@@ -25,13 +27,10 @@ class Button extends Component {
             if (this.props.type.yellow) {
                 style = Object.assign({}, style, this.props.privStyle.yellowButton);
             }
-            if (this.props.type.dropdown) {
+            if (this.props.dropdown) {
                 classes['dropdown-toggle'] = true;
-                const dropdownItems = _.map(this.props.type.dropdownItems, item => {
-                    return (
-                        <li key={item.id}><a href={item.href || '#'}>{item.text}</a></li>
-                    );
-                });
+                const dropdownItems = _.map(this.props.dropdownItems, (item, index) =>
+                    (<DropdownItem separator={item.separator} key={index} href={item.href} text={item.text} />));
 
                 dropdownItemsContainer = <ul className="dropdown-menu">{dropdownItems}</ul>;
 
@@ -62,10 +61,16 @@ class Button extends Component {
 }
 
 Button.propTypes = {
+    dropdown: PropTypes.bool,
+    dropdownItems: PropTypes.arrayOf(PropTypes.shape({
+        text: PropTypes.string,
+        href: PropTypes.string,
+        separator: PropTypes.bool,
+    })),
+    handleClick: PropTypes.func,
     privStyle: PropTypes.object,
     style: PropTypes.object,
     text: PropTypes.string,
-    handleClick: PropTypes.func,
     type: PropTypes.object,
 };
 

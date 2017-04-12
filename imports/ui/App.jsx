@@ -12,8 +12,6 @@ import { AppStyle } from './App.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
 import MainMenu from './components/MainMenu/MainMenu.jsx';
-import FilteringMenu from './components/FilteringMenu/FilteringMenu.jsx';
-import ProjectList from './components/ProjectList/ProjectList.jsx';
 
 import Project from './components/Project/Project.jsx';
 
@@ -39,43 +37,8 @@ class App extends Component {
         }
     }
 
-    getFakeProjects() {
-        return [
-            {
-                _id: 0,
-                name: 'Sometownnaghme',
-                location: 'Far Faraway Straße 1324',
-                date: new Date(2017, 2, 10),
-            },
-            {
-                _id: 1,
-                name: 'Sometownnaghme',
-                location: 'Far Faraway Straße 1324',
-                date: new Date(2017, 2, 10),
-            },
-            {
-                _id: 2,
-                name: 'Sometownnaghme',
-                location: 'Far Faraway Straße 1324',
-                date: new Date(2017, 2, 10),
-            },
-            {
-                _id: 3,
-                name: 'Sometownnaghme',
-                location: 'Far Faraway Straße 1324',
-                date: new Date(2017, 2, 10),
-            },
-            {
-                _id: 4,
-                name: 'Sometownnaghme',
-                location: 'Far Faraway Straße 1324',
-                date: new Date(2017, 2, 10),
-            }];
-    }
-
     render() {
         this.getVersion();
-        const projects = this.getFakeProjects();
 
         if (!this.props.loading) {
             return (

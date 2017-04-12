@@ -61,7 +61,7 @@ export const MainMenuStyle = {
             float: 'left',
             position: 'relative',
             top: 17,
-            left: 177,
+            left: 550,
             height: 46,
         },
         langSelectButtonContainer: {
@@ -79,8 +79,8 @@ export const MainMenuStyle = {
         userNameContainer: {
             float: 'left',
             position: 'relative',
-            top: 20,
-            left: 223,
+            top: 17,
+            left: 577,
         },
         subStyles: {
             userNameContainer: {

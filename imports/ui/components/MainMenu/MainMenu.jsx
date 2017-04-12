@@ -59,25 +59,8 @@ class MainMenu extends Component {
                     <Separator style={this.props.style.separator} />
                 </div>
                 <ProjectsButton style={this.props.style.projectsButtonContainer} />
-                <div style={this.props.style.settingsButtonContainer}>
-                    <Button text="Settings" />
-                </div>
-                <div style={this.props.style.addressesButtonContainer}>
-                    <Button text="Addresses" />
-                </div>
                 <div style={this.props.style.rightSeparatorContainer}>
                     <Separator style={this.props.style.separator} />
-                </div>
-                <div style={this.props.style.langSelectButtonContainer}>
-                    <Button text="GB" style={{ minWidth: 46 }} type={{ yellow: true }} />
-                </div>
-                <div style={this.props.style.langSelectDropdownContainer}>
-                    <Button
-                      text="Languages"
-                      type={{
-                          yellow: true,
-                          dropdown: true,
-                          dropdownItems: langDropdownItems }} />
                 </div>
                 <div style={this.props.style.userNameContainer}>
                     <UserNameContainer
