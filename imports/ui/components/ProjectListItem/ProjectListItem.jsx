@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
 import Radium from 'radium';
+import { Link } from 'react-router-dom';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { ProjectListItemStyle } from './ProjectListItem.style.js';
@@ -32,8 +33,10 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <span style={this.props.style.name}>{this.props.name}</span>
-                <span style={this.props.style.location}>{this.props.location}</span>
+                <Link to={this.props.link}>
+                    <span style={this.props.style.name}>{this.props.name}</span>
+                    <span style={this.props.style.location}>{this.props.location}</span>
+                </Link>
             </div>
         );
     }
@@ -43,6 +46,7 @@ Header.propTypes = {
     name: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     style: PropTypes.object.isRequired,
+    link: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };
 
 Header = Radium(Header);
@@ -177,7 +181,9 @@ class ProjectListItem extends Component {
                               style.common.tableCell,
                               style.titleCell]}>
                             <Header
-                              name={this.props.project.name} location={this.props.project.location}
+                              name={this.props.project.name}
+                              location={this.props.project.location}
+                              link={this.props.project.link}
                               style={style.header} />
                         </div>
                         <div

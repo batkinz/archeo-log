@@ -16,3 +16,7 @@ body {
     height: 100%;
     margin: auto;
 }
+
+a, a:hover {
+    color: #000;
+}

@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import Radium from 'radium';
+import { createContainer } from 'meteor/react-meteor-data';
+
+import Projects from '/imports/api/Projects/ProjectCollection.js';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { ProjectListStyle } from './ProjectList.style.js';
@@ -27,4 +30,21 @@ ProjectList.propTypes = {
     style: PropTypes.object,
 };
 
-export default Radium(ProjectList);
+export default createContainer(() => {
+    Meteor.subscribe('projektek');
+
+    const projects = Projects.find({}, {
+        transform(doc) {
+            return {
+                _id: doc._id,
+                name: doc.name,
+                location: doc.feltarasi_hely,
+                date: doc.asatas_kezdete || new Date(),
+                link: `/project/${doc._id}`,
+            };
+        },
+    }).fetch();
+
+    return { projects };
+}, Radium(ProjectList));
+

@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import Radium from 'radium';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Textfit } from 'react-textfit';
+import { Link } from 'react-router-dom';
 
 import Button from '/imports/ui/components/Button/Button.jsx';
 import ProjectsButton from './ProjectsButton/ProjectsButton.jsx';
@@ -54,7 +55,7 @@ class MainMenu extends Component {
 
         return (
             <div style={this.props.style.container}>
-                <div style={this.props.style.logo}></div>
+                <Link to="/" style={this.props.style.logo}></Link>
                 <div style={this.props.style.leftSeparatorContainer}>
                     <Separator style={this.props.style.separator} />
                 </div>

@@ -4,7 +4,6 @@ import Radium from 'radium';
 import {
     BrowserRouter as Router,
     Route,
-    Link
 } from 'react-router-dom';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
@@ -12,7 +11,7 @@ import { AppStyle } from './App.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
 import MainMenu from './components/MainMenu/MainMenu.jsx';
-
+import ProjectList from './components/ProjectList/ProjectList.jsx';
 import Project from './components/Project/Project.jsx';
 
 // App component - represents the whole app
@@ -49,6 +48,7 @@ class App extends Component {
                         <MainMenu />
 
                         <div className="container" style={this.props.style.pageContainer}>
+                            <Route exact path="/" component={ProjectList} />
                             {/* <FilteringMenu />
                              <ProjectList projects={projects} style={{}} /> */}
                             <Route path="/project" component={Project} />
