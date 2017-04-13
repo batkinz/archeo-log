@@ -42,7 +42,10 @@ export default createContainer(() => {
         },
     }).fetch();
 
-    projectDropdownItems.unshift({ separator: true });
+    if (projectDropdownItems.length > 0) {
+        projectDropdownItems.unshift({ separator: true });
+    }
+
     projectDropdownItems.unshift({
         text: 'Új...',
         href: '/project/add',

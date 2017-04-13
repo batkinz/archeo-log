@@ -12,19 +12,21 @@ import { CommonStyle } from '/imports/ui/common/common.style.js';
 class MenuButton extends Component {
     render() {
         return (
-            <button
+            <Link
+              to={this.props.link}
               type="button"
               className="btn btn-default btn-lg"
               key="projectListItemMenuButton"
               style={this.props.style}>
                 <span className="glyphicon glyphicon-menu-hamburger" />
-            </button>
+            </Link>
         );
     }
 }
 
 MenuButton.propTypes = {
     style: PropTypes.object.isRequired,
+    link: PropTypes.string.isRequired,
 };
 
 MenuButton = Radium(MenuButton);
@@ -175,7 +177,7 @@ class ProjectListItem extends Component {
                           style={[
                               style.common.tableCell,
                               style.menuButtonCell]}>
-                            <MenuButton style={style.menuButton} />
+                            <MenuButton style={style.menuButton} link={this.props.project.link} />
                         </div>
                         <div
                           style={[
@@ -184,7 +186,7 @@ class ProjectListItem extends Component {
                             <Header
                               name={this.props.project.name}
                               location={this.props.project.location}
-                              link={this.props.project.link}
+                              link={this.props.project.objectListLink}
                               style={style.header} />
                         </div>
                         <div

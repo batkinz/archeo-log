@@ -5,7 +5,7 @@ import { DefaultStylesContainer } from '../../ui/common/StyleHelpers.js';
 
 // here come all the style files
 import '/imports/ui/common/common.style.js';
-import '/imports/ui/components/ProjectListItem/ProjectListItem.style.js';
+import '/imports/ui/components/ProjectList/ProjectListItem/ProjectListItem.style.js';
 import '/imports/ui/components/ProjectList/ProjectList.style.js';
 import '/imports/ui/components/MainMenu/MainMenu.style.js';
 import '/imports/ui/components/Button/Button.style.js';

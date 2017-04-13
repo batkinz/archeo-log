@@ -7,7 +7,7 @@ import Projects from '/imports/api/Projects/ProjectCollection.js';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { ProjectListStyle } from './ProjectList.style.js';
-import ProjectListItem from '../ProjectListItem/ProjectListItem.jsx';
+import ProjectListItem from './ProjectListItem/ProjectListItem.jsx';
 
 
 class ProjectList extends Component {
@@ -41,7 +41,8 @@ export default createContainer(() => {
                 name: doc.name,
                 location: doc.feltarasi_hely,
                 date: doc.asatas_kezdete || new Date(),
-                link: `/project/${doc._id}`,
+                link: `/project/${doc._id}/edit`,
+                objectListLink: `/project/${doc._id}`,
             };
         },
     }).fetch();

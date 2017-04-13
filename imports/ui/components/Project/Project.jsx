@@ -8,6 +8,7 @@ import {
 import Projects from '/imports/api/Projects/ProjectCollection.js';
 
 import ProjectForm from './ProjectForm/ProjectForm.jsx';
+import ObjectList from '../ObjectList/ObjectList.jsx';
 
 const Project = ({ match }) => {
     return (
@@ -16,6 +17,12 @@ const Project = ({ match }) => {
             <Route
               exact
               path={`${match.url}/:projectId`}
+              render={({ match: routeMatch }) => {
+                  return (<ObjectList projectId={routeMatch.params.projectId} />);
+              }} />
+            <Route
+              exact
+              path={`${match.url}/:projectId/edit`}
               render={({ match: routeMatch }) => {
                   return (<ProjectForm type="update" docId={routeMatch.params.projectId} />);
               }} />
