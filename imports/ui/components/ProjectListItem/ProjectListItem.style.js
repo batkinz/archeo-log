@@ -37,12 +37,20 @@ export const ProjectListItemStyle = {
                 fontWeight: '500',
                 display: 'block',
                 marginTop: -5,
+                width: 320,
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap',
             },
             location:
             {
                 fontSize: 16,
                 fontWeight: 'normal',
                 display: 'block',
+                width: 320,
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap',
             },
         },
         menuButton: {

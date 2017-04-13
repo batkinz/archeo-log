@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 import Radium from 'radium';
 import { Link } from 'react-router-dom';
@@ -16,7 +17,7 @@ class MenuButton extends Component {
               className="btn btn-default btn-lg"
               key="projectListItemMenuButton"
               style={this.props.style}>
-                <span className="glyphicon glyphicon-menu-hamburger"></span>
+                <span className="glyphicon glyphicon-menu-hamburger" />
             </button>
         );
     }
@@ -32,7 +33,7 @@ MenuButton = Radium(MenuButton);
 class Header extends Component {
     render() {
         return (
-            <div>
+            <div style={this.props.style.container}>
                 <Link to={this.props.link}>
                     <span style={this.props.style.name}>{this.props.name}</span>
                     <span style={this.props.style.location}>{this.props.location}</span>

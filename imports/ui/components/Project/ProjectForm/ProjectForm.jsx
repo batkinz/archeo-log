@@ -1,5 +1,6 @@
 import Blaze from 'meteor/gadicc:blaze-react-component';
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import Projects from '/imports/api/Projects/ProjectCollection.js';

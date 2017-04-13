@@ -1,9 +1,10 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const DropdownItem = (props) => {
     if (props.separator) {
-        return (<li role="separator" className="divider"></li>);
+        return (<li role="separator" className="divider" />);
     }
 
     return (<li><Link to={props.href || '#'}>{props.text}</Link></li>);

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Radium from 'radium';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Textfit } from 'react-textfit';
@@ -55,7 +56,7 @@ class MainMenu extends Component {
 
         return (
             <div style={this.props.style.container}>
-                <Link to="/" style={this.props.style.logo}></Link>
+                <Link to="/" style={this.props.style.logo} />
                 <div style={this.props.style.leftSeparatorContainer}>
                     <Separator style={this.props.style.separator} />
                 </div>
