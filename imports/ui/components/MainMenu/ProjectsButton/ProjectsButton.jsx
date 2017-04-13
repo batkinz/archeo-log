@@ -15,7 +15,7 @@ class ProjectsButton extends Component {
                   text="Projektek"
                   dropdown
                   dropdownItems={this.props.items}
-                  type={{ yellow: true }} />
+                  type={{ yellow: true }}>Projektek</Button>
             </div>
         );
     }

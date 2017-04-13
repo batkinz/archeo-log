@@ -11,6 +11,7 @@ import '/imports/ui/components/MainMenu/MainMenu.style.js';
 import '/imports/ui/components/Button/Button.style.js';
 import '/imports/ui/App.style.js';
 import '/imports/ui/components/NotFound/NotFound.style.js';
+import '/imports/ui/components/ObjectList/ObjectListMenu.style.js';
 
 import { Styles } from '/imports/api/styles/styles.collection.js';
 

@@ -39,7 +39,7 @@ class Button extends Component {
                 extraAttributes['aria-haspopup'] = 'true';
                 extraAttributes['aria-expanded'] = 'false';
 
-                caret = <span className="caret"></span>;
+                caret = <span className="caret" />;
             }
         }
 
@@ -53,7 +53,7 @@ class Button extends Component {
                   style={style}
                   onClick={this.handleClick}
                   {...extraAttributes}>
-                    {this.props.text} {caret}
+                    {this.props.children} {caret}
                 </button>
                 {dropdownItemsContainer}
             </div>
@@ -71,8 +71,11 @@ Button.propTypes = {
     handleClick: PropTypes.func,
     privStyle: PropTypes.object,
     style: PropTypes.object,
-    text: PropTypes.string,
     type: PropTypes.object,
+    children: PropTypes.oneOfType([
+        React.PropTypes.arrayOf(React.PropTypes.node),
+        React.PropTypes.node,
+    ]),
 };
 
 export default createContainer(() => {

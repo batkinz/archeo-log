@@ -49,11 +49,6 @@ UserNameContainer = Radium(UserNameContainer);
 
 class MainMenu extends Component {
     render() {
-        const langDropdownItems = [
-            { id: 1, text: 'HU' },
-            { id: 2, text: 'DE' },
-            { id: 3, text: 'GB' }];
-
         return (
             <div style={this.props.style.container}>
                 <Link to="/" style={this.props.style.logo} />
