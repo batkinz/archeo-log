@@ -12,6 +12,7 @@ import '/imports/ui/components/Button/Button.style.js';
 import '/imports/ui/App.style.js';
 import '/imports/ui/components/NotFound/NotFound.style.js';
 import '/imports/ui/components/ObjectList/ObjectListMenu.style.js';
+import '/imports/ui/components/ObjectList/ObjectListItem/ObjectListItem.style.js';
 
 import { Styles } from '/imports/api/styles/styles.collection.js';
 
