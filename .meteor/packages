@@ -28,3 +28,6 @@ hwillson:stub-collections
 aldeed:autoform
 gadicc:blaze-react-component
 aldeed:schema-index
+useraccounts:bootstrap
+npm-bcrypt
+accounts-password

@@ -11,6 +11,7 @@ import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { AppStyle } from './App.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
 
+import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
 import MainMenu from './components/MainMenu/MainMenu.jsx';
 import ProjectList from './components/ProjectList/ProjectList.jsx';
 import Project from './components/Project/Project.jsx';
@@ -42,21 +43,17 @@ class App extends Component {
 
         if (!this.props.loading) {
             return (
-                <Router>
-                    <div className="container" style={this.props.style.appContainer}>
-                        <span style={this.props.style.version}>{this.version}</span>
+                <div className="container" style={this.props.style.appContainer}>
+                    <span style={this.props.style.version}>{this.version}</span>
 
-                        <MainMenu />
+                    <MainMenu history={this.props.history} />
 
-                        <div className="container" style={this.props.style.pageContainer}>
-                            <Route exact path="/" component={ProjectList} />
-                            {/* <FilteringMenu />
-                             <ProjectList projects={projects} style={{}} /> */}
-                            <Route path="/project" component={Project} />
-                        </div>
-                        {this.props.children}
+                    <div className="container" style={this.props.style.pageContainer}>
+                        <PrivateRoute exact path="/" component={ProjectList} />
+                        <PrivateRoute path="/project" component={Project} />
                     </div>
-                </Router>
+                    {this.props.children}
+                </div>
             );
         }
 
@@ -67,6 +64,7 @@ class App extends Component {
 }
 
 App.propTypes = {
+    history: PropTypes.object.isRequired,
     style: PropTypes.object.isRequired,
     pliStyles: PropTypes.object,
     menuStyle: PropTypes.object,

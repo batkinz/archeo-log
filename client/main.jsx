@@ -3,9 +3,10 @@ import { render } from 'react-dom';
 import React from 'react';
 
 import '/imports/startup/common/SimpleSchemaExtensions.js';
+import '/imports/startup/client/AccountsTemplatesConfiguration.js';
 
-import App from '/imports/ui/App.jsx';
+import Routes from '/imports/ui/Routes.jsx';
 
 Meteor.startup(() => {
-    render(<App />, document.getElementById('render-target'));
+    render(<Routes />, document.getElementById('render-target'));
 });

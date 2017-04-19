@@ -6,8 +6,11 @@
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
+    "bcrypt": "^1.0.2",
+    "bootstrap-select": "^1.12.2",
     "color": "^1.0.3",
     "eslint-import-resolver-meteor": "^0.0.6",
+    "jquery": "^2.2.4",
     "meteor-node-stubs": "^0.2.6",
     "prop-types": "^15.5.8",
     "radium": "^0.18.1",

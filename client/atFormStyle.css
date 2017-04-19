@@ -1,0 +1,22 @@
+#at-field-username_and_email {
+    font-size: 18px;
+    height: 40px;
+}
+
+#at-field-password {
+    font-size: 18px;
+    height: 40px;
+}
+
+.at-input {
+    margin-bottom: 11px;
+}
+
+#at-btn {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11px;
+    background-color: #4d4d4d;
+    color: #e1e1e1;
+}

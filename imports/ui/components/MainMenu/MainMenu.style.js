@@ -82,6 +82,16 @@ export const MainMenuStyle = {
             top: 17,
             left: 577,
         },
+        logoutContainer: {
+            float: 'left',
+            position: 'relative',
+            top: 17,
+            left: 577,
+        },
+        logoutButton: {
+            minWidth: 46,
+            backgroundColor: common.colors.red.backgroundColor,
+        },
         subStyles: {
             userNameContainer: {
                 div: {

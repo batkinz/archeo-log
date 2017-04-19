@@ -4,6 +4,7 @@ import Radium from 'radium';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Textfit } from 'react-textfit';
 import { Link } from 'react-router-dom';
+import { AccountsTemplates } from 'meteor/useraccounts:core';
 
 import Button from '/imports/ui/components/Button/Button.jsx';
 import ProjectsButton from './ProjectsButton/ProjectsButton.jsx';
@@ -48,6 +49,18 @@ UserNameContainer = Radium(UserNameContainer);
 
 
 class MainMenu extends Component {
+    constructor(props) {
+        super(props);
+        this.logout = this.logout.bind(this);
+    }
+
+    logout() {
+        AccountsTemplates.logout();
+        setTimeout(() => {
+            this.props.history.push('/login');
+        }, 100);
+    }
+
     render() {
         return (
             <div style={this.props.style.container}>
@@ -61,9 +74,12 @@ class MainMenu extends Component {
                 </div>
                 <div style={this.props.style.userNameContainer}>
                     <UserNameContainer
-                      firstName="Géza"
-                      lastName="Mézga"
+                      firstName={this.props.user.firstName}
+                      lastName={this.props.user.lastName}
                       style={this.props.style.subStyles.userNameContainer} />
+                </div>
+                <div style={this.props.style.logoutContainer}>
+                    <Button handleClick={this.logout} style={this.props.style.logoutButton}>X</Button>
                 </div>
             </div>
         );
@@ -71,11 +87,28 @@ class MainMenu extends Component {
 }
 
 MainMenu.propTypes = {
+    history: PropTypes.object.isRequired,
     style: PropTypes.object,
+    user: PropTypes.shape({
+        firstName: PropTypes.string,
+        lastName: PropTypes.string,
+    }),
 };
 
 export default createContainer(() => {
+    const user = {
+        firstName: '',
+        lastName: '',
+    };
+
+    if (Meteor.userId()) {
+        const meteorUser = Meteor.user();
+        user.firstName = meteorUser.profile.firstName;
+        user.lastName = meteorUser.profile.lastName;
+    }
+
     return {
         style: getStyle('MainMenu', MainMenuStyle.style),
+        user,
     };
 }, Radium(MainMenu));
