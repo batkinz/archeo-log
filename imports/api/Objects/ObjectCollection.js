@@ -1,6 +1,7 @@
 import SimpleSchema from 'simpl-schema';
-import Artefacts from  '../Artefacts/ArtefactCollection.js';
+import Artefacts from '../Artefacts/ArtefactCollection.js';
 import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
+import { getOmittedFields } from '/imports/api/CollectionHelpers/CollectionHelpers.js';
 
 const Objects = new Meteor.Collection('objektum');
 
@@ -8,20 +9,28 @@ const ObjectSchema = new SimpleSchema({
     projekt_id: {
         type: String,
         regEx: SimpleSchema.RegEx.Id,
+        omitInForm: true,
     },
     objektum_szam: {
         type: Number,
         custom() {
-            const objectsWithSameNumberIter = Objects.find({
-                _id: { $not: this.field('_id').value },
-                projekt_id: this.field('projekt_id').value,
+            const predicate = {
+                _id: { $not: { $eq: this.siblingField('_id').value } },
+                projekt_id: this.siblingField('projekt_id').value,
                 objektum_szam: this.value,
-            });
-            return (objectsWithSameNumberIter.count() === 0) || 'notAllowed';
+            };
+            const objectsWithSameNumberIter = Objects.find(predicate);
+            console.log(this);
+            if (objectsWithSameNumberIter.count() !== 0) {
+                return 'notAllowed';
+            }
+
+            return undefined;
         },
     },
     telepules: {
         type: String,
+        optional: true,
     },
     objektum_jellege: {
         type: String,
@@ -112,7 +121,7 @@ const ObjectSchema = new SimpleSchema({
                 return 'required';
             }
 
-            return '';
+            return undefined;
         },
         autoform: {
             options() {
@@ -133,7 +142,8 @@ const ObjectSchema = new SimpleSchema({
                 'static_strings.kormeghatarozas_alapja.kormeghatarozas_alapja_1') {
                 return 'required';
             }
-            return '';
+
+            return undefined;
         },
         autoform: {
             options() {
@@ -154,8 +164,32 @@ const ObjectSchema = new SimpleSchema({
         type: Date,
         optional: true,
     },
+    timestamp: {
+        type: Date,
+        optional: true,
+        omitInForm: true,
+    },
 });
 
 Objects.attachSchema(ObjectSchema);
 
-export default Objects;
+Objects.allow({
+    insert(userId, doc) {
+        return true;
+        // return userId;
+    },
+    update(userId, doc, fieldNames, modifier) {
+        return true;
+        // return (userId && doc.userId === userId && _.difference(fieldNames, whitelist).length === 0);
+    },
+    remove(userId, doc) {
+        return userId === doc.adatrogzito_szemely_id;
+    },
+});
+
+const omitFields = getOmittedFields(ObjectSchema);
+
+export {
+    Objects as default,
+    omitFields as OmitFieldsObjectForm,
+} ;

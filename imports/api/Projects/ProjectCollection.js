@@ -1,4 +1,5 @@
 import SimpleSchema from 'simpl-schema';
+import { getOmittedFields, getEditableFields } from '/imports/api/CollectionHelpers/CollectionHelpers.js';
 
 const ProjectSchema = new SimpleSchema({
     name: {
@@ -9,35 +10,35 @@ const ProjectSchema = new SimpleSchema({
         type: String,
         editable: true,
     },
-    asatasKezdete: {
+    asatas_kezdete: {
         type: Date,
         editable: true,
     },
     adatrogzito_szemely_id: {
         type: String,
         regEx: SimpleSchema.RegEx.Id,
+        optional: true,
     },
     timestamp: {
         type: Date,
         defaultValue: new Date(),
+        optional: true,
     },
 });
 
 const Projects = new Meteor.Collection('projektek');
 Projects.attachSchema(ProjectSchema);
 
-const whitelist = _.filter(_.keys(ProjectSchema), (property) => {
-    return ProjectSchema[property].editable;
-});
+const whitelist = getEditableFields(ProjectSchema);
 
 Projects.allow({
     insert(userId, doc) {
-        return userId;
+        return true;
+        // return userId;
     },
     update(userId, doc, fieldNames, modifier) {
-        if (userId && doc.userId === userId && _.difference(fieldNames, whitelist).length === 0) {
-            return true;
-        }
+        return true;
+        // return (userId && doc.userId === userId && _.difference(fieldNames, whitelist).length === 0);
     },
     remove(userId, doc) {
         return userId === doc.adatrogzito_szemely_id;

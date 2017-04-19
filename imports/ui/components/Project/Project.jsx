@@ -9,6 +9,7 @@ import Projects from '/imports/api/Projects/ProjectCollection.js';
 
 import ProjectForm from './ProjectForm/ProjectForm.jsx';
 import ObjectList from '../ObjectList/ObjectList.jsx';
+import ObjectForm from '../Object/ObjectForm.jsx';
 
 const Project = ({ match }) => {
     return (
@@ -25,6 +26,12 @@ const Project = ({ match }) => {
               path={`${match.url}/:projectId/edit`}
               render={({ match: routeMatch }) => {
                   return (<ProjectForm type="update" docId={routeMatch.params.projectId} />);
+              }} />
+            <Route
+              exact
+              path={`${match.url}/:projectId/object/:objectNumber`}
+              render={({ match: routeMatch }) => {
+                  return (<ObjectForm objectNumber={routeMatch.params.objectNumber} projectId={routeMatch.params.projectId} />);
               }} />
         </Switch>);
 };

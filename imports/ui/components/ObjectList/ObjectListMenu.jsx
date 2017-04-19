@@ -25,17 +25,20 @@ class ObjectListMenu extends Component {
 
         return (
             <div style={style.container}>
+                <span style={style.label}>Objektumok létrehozása:</span>
                 <input
                   style={style.objectNumberInput}
                   onChange={(evt) => this.setState({ startNumber: evt.target.value })}
                   className="form-control"
-                  type="number" />
+                  type="number"
+                  placeholder="-tól" />
                 <span>—</span>
                 <input
                   style={style.objectNumberInput}
                   onChange={(evt) => this.setState({ endNumber: evt.target.value })}
                   className="form-control"
-                  type="number" />
+                  type="number"
+                  placeholder="-ig" />
                 <Button
                   style={style.addButton}
                   handleClick={() => this.props.addObjectRange(this.state.startNumber, this.state.endNumber)}>

@@ -3,4 +3,4 @@
  */
 import SimpleSchema from 'simpl-schema';
 
-SimpleSchema.extendOptions(['autoform', 'editable']);
+SimpleSchema.extendOptions(['autoform', 'editable', 'omitInForm']);

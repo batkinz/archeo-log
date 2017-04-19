@@ -34,7 +34,7 @@ export default createContainer((props) => {
         transform(doc) {
             return {
                 number: doc.objektum_szam,
-                link: `/project/${props.projectId}/objects/${doc.objektum_szam}`,
+                link: `/project/${props.projectId}/object/${doc.objektum_szam}`,
             };
         },
     }).fetch();

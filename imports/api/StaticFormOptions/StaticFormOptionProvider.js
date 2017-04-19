@@ -42,4 +42,4 @@ class StaticFormOptionProvider {
     }
 }
 
-export default StaticFormOptionProvider;
+export default new StaticFormOptionProvider();

@@ -16,6 +16,9 @@ export const ObjectListMenuStyle = {
             paddingTop: 11,
             fontSize: 32,
         },
+        label: {
+            fontSize: 32,
+        },
         objectNumberInput: {
             width: 86,
             display: 'inline',
