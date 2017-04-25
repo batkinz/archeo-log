@@ -1,19 +1,19 @@
-import Blaze from 'meteor/gadicc:blaze-react-component';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
+
+import AutoFormBase from '../AutoFormBase/AutoFormBase.jsx';
 
 import Objects, { OmitFieldsObjectForm } from '/imports/api/Objects/ObjectCollection.js';
 
 class ObjectForm extends Component {
     render() {
         return (
-            <Blaze
-              template="ProjectForm"
+            <AutoFormBase
               formId="objectForm"
               collection={Objects}
-              type="update"
-              doc={this.props.doc} />
+              doc={this.props.doc}
+              omitFields={OmitFieldsObjectForm} />
         );
     }
 }
@@ -27,7 +27,7 @@ ObjectForm.propTypes = {
 export default createContainer((props) => {
     Meteor.subscribe('objektumok');
 
-    const doc = Objects.findOne({
+    const doc = props.doc || Objects.findOne({
         $and:
         [
             { projekt_id: props.projectId },

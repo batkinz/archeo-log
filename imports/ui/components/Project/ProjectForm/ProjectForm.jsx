@@ -1,25 +1,23 @@
-import Blaze from 'meteor/gadicc:blaze-react-component';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
+
+import AutoFormBase from '../../AutoFormBase/AutoFormBase.jsx';
 
 import Projects from '/imports/api/Projects/ProjectCollection.js';
 
 class ProjectForm extends Component {
     render() {
         return (
-            <Blaze
-              template="ProjectForm"
+            <AutoFormBase
               formId="projectForm"
               collection={Projects}
-              type={this.props.type}
               doc={this.props.doc} />
         );
     }
 }
 
 ProjectForm.propTypes = {
-    type: PropTypes.string.isRequired,
     docId: PropTypes.string,
     doc: PropTypes.object,
     omitFields: PropTypes.array,
