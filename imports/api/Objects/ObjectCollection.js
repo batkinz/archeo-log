@@ -1,7 +1,8 @@
 import SimpleSchema from 'simpl-schema';
-import Artefacts from '../Artefacts/ArtefactCollection.js';
 import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
 import { getOmittedFields } from '/imports/api/CollectionHelpers/CollectionHelpers.js';
+
+import GraveSchema from './GraveSchema.js';
 
 const Objects = new Meteor.Collection('objektum');
 
@@ -10,17 +11,19 @@ const ObjectSchema = new SimpleSchema({
         type: String,
         regEx: SimpleSchema.RegEx.Id,
         omitInForm: true,
+        autoform: {
+            type: 'hidden',
+        },
     },
     objektum_szam: {
         type: Number,
         custom() {
             const predicate = {
-                _id: { $not: { $eq: this.siblingField('_id').value } },
+                _id: { $not: { $eq: this.docId } },
                 projekt_id: this.siblingField('projekt_id').value,
                 objektum_szam: this.value,
             };
             const objectsWithSameNumberIter = Objects.find(predicate);
-            console.log(this);
             if (objectsWithSameNumberIter.count() !== 0) {
                 return 'notAllowed';
             }
@@ -51,6 +54,11 @@ const ObjectSchema = new SimpleSchema({
             }
             return true;
         },
+        autoform: {
+            options() {
+                return StaticFormOptionProvider.get('objektum_pozitiv');
+            },
+        },
     },
     'objektum_pozitiv.$': {
         type: String,
@@ -58,9 +66,9 @@ const ObjectSchema = new SimpleSchema({
     objektum_pozitiv_egyeb: {
         type: Array,
         optional: true,
-        custom() {
-            // return Regesz.validate_egyeb(this, 'objektum_pozitiv', 'objektum_pozitiv');
-        },
+        // custom() {
+        //     // return Regesz.validate_egyeb(this, 'objektum_pozitiv', 'objektum_pozitiv');
+        // },
     },
     'objektum_pozitiv_egyeb.$': {
         type: String,
@@ -87,9 +95,9 @@ const ObjectSchema = new SimpleSchema({
     objektum_negativ_egyeb: {
         type: Array,
         optional: true,
-        custom() {
-            // return Regesz.validate_egyeb(this, 'objektum_negativ', 'objektum_negativ');
-        },
+        // custom() {
+        //     // return Regesz.validate_egyeb(this, 'objektum_negativ', 'objektum_negativ');
+        // },
     },
     'objektum_negativ_egyeb.$': {
         type: String,
@@ -164,12 +172,23 @@ const ObjectSchema = new SimpleSchema({
         type: Date,
         optional: true,
     },
+    sir: {
+        type: Object,
+        optional: true,
+    },
+    adatrogzito_szemely_id: {
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
+        optional: true,
+    },
     timestamp: {
         type: Date,
         optional: true,
         omitInForm: true,
     },
 });
+
+ObjectSchema.extend(GraveSchema);
 
 Objects.attachSchema(ObjectSchema);
 
@@ -183,7 +202,8 @@ Objects.allow({
         // return (userId && doc.userId === userId && _.difference(fieldNames, whitelist).length === 0);
     },
     remove(userId, doc) {
-        return userId === doc.adatrogzito_szemely_id;
+        return true;
+        // return userId === doc.adatrogzito_szemely_id;
     },
 });
 
@@ -191,5 +211,6 @@ const omitFields = getOmittedFields(ObjectSchema);
 
 export {
     Objects as default,
+    ObjectSchema,
     omitFields as OmitFieldsObjectForm,
-} ;
+};

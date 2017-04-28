@@ -6,8 +6,8 @@ import { CommonStyle } from '/imports/ui/common/common.style.js';
 
 const common = CommonStyle.style.common;
 
-export const ObjectListItemStyle = {
-    targetComponent: 'ObjectListItem',
+export const GenericListItemStyle = {
+    targetComponent: 'GenericListItem',
     style: {
         container: {
             width: 68,
@@ -26,4 +26,4 @@ export const ObjectListItemStyle = {
     },
 };
 
-DefaultStylesContainer.addStyle(ObjectListItemStyle);
+DefaultStylesContainer.addStyle(GenericListItemStyle);

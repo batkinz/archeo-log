@@ -41,7 +41,7 @@ export default class AutoFormBase extends Component {
         }
 
         const hooks = {
-            onError() {
+            onError(formType, error) {
                 triggerRerender();
             },
             onSuccess() {
@@ -65,12 +65,18 @@ export default class AutoFormBase extends Component {
     }
 
     render() {
+        let type = this.props.type;
+        if (!type) {
+            type = this.props.doc ? 'update' : 'insert';
+        }
+
         return (
             <Blaze
               template="ProjectForm"
               formId={this.props.formId}
               collection={this.props.collection}
-              type={this.props.doc ? 'update' : 'insert'}
+              schema={this.props.schema}
+              type={type}
               doc={this.props.doc}
               omitFields={this.props.omitFields}
               state={this.state.random} />
@@ -80,8 +86,10 @@ export default class AutoFormBase extends Component {
 
 AutoFormBase.propTypes = {
     formId: PropTypes.string.isRequired,
-    collection: PropTypes.object.isRequired,
+    collection: PropTypes.object,
+    schema: PropTypes.object,
     doc: PropTypes.object,
     hooksObject: PropTypes.object,
     omitFields: PropTypes.arrayOf(PropTypes.string),
+    type: PropTypes.string,
 };

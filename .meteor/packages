@@ -31,3 +31,4 @@ aldeed:schema-index
 useraccounts:bootstrap
 npm-bcrypt
 accounts-password
+practicalmeteor:chai
