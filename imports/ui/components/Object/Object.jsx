@@ -7,7 +7,7 @@ import {
 
 import ObjectMenu from './ObjectMenu/ObjectMenu.jsx';
 import ObjectForm from './ObjectForm.jsx';
-import ArtefactList from '../ArtefactList/ArtefactList.jsx';
+import Artefact from '../Artefact/Artefact.jsx';
 import GraveForm from '../Grave/GraveForm.jsx';
 
 const Object = ({ match, projectId, objectNumber }) => {
@@ -29,9 +29,9 @@ const Object = ({ match, projectId, objectNumber }) => {
                           return (<GraveForm objectNumber={objectNumber} projectId={projectId} />);
                       }} />
                     <Route
-                      exact
-                      path={`${match.url}`}
-                      render={ArtefactList} />
+                      path={`${match.url}/artefacts`}
+                      render={({ match: routeMatch }) =>
+                          <Artefact match={routeMatch} objectNumber={objectNumber} projectId={projectId} />} />
                 </Switch>
             </div>
         </div>);

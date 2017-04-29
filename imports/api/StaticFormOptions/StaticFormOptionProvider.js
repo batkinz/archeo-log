@@ -10,7 +10,7 @@ class StaticFormOptionProvider {
     get(stringId) {
         let result = this.cache[stringId];
         if (!result) {
-            const locale = 'de';
+            const locale = 'hu';
             const list = StaticStrings[stringId];
             const keys = Object.keys(list);
             keys.sort((a, b) => {

@@ -5,6 +5,7 @@ import Radium from 'radium';
 import {
     BrowserRouter as Router,
     Route,
+    Switch,
 } from 'react-router-dom';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
@@ -15,6 +16,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
 import MainMenu from './components/MainMenu/MainMenu.jsx';
 import ProjectList from './components/ProjectList/ProjectList.jsx';
 import Project from './components/Project/Project.jsx';
+import NotFound from './components/NotFound/NotFound.jsx';
 
 // App component - represents the whole app
 class App extends Component {
@@ -49,8 +51,11 @@ class App extends Component {
                     <MainMenu history={this.props.history} />
 
                     <div className="container" style={this.props.style.pageContainer}>
-                        <PrivateRoute exact path="/" component={ProjectList} />
-                        <PrivateRoute path="/project" component={Project} />
+                        <Switch>
+                            <PrivateRoute exact path="/" component={ProjectList} />
+                            <PrivateRoute path="/project" component={Project} />
+                            <PrivateRoute component={NotFound} />
+                        </Switch>
                     </div>
                     {this.props.children}
                 </div>

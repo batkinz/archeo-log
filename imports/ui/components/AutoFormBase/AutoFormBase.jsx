@@ -42,9 +42,11 @@ export default class AutoFormBase extends Component {
 
         const hooks = {
             onError(formType, error) {
+                console.log(error);
                 triggerRerender();
             },
             onSuccess() {
+                console.log('success');
                 triggerRerender();
             },
             formToDoc(doc) {

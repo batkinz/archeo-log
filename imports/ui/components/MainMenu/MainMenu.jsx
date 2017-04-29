@@ -79,7 +79,9 @@ class MainMenu extends Component {
                       style={this.props.style.subStyles.userNameContainer} />
                 </div>
                 <div style={this.props.style.logoutContainer}>
-                    <Button handleClick={this.logout} style={this.props.style.logoutButton}>X</Button>
+                    <Button handleClick={this.logout} style={this.props.style.logoutButton}>
+                        <span className="glyphicon glyphicon-log-out" style={this.props.style.logoutIcon} />
+                    </Button>
                 </div>
             </div>
         );

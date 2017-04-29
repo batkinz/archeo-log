@@ -25,7 +25,7 @@ class ObjectMenu extends Component {
                 <Link to={`${baseUrl}/edit`}>
                     <Button style={style.menuButton}>Objektum adatlap</Button>
                 </Link>
-                <Link to={`${baseUrl}`}>
+                <Link to={`${baseUrl}/artefacts`}>
                     <Button style={style.menuButton}>Leletek</Button>
                 </Link>
                 <Link to={`${baseUrl}/grave`}>

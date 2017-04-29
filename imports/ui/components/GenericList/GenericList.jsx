@@ -26,7 +26,7 @@ const GenericList = (props) => {
 GenericList.propTypes = {
     items: PropTypes.array,
     getItemsReactive: PropTypes.func.isRequired,
-    itemComponent: PropTypes.object,
+    itemComponent: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
     style: PropTypes.object,
 };
 

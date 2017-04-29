@@ -124,7 +124,6 @@ const GraveSchema = new SimpleSchema({
     // },
     'sir.vannak_csontok': {
         type: Boolean,
-        defaultValue: false,
     },
     'sir.jobb_felkarok': {
         type: Array,
@@ -243,7 +242,7 @@ const GraveSchema = new SimpleSchema({
     },
     'sir.datum': {
         type: Date,
-        defaultValue: new Date(),
+        optional: true,
     },
     'sir.csontvazak': {
         type: Array,

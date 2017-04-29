@@ -19,7 +19,7 @@ const ObjectSchema = new SimpleSchema({
         type: Number,
         custom() {
             const predicate = {
-                _id: { $not: { $eq: this.docId } },
+                _id: { $ne: this.docId },
                 projekt_id: this.siblingField('projekt_id').value,
                 objektum_szam: this.value,
             };
@@ -194,15 +194,15 @@ Objects.attachSchema(ObjectSchema);
 
 Objects.allow({
     insert(userId, doc) {
-        return true;
+        return Meteor.user();
         // return userId;
     },
     update(userId, doc, fieldNames, modifier) {
-        return true;
+        return Meteor.user();
         // return (userId && doc.userId === userId && _.difference(fieldNames, whitelist).length === 0);
     },
     remove(userId, doc) {
-        return true;
+        return Meteor.user();
         // return userId === doc.adatrogzito_szemely_id;
     },
 });

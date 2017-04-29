@@ -92,6 +92,9 @@ export const MainMenuStyle = {
             minWidth: 46,
             backgroundColor: common.colors.red.backgroundColor,
         },
+        logoutIcon: {
+            color: '#fff',
+        },
         subStyles: {
             userNameContainer: {
                 div: {

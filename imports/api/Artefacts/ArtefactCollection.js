@@ -1,34 +1,33 @@
 import SimpleSchema from 'simpl-schema';
 import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
+import { getOmittedFields } from '/imports/api/CollectionHelpers/CollectionHelpers.js';
 
 const Artefacts = new Meteor.Collection('leletek');
 
 const ArtefactSchema = new SimpleSchema({
+    objektum_id: {
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
+    },
     lelet_szam: {
         type: Number,
-        unique: false,
         index: false,
         custom() {
-            // if (Meteor.isClient) {
-            //     const objektumId = Router.current().params.objektum_id;
-            //     const leletId = Router.current().params.lelet_id;
-            //     if (leletId && Artefacts.find({ _id: { $not: leletId },
-            //             objektum_id: objektumId,
-            //             lelet_szam: this.value }).count() > 0) {
-            //         return 'notAllowed';
-            //     } else if (!leletId
-            //         && Artefacts.find({ objektum_id: objektumId, lelet_szam: this.value }).count() > 0) {
-            //         return 'notAllowed';
-            //     }
-            // }
-            return true;
+            const collidingArtifactNumbers = Artefacts.find({
+                _id: { $ne: this.docId },
+                objektum_id: this.siblingField('objektum_id').value,
+                lelet_szam: this.value,
+            });
+            if (collidingArtifactNumbers.count() > 0) {
+                return 'notAllowed';
+            }
+            return undefined;
         },
     },
     megtalalo_id: {
         type: String,
-        custom() {
-            // return Regesz.autocomplete_validate(this.value);
-        },
+        regEx: SimpleSchema.RegEx.Id,
+        optional: true,
     },
     raktari_lada_szama: {
         type: Number,
@@ -168,22 +167,28 @@ const ArtefactSchema = new SimpleSchema({
     adatrogzito_szemely_id: {
         type: String,
         optional: true,
+        regEx: SimpleSchema.RegEx.Id,
     },
 });
 
 Artefacts.attachSchema(ArtefactSchema);
 
 Artefacts.allow({
+    insert() {
+        return Meteor.user();
+    },
     remove() {
-        if (Meteor.user()) {
-            return true;
-        }
-        return false;
+        return Meteor.user();
     },
     update() {
-        if (Meteor.user()) {
-            return true;
-        }
-        return false;
+        return Meteor.user();
     },
 });
+
+const omitFields = getOmittedFields(ArtefactSchema);
+
+export {
+    Artefacts as default,
+    ArtefactSchema,
+    omitFields as OmitFieldsArtefactForm,
+};

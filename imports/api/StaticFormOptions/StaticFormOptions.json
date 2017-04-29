@@ -1,1703 +1,2223 @@
 {
     "alapszin": {
         "alapszin_0": {
-            "de": "schwarz"
+            "de": "schwarz",
+            "hu": "fekete"
         },
         "alapszin_1": {
-            "de": "weiß"
+            "de": "weiß",
+            "hu": "fehér"
         },
         "alapszin_2": {
-            "de": "blau"
+            "de": "blau",
+            "hu": "kék"
         },
         "alapszin_3": {
-            "de": "braun"
+            "de": "braun",
+            "hu": "barna"
         },
         "alapszin_4": {
-            "de": "gelb"
+            "de": "gelb",
+            "hu": "sárga"
         },
         "alapszin_5": {
-            "de": "grün"
+            "de": "grün",
+            "hu": "zöld"
         },
         "alapszin_6": {
-            "de": "rot"
+            "de": "rot",
+            "hu": "piros"
         },
         "alapszin_7": {
-            "de": "grau"
+            "de": "grau",
+            "hu": "szürke"
         },
         "alapszin_8": {
-            "de": "violett"
+            "de": "violett",
+            "hu": "lila"
         },
         "alapszin_9": {
-            "de": "orange"
+            "de": "orange",
+            "hu": "narancssárga"
         },
         "alapszin_10": {
-            "de": "ocker"
+            "de": "ocker",
+            "hu": "okkersárga"
         }
     },
     "geologia_szin": {
         "geologia_szin_0": {
-            "de": "braun"
+            "de": "braun",
+            "hu": "barna"
         },
         "geologia_szin_1": {
-            "de": "gelb"
+            "de": "gelb",
+            "hu": "sárga"
         },
         "geologia_szin_2": {
-            "de": "grün"
+            "de": "grün",
+            "hu": "zöld"
         },
         "geologia_szin_3": {
-            "de": "grau"
+            "de": "grau",
+            "hu": "szürke"
         },
         "geologia_szin_4": {
-            "de": "schwarz"
+            "de": "schwarz",
+            "hu": "fekete"
         },
         "geologia_szin_5": {
-            "de": "weiss"
+            "de": "weiss",
+            "hu": "fehér"
         },
         "geologia_szin_6": {
-            "de": "violett"
+            "de": "violett",
+            "hu": "lila"
         },
         "geologia_szin_7": {
-            "de": "orange"
+            "de": "orange",
+            "hu": "narancssárga"
         },
         "geologia_szin_8": {
-            "de": "oliv"
+            "de": "oliv",
+            "hu": "olíva"
         },
         "geologia_szin_9": {
-            "de": "ocker"
+            "de": "ocker",
+            "hu": "okkersárga"
         }
     },
     "allag": {
         "allag_0": {
-            "de": "sehr hart"
+            "de": "sehr hart",
+            "hu": "nagyon kemény"
         },
         "allag_1": {
-            "de": "hart"
+            "de": "hart",
+            "hu": "kemény"
         },
         "allag_2": {
-            "de": "fest"
+            "de": "fest",
+            "hu": "szilárd"
         },
         "allag_3": {
-            "de": "mittelfest"
+            "de": "mittelfest",
+            "hu": "közepes erősségű"
         },
         "allag_4": {
-            "de": "weich"
+            "de": "weich",
+            "hu": "lágy"
         },
         "allag_5": {
-            "de": "sehr weich"
+            "de": "sehr weich",
+            "hu": "nagyon lágy"
         },
         "allag_6": {
-            "de": "flüssig"
+            "de": "flüssig",
+            "hu": "folyadék"
         }
     },
     "anyag": {
         "anyag_egyeb": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": "egyéb, éspedig"
         },
         "anyag_1": {
-            "de": "Knochen (menschlich)"
+            "de": "Knochen (menschlich)",
+            "hu": "csont (emberi)"
         },
         "anyag_2": {
-            "de": "Knochen (tierisch)"
+            "de": "Knochen (tierisch)",
+            "hu": "csont (állati)"
         },
         "anyag_3": {
-            "de": "Knochen (k.a.)"
+            "de": "Knochen (k.a.)",
+            "hu": "csont (k.a.)"
         },
         "anyag_4": {
-            "de": "Keramik"
+            "de": "Keramik",
+            "hu": "kerámia"
         },
         "anyag_5": {
-            "de": "Stein"
+            "de": "Stein",
+            "hu": "kő"
         },
         "anyag_6": {
-            "de": "Holz"
+            "de": "Holz",
+            "hu": "fa"
         },
         "anyag_7": {
-            "de": "Glas"
+            "de": "Glas",
+            "hu": "üveg"
         },
         "anyag_8": {
-            "de": "Metall"
+            "de": "Metall",
+            "hu": "fém"
         },
         "anyag_9": {
-            "de": "Edelmetall"
+            "de": "Edelmetall",
+            "hu": "nemesfém"
         },
         "anyag_10": {
-            "de": "Leder"
+            "de": "Leder",
+            "hu": "bőr"
         },
         "anyag_11": {
-            "de": "Stoff"
+            "de": "Stoff",
+            "hu": "szövet"
         },
         "anyag_12": {
-            "de": "Holzkohle"
+            "de": "Holzkohle",
+            "hu": "faszén"
         }
     },
     "anyagcsoport": {
         "anyagcsoport_0": {
-            "de": "mineralische Materialien"
+            "de": "mineralische Materialien",
+            "hu": "ásványi anyagok"
         },
         "anyagcsoport_1": {
-            "de": "Metalle"
+            "de": "Metalle",
+            "hu": "fémek"
         },
         "anyagcsoport_2": {
-            "de": "organische und artverwandte Materialien"
+            "de": "organische und artverwandte Materialien",
+            "hu": "szerves és kapcsolódó anyagok"
         }
     },
     "arnyalat": {
         "arnyalat_0": {
-            "de": "sehr hell"
+            "de": "sehr hell",
+            "hu": "nagyon fényes"
         },
         "arnyalat_1": {
-            "de": "hell"
+            "de": "hell",
+            "hu": "fényes"
         },
         "arnyalat_2": {
-            "de": "mittel"
+            "de": "mittel",
+            "hu": "közepes"
         },
         "arnyalat_3": {
-            "de": "dunkel"
+            "de": "dunkel",
+            "hu": "sötét"
         },
         "arnyalat_4": {
-            "de": "sehr dunkel"
+            "de": "sehr dunkel",
+            "hu": "nagyon sötét"
         },
         "arnyalat_5": {
-            "de": "leuchtend"
+            "de": "leuchtend",
+            "hu": "csillogó"
         },
         "arnyalat_6": {
-            "de": "blass"
+            "de": "blass",
+            "hu": "halvány"
         },
         "arnyalat_7": {
-            "de": "fahl"
+            "de": "fahl",
+            "hu": "fakó"
         },
         "arnyalat_8": {
-            "de": "schmutzig"
+            "de": "schmutzig",
+            "hu": "piszkos"
         }
     },
     "asatasi_modszer": {
         "asatasi_modszer_0": {
-            "de": "nach künstlichen Schichten"
+            "de": "nach künstlichen Schichten",
+            "hu": "mesterséges rétegek"
         },
         "asatasi_modszer_1": {
-            "de": "nach natürlichen Schichten"
+            "de": "nach natürlichen Schichten",
+            "hu": "természetes rétegek"
         }
     },
     "bazis_formaja": {
         "bazis_formaja_0": {
-            "de": "horizontal"
+            "de": "horizontal",
+            "hu": "vízszintes"
         },
         "bazis_formaja_1": {
-            "de": "geneigt nach unten"
+            "de": "geneigt nach unten",
+            "hu": "lefelé hajló"
         },
         "bazis_formaja_2": {
-            "de": "geneigt nach oben"
+            "de": "geneigt nach oben",
+            "hu": "felfelé hajló"
         },
         "bazis_formaja_3": {
-            "de": "konvex"
+            "de": "konvex",
+            "hu": "domború"
         },
         "bazis_formaja_4": {
-            "de": "konkav"
+            "de": "konkav",
+            "hu": "homorú"
         },
         "bazis_formaja_5": {
-            "de": "wellig"
+            "de": "wellig",
+            "hu": "hullámos"
         },
         "bazis_formaja_6": {
-            "de": "tropfenförmig"
+            "de": "tropfenförmig",
+            "hu": "csepp alakú"
         }
     },
     "durva_talajosszetetel": {
         "durva_talajosszetetel_0": {
-            "de": "Feinkies"
+            "de": "Feinkies",
+            "hu": "apró kavics"
         },
         "durva_talajosszetetel_1": {
-            "de": "Mittelkies"
+            "de": "Mittelkies",
+            "hu": "közepes kavics"
         },
         "durva_talajosszetetel_2": {
-            "de": "Grobkies"
+            "de": "Grobkies",
+            "hu": "durva kavics"
         },
         "durva_talajosszetetel_3": {
-            "de": "runde Steine"
+            "de": "runde Steine",
+            "hu": "lekerekített kövek"
         },
         "durva_talajosszetetel_4": {
-            "de": "runde Blöcke"
+            "de": "runde Blöcke",
+            "hu": "lekerekített sziklák"
         },
         "durva_talajosszetetel_5": {
-            "de": "runde Großblöcke"
+            "de": "runde Großblöcke",
+            "hu": "nagyméretű lekerekített sziklák"
         },
         "durva_talajosszetetel_6": {
-            "de": "Feingrus"
+            "de": "Feingrus",
+            "hu": "finom homok"
         },
         "durva_talajosszetetel_7": {
-            "de": "Mittelgrus"
+            "de": "Mittelgrus",
+            "hu": "homok"
         },
         "durva_talajosszetetel_8": {
-            "de": "Grobrus"
+            "de": "Grobrus",
+            "hu": "durva homok"
         },
         "durva_talajosszetetel_9": {
-            "de": "Bruchstein"
+            "de": "Bruchstein",
+            "hu": "tört kavics"
         },
         "durva_talajosszetetel_10": {
-            "de": "kantige Blöcke"
+            "de": "kantige Blöcke",
+            "hu": "szögletes sziklák"
         },
         "durva_talajosszetetel_11": {
-            "de": "kantige Großblöcke"
+            "de": "kantige Großblöcke",
+            "hu": "nagyméretű szögletes sziklák"
         },
         "durva_talajosszetetel_12": {
-            "de": "Ziegel"
+            "de": "Ziegel",
+            "hu": "tégla"
         },
         "durva_talajosszetetel_13": {
-            "de": "Schutt"
+            "de": "Schutt",
+            "hu": "törmelékek"
         }
     },
     "eddigi_terulethasznalat": {
         "eddigi_terulethasznalat_0": {
-            "de": "Ackerland"
+            "de": "Ackerland",
+            "hu": "termőföld"
         },
         "eddigi_terulethasznalat_1": {
-            "de": "Grünland"
+            "de": "Grünland",
+            "hu": "legelő"
         },
         "eddigi_terulethasznalat_2": {
-            "de": "Sonderkultur"
+            "de": "Sonderkultur",
+            "hu": "speciális termőföld"
         },
         "eddigi_terulethasznalat_3": {
-            "de": "Wald"
+            "de": "Wald",
+            "hu": "erdő"
         },
         "eddigi_terulethasznalat_4": {
-            "de": "Brachfläche"
+            "de": "Brachfläche",
+            "hu": "parlag"
         },
         "eddigi_terulethasznalat_5": {
-            "de": "Sportplatz, Park"
+            "de": "Sportplatz, Park",
+            "hu": "sportpálya, park"
         },
         "eddigi_terulethasznalat_6": {
-            "de": "Auftragsflächen (z.B. Bauschutt)"
+            "de": "Auftragsflächen (z.B. Bauschutt)",
+            "hu": "rakodóterület (pl. építési hulladék)"
         },
         "eddigi_terulethasznalat_7": {
-            "de": "keine Angaben"
+            "de": "keine Angaben",
+            "hu": "nincs adat"
         }
     },
     "elozetes_kormeghatarozas": {
         "elozetes_kormeghatarozas_0": {
-            "de": "Neuzeit"
+            "de": "Neuzeit",
+            "hu": "újkor"
         },
         "elozetes_kormeghatarozas_1": {
-            "de": "Spät-MA"
+            "de": "Spät-MA",
+            "hu": "kései középkor"
         },
         "elozetes_kormeghatarozas_2": {
-            "de": "Hoch-MA"
+            "de": "Hoch-MA",
+            "hu": "érett középkor"
         },
         "elozetes_kormeghatarozas_3": {
-            "de": "Früh-MA"
+            "de": "Früh-MA",
+            "hu": "korai középkor"
         },
         "elozetes_kormeghatarozas_4": {
-            "de": "Späte Völkerwanderung"
+            "de": "Späte Völkerwanderung",
+            "hu": "késő népvándorlás kora"
         },
         "elozetes_kormeghatarozas_5": {
-            "de": "frühe Völkerwanderung"
+            "de": "frühe Völkerwanderung",
+            "hu": "korai népvándorlás kora"
         },
         "elozetes_kormeghatarozas_6": {
-            "de": "jüngere röm. Kaiserzeit"
+            "de": "jüngere röm. Kaiserzeit",
+            "hu": "korai római császárkor"
         },
         "elozetes_kormeghatarozas_7": {
-            "de": "ältere röm. Kaiserzeit"
+            "de": "ältere röm. Kaiserzeit",
+            "hu": "kései római császárkor"
         },
         "elozetes_kormeghatarozas_8": {
-            "de": "jüngere EZ (Latenezeit)"
+            "de": "jüngere EZ (Latenezeit)",
+            "hu": "korai vaskor (La Téne)"
         },
         "elozetes_kormeghatarozas_9": {
-            "de": "ältere EZ (Hallstiattzeit)"
+            "de": "ältere EZ (Hallstiattzeit)",
+            "hu": "késői vaskor (hallstatti kor)"
         },
         "elozetes_kormeghatarozas_10": {
-            "de": "Jüngst-BZ (Hallsiattzeit)"
+            "de": "Jüngst-BZ (Hallsiattzeit)",
+            "hu": "korai bronzkor (hallstatti kor)"
         },
         "elozetes_kormeghatarozas_11": {
-            "de": "Jung-BZ (Urnenfelder-BZ)"
+            "de": "Jung-BZ (Urnenfelder-BZ)",
+            "hu": "korai bronzkor (urnamezős kultúra)"
         },
         "elozetes_kormeghatarozas_12": {
-            "de": "Mittel-BZ (Hügelgräber-BZ) "
+            "de": "Mittel-BZ (Hügelgräber-BZ)",
+            "hu": "középső bronzkor (halomsíros kultúra)"
         },
         "elozetes_kormeghatarozas_13": {
-            "de": "Früh-BZ"
+            "de": "Früh-BZ",
+            "hu": "kései bronzkor"
         },
         "elozetes_kormeghatarozas_14": {
-            "de": "Neolithikum"
+            "de": "Neolithikum",
+            "hu": "neolitikum"
         },
         "elozetes_kormeghatarozas_15": {
-            "de": "Mesolithikum"
+            "de": "Mesolithikum",
+            "hu": "középső kőkor"
         },
         "elozetes_kormeghatarozas_16": {
-            "de": "Paläolithikum"
+            "de": "Paläolithikum",
+            "hu": "kőkorszak"
         }
     },
     "famaradvany_allapota": {
         "famaradvany_allapota_0": {
-            "de": "verbrannt"
+            "de": "verbrannt",
+            "hu": "megégett"
         },
         "famaradvany_allapota_1": {
-            "de": "verkohlt"
+            "de": "verkohlt",
+            "hu": "elszenesedett"
         },
         "famaradvany_allapota_2": {
-            "de": "vergammelt"
+            "de": "vergammelt",
+            "hu": "ápolatlan"
         }
     },
     "famaradvany_kidolgozasa": {
         "famaradvany_kidolgozasa_0": {
-            "de": "gesägt"
+            "de": "gesägt",
+            "hu": "fogazott"
         },
         "famaradvany_kidolgozasa_1": {
-            "de": "geschlagen"
+            "de": "geschlagen",
+            "hu": "lyukasztott"
         },
         "famaradvany_kidolgozasa_2": {
-            "de": "gespalten"
+            "de": "gespalten",
+            "hu": "osztott"
         },
         "famaradvany_kidolgozasa_3": {
-            "de": "unbearbeitet"
+            "de": "unbearbeitet",
+            "hu": "befejezetlen"
         },
         "famaradvany_kidolgozasa_4": {
-            "de": "keine Angabe"
+            "de": "keine Angabe",
+            "hu": "nincs leírás"
         }
     },
     "famaradvany_rogzites_fogazat": {
         "famaradvany_rogzites_fogazat_0": {
-            "de": "Verblattung"
+            "de": "Verblattung",
+            "hu": "metsz"
         },
         "famaradvany_rogzites_fogazat_1": {
-            "de": "Verzapfung"
+            "de": "Verzapfung",
+            "hu": "furat"
         },
         "famaradvany_rogzites_fogazat_2": {
-            "de": "Verklemmung"
+            "de": "Verklemmung",
+            "hu": "holtpont"
         },
         "famaradvany_rogzites_fogazat_3": {
-            "de": "gefügt"
+            "de": "gefügt",
+            "hu": "illesztett"
         },
         "famaradvany_rogzites_fogazat_4": {
-            "de": "gestülpt"
+            "de": "gestülpt",
+            "hu": "átfordított"
         },
         "famaradvany_rogzites_fogazat_5": {
-            "de": "gefalzt"
+            "de": "gefalzt",
+            "hu": "hajtogatott"
         },
         "famaradvany_rogzites_fogazat_6": {
-            "de": "gerollt"
+            "de": "gerollt",
+            "hu": "tekercselt"
         },
         "famaradvany_rogzites_fogazat_7": {
-            "de": "gespundet"
+            "de": "gespundet",
+            "hu": "korzikai"
         },
         "famaradvany_rogzites_fogazat_8": {
-            "de": "gespundet mit Fase"
+            "de": "gespundet mit Fase",
+            "hu": "gyalukéssel"
         },
         "famaradvany_rogzites_fogazat_9": {
-            "de": "Nut und Feder"
+            "de": "Nut und Feder",
+            "hu": "csaphornyos"
         },
         "famaradvany_rogzites_fogazat_10": {
-            "de": "gedübelt"
+            "de": "gedübelt",
+            "hu": "szegelt"
         },
         "famaradvany_rogzites_fogazat_11": {
-            "de": "überschobene Bretter gespundet"
+            "de": "überschobene Bretter gespundet",
+            "hu": "tábla"
         },
         "famaradvany_rogzites_fogazat_12": {
-            "de": "keine Angabe"
+            "de": "keine Angabe",
+            "hu": "nincs adat"
         }
     },
     "nev": {
         "nev_0": {
-            "de": "de"
+            "de": "de",
+            "hu": "telen"
         },
         "nev_1": {
-            "de": "de"
+            "de": "de",
+            "hu": "telen"
         },
         "nev_2": {
-            "de": "de"
+            "de": "de",
+            "hu": "telen"
         },
         "nev_3": {
-            "de": "de"
+            "de": "de",
+            "hu": "telen"
         }
     },
     "falforma": {
         "falforma_0": {
-            "de": "vertikal, senkrecht"
+            "de": "vertikal, senkrecht",
+            "hu": "függőleges"
         },
         "falforma_1": {
-            "de": "schräg (um 45°)"
+            "de": "schräg (um 45°)",
+            "hu": "ferde (45°)"
         },
         "falforma_2": {
-            "de": "flachschräg (10-45°)"
+            "de": "flachschräg (10-45°)",
+            "hu": "átlós (10-45°)"
         },
         "falforma_3": {
-            "de": "steilschräg (50-80°)"
+            "de": "steilschräg (50-80°)",
+            "hu": "meredeken lejtett (50-80°)"
         },
         "falforma_4": {
-            "de": "steilschräg, überkippt"
+            "de": "steilschräg, überkippt",
+            "hu": "meredeken lejtett, felborult"
+
         },
         "falforma_5": {
-            "de": "nach außen gebogen"
+            "de": "nach außen gebogen",
+            "hu": "kiefelé hajló"
         },
         "falforma_6": {
-            "de": "eingezogen"
+            "de": "eingezogen",
+            "hu": "behúzott"
         },
         "falforma_7": {
-            "de": "gestuft"
+            "de": "gestuft",
+            "hu": "besorolt"
         }
     },
     "falmaradvany_anyaga": {
         "falmaradvany_anyaga_egyeb": {
-            "de": "gebrannter Ziegel"
+            "de": "gebrannter Ziegel",
+            "hu": "égetett tégla"
         },
         "falmaradvany_anyaga_1": {
-            "de": "Lehm"
+            "de": "Lehm",
+            "hu": "agyag"
         },
         "falmaradvany_anyaga_2": {
-            "de": "Lehmziegel"
+            "de": "Lehmziegel",
+            "hu": "vályogtégla"
         },
         "falmaradvany_anyaga_3": {
-            "de": "Stein"
+            "de": "Stein",
+            "hu": "kő"
         },
         "falmaradvany_anyaga_4": {
-            "de": "Beton"
+            "de": "Beton",
+            "hu": "beton"
         },
         "falmaradvany_anyaga_5": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": "egyéb"
         }
     },
     "falmaradvany_kidolgozasa": {
         "falmaradvany_kidolgozasa_0": {
-            "de": "Lesestein"
+            "de": "Lesestein",
+            "hu": "legpuhább"
         },
         "falmaradvany_kidolgozasa_1": {
-            "de": "Bruchstein"
+            "de": "Bruchstein",
+            "hu": "törés"
         },
         "falmaradvany_kidolgozasa_2": {
-            "de": "Haustein"
+            "de": "Haustein",
+            "hu": "haustein"
         },
         "falmaradvany_kidolgozasa_3": {
-            "de": "Werkstein"
+            "de": "Werkstein",
+            "hu": "gyári kő"
         },
         "falmaradvany_kidolgozasa_4": {
-            "de": "bruchrau"
+            "de": "bruchrau",
+            "hu": "törhetetlen"
         },
         "falmaradvany_kidolgozasa_5": {
-            "de": "gespitzt"
+            "de": "gespitzt",
+            "hu": "hegyes"
         },
         "falmaradvany_kidolgozasa_6": {
-            "de": "gestockt"
+            "de": "gestockt",
+            "hu": "megakaszt"
         },
         "falmaradvany_kidolgozasa_7": {
-            "de": "bossiert"
+            "de": "bossiert",
+            "hu": "domborít"
         },
         "falmaradvany_kidolgozasa_8": {
-            "de": "scharriert"
+            "de": "scharriert",
+            "hu": "kőműves"
         }
     },
     "falmaradvany_nezeti_oldal": {
         "falmaradvany_nezeti_oldal_0": {
-            "de": "regellos, nicht lagenhaft"
+            "de": "regellos, nicht lagenhaft",
+            "hu": "véletlenszerű, nem rétegzett"
         },
         "falmaradvany_nezeti_oldal_1": {
-            "de": "partiell lagenhaft"
+            "de": "partiell lagenhaft",
+            "hu": "részlegesen rétegzett"
         },
         "falmaradvany_nezeti_oldal_2": {
-            "de": "ungleichmäßige Lagen"
+            "de": "ungleichmäßige Lagen",
+            "hu": "egyenetlen rétegek"
         },
         "falmaradvany_nezeti_oldal_3": {
-            "de": "lagenhaft"
+            "de": "lagenhaft",
+            "hu": "rétegzett"
         },
         "falmaradvany_nezeti_oldal_4": {
-            "de": "regelmäßig, lagenhaft"
+            "de": "regelmäßig, lagenhaft",
+            "hu": "szabályos, rétegzett"
         }
     },
     "falmaradvany_tipus": {
         "falmaradvany_tipus_egyeb": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": "egyéb"
         },
         "falmaradvany_tipus_1": {
-            "de": "Mauer"
+            "de": "Mauer",
+            "hu": "fal"
         },
         "falmaradvany_tipus_2": {
-            "de": "Fundament"
+            "de": "Fundament",
+            "hu": "alap"
         },
         "falmaradvany_tipus_3": {
-            "de": "Ofenbefund"
+            "de": "Ofenbefund",
+            "hu": "sütő-diagnosis"
         },
         "falmaradvany_tipus_4": {
-            "de": "Latrine (gemauert)"
+            "de": "Latrine (gemauert)",
+            "hu": "letrine (falazott)"
         },
         "falmaradvany_tipus_5": {
-            "de": "Brunnen (gemauert)"
+            "de": "Brunnen (gemauert)",
+            "hu": "szökőkút (falazott)"
         },
         "falmaradvany_tipus_6": {
-            "de": "Zisterne (gemauert)"
+            "de": "Zisterne (gemauert)",
+            "hu": "víztároló (falazott)"
         },
         "falmaradvany_tipus_7": {
-            "de": "Gewölbe"
+            "de": "Gewölbe",
+            "hu": "boltozat"
         },
         "falmaradvany_tipus_8": {
-            "de": "Steinsetzung"
+            "de": "Steinsetzung",
+            "hu": "kőrakás"
         }
     },
     "famaradvany_forma": {
         "famaradvany_forma_0": {
-            "de": "Hälbling"
+            "de": "Hälbling",
+            "hu": "helbling"
         },
         "famaradvany_forma_1": {
-            "de": "Balken / Kantholz"
+            "de": "Balken / Kantholz",
+            "hu": "gerenda / szögletes fa"
         },
         "famaradvany_forma_2": {
-            "de": "Bohle / Brett"
+            "de": "Bohle / Brett",
+            "hu": "széles deszka / tábla"
         },
         "famaradvany_forma_3": {
-            "de": "Spältling"
+            "de": "Spältling",
+            "hu": "rés"
         },
         "famaradvany_forma_4": {
-            "de": "Spaltbohle"
+            "de": "Spaltbohle",
+            "hu": "deszkarés"
         },
         "famaradvany_forma_5": {
-            "de": "länglich"
+            "de": "länglich",
+            "hu": "hosszúkás"
         },
         "famaradvany_forma_6": {
-            "de": "oval"
+            "de": "oval",
+            "hu": "ovális"
         },
         "famaradvany_forma_7": {
-            "de": "kantig"
+            "de": "kantig",
+            "hu": "szögletes"
         },
         "famaradvany_forma_8": {
-            "de": "unregelmäßig"
+            "de": "unregelmäßig",
+            "hu": "szabálytalan"
         }
     },
     "famaradvany_keresztmetszet": {
         "famaradvany_keresztmetszet_0": {
-            "de": "rund"
+            "de": "rund",
+            "hu": "kör"
         },
         "famaradvany_keresztmetszet_1": {
-            "de": "quadratisch"
+            "de": "quadratisch",
+            "hu": "négyzetes"
         },
         "famaradvany_keresztmetszet_2": {
-            "de": "rechteckig"
+            "de": "rechteckig",
+            "hu": "téglalap alakú"
         },
         "famaradvany_keresztmetszet_3": {
-            "de": "ringporig"
+            "de": "ringporig",
+            "hu": "gyűrűs"
         },
         "famaradvany_keresztmetszet_4": {
-            "de": "halbringporig"
+            "de": "halbringporig",
+            "hu": "félgyűrűs"
         },
         "famaradvany_keresztmetszet_5": {
-            "de": "zerstreutporig"
+            "de": "zerstreutporig",
+            "hu": "diffúz-porózus"
         },
         "famaradvany_keresztmetszet_6": {
-            "de": "keine Gefäße erkennbar"
+            "de": "keine Gefäße erkennbar",
+            "hu": "egyetlen felismerhető hajó"
         },
         "famaradvany_keresztmetszet_7": {
-            "de": "keine Angabe"
+            "de": "keine Angabe",
+            "hu": "nincs adat"
         }
     },
     "famaradvany_tipus": {
         "famaradvany_tipus_egyeb": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": " egyéb"
         },
         "famaradvany_tipus_1": {
-            "de": "Pfosten"
+            "de": "Pfosten",
+            "hu": "posta"
         },
         "famaradvany_tipus_2": {
-            "de": "Schwellbalken"
+            "de": "Schwellbalken",
+            "hu": "küstöb gerenda"
         },
         "famaradvany_tipus_3": {
-            "de": "Holzboden"
+            "de": "Holzboden",
+            "hu": "fapadló"
         },
         "famaradvany_tipus_4": {
-            "de": "Einzelhölzer"
+            "de": "Einzelhölzer",
+            "hu": "vasfa"
         },
         "famaradvany_tipus_5": {
-            "de": "Brunnen (Holz)"
+            "de": "Brunnen (Holz)",
+            "hu": "kút (fa)"
         },
         "famaradvany_tipus_6": {
-            "de": "Zisterne (Holz)"
+            "de": "Zisterne (Holz)",
+            "hu": "víztároló (fa)"
         },
         "famaradvany_tipus_7": {
-            "de": "Latrine (Holz)"
+            "de": "Latrine (Holz)",
+            "hu": "latrina (fa)"
         }
     },
     "fekves_a_domborzatban": {
         "fekves_a_domborzatban_0": {
-            "de": "Oberhang"
+            "de": "Oberhang",
+            "hu": "forráslejtő"
         },
         "fekves_a_domborzatban_1": {
-            "de": "Mittelhang"
+            "de": "Mittelhang",
+            "hu": "közepes lejtő"
         },
         "fekves_a_domborzatban_2": {
-            "de": "Unterhang"
+            "de": "Unterhang",
+            "hu": "lejtő alján"
         },
         "fekves_a_domborzatban_3": {
-            "de": "Hangschulter"
+            "de": "Hangschulter",
+            "hu": "lejtő tetején"
         },
         "fekves_a_domborzatban_4": {
-            "de": "Hangfuß"
+            "de": "Hangfuß",
+            "hu": "lejtő lábánál"
         },
         "fekves_a_domborzatban_5": {
-            "de": "Ebene"
+            "de": "Ebene",
+            "hu": "szintben"
         },
         "fekves_a_domborzatban_6": {
-            "de": "keine Angaben"
+            "de": "keine Angaben",
+            "hu": "nincs adat"
         }
     },
     "finom_talajosszetetel": {
         "finom_talajosszetetel_0": {
-            "de": "Sand (0,063-2,0 mm)"
+            "de": "Sand (0,063-2,0 mm)",
+            "hu": "homok (0,063-2, 0 mm)"
         },
         "finom_talajosszetetel_1": {
-            "de": "Grobsand"
+            "de": "Grobsand",
+            "hu": "durva homok"
         },
         "finom_talajosszetetel_2": {
-            "de": "mittelfeiner Sand"
+            "de": "mittelfeiner Sand",
+            "hu": "közepes-finom homok"
         },
         "finom_talajosszetetel_3": {
-            "de": "Feinsand"
+            "de": "Feinsand",
+            "hu": "homok"
         },
         "finom_talajosszetetel_4": {
-            "de": "Feinstsand"
+            "de": "Feinstsand",
+            "hu": "nagyon finom homok"
         },
         "finom_talajosszetetel_5": {
-            "de": "schluffiger Sand"
+            "de": "schluffiger Sand",
+            "hu": "iszapos homok"
         },
         "finom_talajosszetetel_6": {
-            "de": "toniger Sand"
+            "de": "toniger Sand",
+            "hu": "agyagos homok"
         },
         "finom_talajosszetetel_7": {
-            "de": "lehmiger Sand"
+            "de": "lehmiger Sand",
+            "hu": "nagyszemű homok"
         },
         "finom_talajosszetetel_8": {
-            "de": "Schluff (0,002-0,063 mm)"
+            "de": "Schluff (0,002-0,063 mm)",
+            "hu": "iszap"
         },
         "finom_talajosszetetel_9": {
-            "de": "sandiger Schluff"
+            "de": "sandiger Schluff",
+            "hu": "homokos iszap"
         },
         "finom_talajosszetetel_10": {
-            "de": "lehmiger Schluff"
+            "de": "lehmiger Schluff",
+            "hu": "nagyszemű iszap"
         },
         "finom_talajosszetetel_11": {
-            "de": "toniger Schluff"
+            "de": "toniger Schluff",
+            "hu": "agyagos iszap"
         },
         "finom_talajosszetetel_12": {
-            "de": "Ton (< 0,002 mm)"
+            "de": "Ton (< 0,002 mm)",
+            "hu": "agyag"
         },
         "finom_talajosszetetel_13": {
-            "de": "sandiger Ton"
+            "de": "sandiger Ton",
+            "hu": "homokos agyag"
         },
         "finom_talajosszetetel_14": {
-            "de": "schluffiger Ton"
+            "de": "schluffiger Ton",
+            "hu": "iszapos agyag"
         },
         "finom_talajosszetetel_15": {
-            "de": "lehmiger Ton"
+            "de": "lehmiger Ton",
+            "hu": "nagyszemű agyag"
         },
         "finom_talajosszetetel_16": {
-            "de": "Lehm (Sand- / Schluff- / Tongemenge)"
+            "de": "Lehm (Sand- / Schluff- / Tongemenge)",
+            "hu": "agyag (homok- / iszap- / agyag)"
         },
         "finom_talajosszetetel_17": {
-            "de": "sandiger Lehm"
+            "de": "sandiger Lehm",
+            "hu": "homokos agyag"
         },
         "finom_talajosszetetel_18": {
-            "de": "schluffiger Lehm"
+            "de": "schluffiger Lehm",
+            "hu": "iszapos agyag"
         },
         "finom_talajosszetetel_19": {
-            "de": "toniger Lehm"
+            "de": "toniger Lehm",
+            "hu": "agyagos vályog"
         }
     },
     "forma_1": {
         "forma_1_0": {
-            "de": "regelmäßig"
+            "de": "regelmäßig",
+            "hu": "szabályos"
         },
         "forma_1_1": {
-            "de": "unregelmäßig"
+            "de": "unregelmäßig",
+            "hu": "szabálytalan"
         }
     },
     "forma_2": {
         "forma_2_0": {
-            "de": "kreisförmig"
+            "de": "kreisförmig",
+            "hu": "köralakú"
         },
         "forma_2_1": {
-            "de": "oval"
+            "de": "oval",
+            "hu": "ovális"
         },
         "forma_2_2": {
-            "de": "langoval"
+            "de": "langoval",
+            "hu": "hosszú, ovális"
         },
         "forma_2_3": {
-            "de": "trapezförmig"
+            "de": "trapezförmig",
+            "hu": "trapéz"
         },
         "forma_2_4": {
-            "de": "dreieckig"
+            "de": "dreieckig",
+            "hu": "háromszögű"
         },
         "forma_2_5": {
-            "de": "rechteckig"
+            "de": "rechteckig",
+            "hu": "négyszögletes"
         },
         "forma_2_6": {
-            "de": "linear"
+            "de": "linear",
+            "hu": "lineáris"
         },
         "forma_2_7": {
-            "de": "halbmondförmig"
+            "de": "halbmondförmig",
+            "hu": "félhold"
         },
         "forma_2_8": {
-            "de": "formlos"
+            "de": "formlos",
+            "hu": "alaktalan"
         },
         "forma_2_9": {
-            "de": "mit gerundeten Ecken"
+            "de": "mit gerundeten Ecken",
+            "hu": "lekerekített sarok"
         }
     },
     "habarcs_vakolat": {
         "habarcs_vakolat_0": {
-            "de": "Mörtel"
+            "de": "Mörtel",
+            "hu": "habarcs"
         },
         "habarcs_vakolat_1": {
-            "de": "Putz"
+            "de": "Putz",
+            "hu": "vakolat"
         },
         "habarcs_vakolat_2": {
-            "de": "Kalk"
+            "de": "Kalk",
+            "hu": "mész"
         },
         "habarcs_vakolat_3": {
-            "de": "Gips"
+            "de": "Gips",
+            "hu": "gipsz"
         },
         "habarcs_vakolat_4": {
-            "de": "Lehm"
+            "de": "Lehm",
+            "hu": "agyag"
         },
         "habarcs_vakolat_5": {
-            "de": "Farbspuren"
+            "de": "Farbspuren",
+            "hu": "színes nyomok"
         },
         "habarcs_vakolat_6": {
-            "de": "Fresken"
+            "de": "Fresken",
+            "hu": "freskó"
         },
         "habarcs_vakolat_7": {
-            "de": "Einschläge"
+            "de": "Einschläge",
+            "hu": "burkolat"
         },
         "habarcs_vakolat_8": {
-            "de": "nicht vorhanden"
+            "de": "nicht vorhanden",
+            "hu": "nem létező"
         }
     },
     "hasznalat": {
         "hasznalat_0": {
-            "de": "Ackerland"
+            "de": "Ackerland",
+            "hu": "termőföld"
         },
         "hasznalat_1": {
-            "de": "Grünland"
+            "de": "Grünland",
+            "hu": "legelő"
         },
         "hasznalat_2": {
-            "de": "Sonderkultur"
+            "de": "Sonderkultur",
+            "hu": "különleges kultúra"
         },
         "hasznalat_3": {
-            "de": "Wald"
+            "de": "Wald",
+            "hu": "erdő"
         },
         "hasznalat_4": {
-            "de": "Brachfläche"
+            "de": "Brachfläche",
+            "hu": "barnamező"
         },
         "hasznalat_5": {
-            "de": "Sportplatz, Park"
+            "de": "Sportplatz, Park",
+            "hu": "sportpálya, park"
         },
         "hasznalat_6": {
-            "de": "Auftragsflächen (z.B. Bauschutt)"
+            "de": "Auftragsflächen (z.B. Bauschutt)",
+            "hu": "munkakerület (építési hulladék)"
         },
         "hasznalat_7": {
-            "de": "keine Angaben"
+            "de": "keine Angaben",
+            "hu": "nincs adat"
         }
     },
     "hatar_lathatosaga": {
         "hatar_lathatosaga_0": {
-            "de": "sehr deutlich"
+            "de": "sehr deutlich",
+            "hu": "nagyon világos"
         },
         "hatar_lathatosaga_1": {
-            "de": "deutlich"
+            "de": "deutlich",
+            "hu": "világos"
         },
         "hatar_lathatosaga_2": {
-            "de": "erkennbar"
+            "de": "erkennbar",
+            "hu": "felismerhető"
         },
         "hatar_lathatosaga_3": {
-            "de": "diffus"
+            "de": "diffus",
+            "hu": "szétszórt"
         },
         "hatar_lathatosaga_4": {
-            "de": "undeutlich"
+            "de": "undeutlich",
+            "hu": "határozatlanul"
         },
         "hatar_lathatosaga_5": {
-            "de": "erahnbar"
+            "de": "erahnbar",
+            "hu": "sejtelmes"
         },
-        "hatar_lathatosaga_6": {
-            "de": "unklar"
+        "hatar_lathatosaga_,6": {
+            "de": "unklar",
+            "hu": "homályos"
         }
     },
     "hatarok": {
         "hatarok_0": {
-            "de": "scharf"
+            "de": "scharf",
+            "hu": "éles"
         },
         "hatarok_1": {
-            "de": "etwas verwaschen"
+            "de": "etwas verwaschen",
+            "hu": "körbehatárolt"
         },
         "hatarok_2": {
-            "de": "verwaschen"
+            "de": "verwaschen",
+            "hu": "jól körbehatárolt"
         },
         "hatarok_3": {
-            "de": "fließend"
+            "de": "fließend",
+            "hu": "elmosódott"
         }
     },
     "hatarvonal": {
         "hatarvonal_0": {
-            "de": "eben"
+            "de": "eben",
+            "hu": "egyenletes"
         },
         "hatarvonal_1": {
-            "de": "uneben"
+            "de": "uneben",
+            "hu": "egyenetlen"
         },
         "hatarvonal_2": {
-            "de": "regelmäßig"
+            "de": "regelmäßig",
+            "hu": "szabályos"
         },
         "hatarvonal_3": {
-            "de": "unregelmäßig"
+            "de": "unregelmäßig",
+            "hu": "szabálytalan"
         },
         "hatarvonal_4": {
-            "de": "wellig"
+            "de": "wellig",
+            "hu": "hullámos"
         },
         "hatarvonal_5": {
-            "de": "gezackt"
+            "de": "gezackt",
+            "hu": "cakkos"
         }
     },
     "hivatallal_leegyeztetve": {
         "hivatallal_leegyeztetve_0": {
-            "de": "Freigegeben"
+            "de": "Freigegeben",
+            "hu": "jóváhagyva"
         },
         "hivatallal_leegyeztetve_1": {
-            "de": "mündliche Freigabe"
+            "de": "mündliche Freigabe",
+            "hu": "szóbeli jóvágyás"
         },
         "hivatallal_leegyeztetve_2": {
-            "de": "Teilfreigabe erteilt"
+            "de": "Teilfreigabe erteilt",
+            "hu": "részlegesen jóváhagyva"
         }
     },
     "karok_elhelyezkedes": {
         "karok_elhelyezkedes_0": {
-            "de": "Arme seitlich anliegend"
+            "de": "Arme seitlich anliegend",
+            "hu": "oldalirányban szomszédos karok"
         },
         "karok_elhelyezkedes_1": {
-            "de": "Arme gekreuzt über Becken"
+            "de": "Arme gekreuzt über Becken",
+            "hu": "a medencén keresztbe"
         },
         "karok_elhelyezkedes_2": {
-            "de": "Arme gekreuzt über Bauch"
+            "de": "Arme gekreuzt über Bauch",
+            "hu": "a hasán keresztbe"
         },
         "karok_elhelyezkedes_3": {
-            "de": "Arme gekreuzt über Brust"
+            "de": "Arme gekreuzt über Brust",
+            "hu": "a mellkason keresztbe"
         },
         "karok_elhelyezkedes_4": {
-            "de": "Hände am Kinn"
+            "de": "Hände am Kinn",
+            "hu": "kéz az állon"
         },
         "karok_elhelyezkedes_5": {
-            "de": "ungleichmäßige Armhaltung"
+            "de": "ungleichmäßige Armhaltung",
+            "hu": "egyenetlen pozíció"
         }
     },
     "kormeghatarozas_alapja": {
         "kormeghatarozas_alapja_0": {
-            "de": "Funde"
+            "de": "Funde",
+            "hu": "leletek"
         },
         "kormeghatarozas_alapja_1": {
-            "de": "Statigrafie"
+            "de": "Statigrafie",
+            "hu": "statigráfia"
         }
     },
     "kornyezeti_adottsagok": {
         "kornyezeti_adottsagok_egyeb": {
-            "de": "sonsitges, und zwar"
+            "de": "sonsitges, und zwar",
+            "hu": "egyéb"
         },
         "kornyezeti_adottsagok_0": {
-            "de": "Aue"
+            "de": "Aue",
+            "hu": "folyópart"
         },
         "kornyezeti_adottsagok_1": {
-            "de": "Terrasse"
+            "de": "Terrasse",
+            "hu": "terasz"
         },
         "kornyezeti_adottsagok_2": {
-            "de": "Löss-Hochfläche"
+            "de": "Löss-Hochfläche",
+            "hu": "lösz felület"
         },
         "kornyezeti_adottsagok_3": {
-            "de": "Mittelgebirge"
+            "de": "Mittelgebirge",
+            "hu": "felföld"
         },
         "kornyezeti_adottsagok_4": {
-            "de": "Alp"
+            "de": "Alp",
+            "hu": "hegy"
         }
     },
     "koztes_tarolas_modja": {
         "koztes_tarolas_modja_0": {
-            "de": "ausgelegt"
+            "de": "ausgelegt",
+            "hu": "szabadon"
         },
         "koztes_tarolas_modja_1": {
-            "de": "in Kisten"
+            "de": "in Kisten",
+            "hu": "ládában"
         }
     },
     "labak_elhelyezkedes": {
         "labak_elhelyezkedes_0": {
-            "de": "gestreckte Beinhaltung"
+            "de": "gestreckte Beinhaltung",
+            "hu": "egymás mellett"
         },
         "labak_elhelyezkedes_1": {
-            "de": "gekreuzte Beinhaltung"
+            "de": "gekreuzte Beinhaltung",
+            "hu": "keresztbe"
         },
         "labak_elhelyezkedes_2": {
-            "de": "Hocker"
+            "de": "Hocker",
+            "hu": "ülve"
         },
         "labak_elhelyezkedes_3": {
-            "de": "Beinhocker"
+            "de": "Beinhocker",
+            "hu": "lábpúp"
         },
         "labak_elhelyezkedes_4": {
-            "de": "Extremhocker"
+            "de": "Extremhocker",
+            "hu": "extrém púpos"
         }
     },
     "laza_kozet": {
         "laza_kozet_0": {
-            "de": "Kies (rund)"
+            "de": "Kies (rund)",
+            "hu": "kavics (kör)"
         },
         "laza_kozet_1": {
-            "de": "Schutt (eckig)"
+            "de": "Schutt (eckig)",
+            "hu": "törmelék (éles)"
         },
         "laza_kozet_2": {
-            "de": "Sand"
+            "de": "Sand",
+            "hu": "homok"
         },
         "laza_kozet_3": {
-            "de": "Löss"
+            "de": "Löss",
+            "hu": "lösz"
         },
         "laza_kozet_4": {
-            "de": "Geschiebemergel / -lehm / -sand"
+            "de": "Geschiebemergel / -lehm / -sand",
+            "hu": "darabos hordalék / -agyag / -homok"
         },
         "laza_kozet_5": {
-            "de": "Torf"
+            "de": "Torf",
+            "hu": "tőzeg"
         },
         "laza_kozet_6": {
-            "de": "nicht aufgeschlossen"
+            "de": "nicht aufgeschlossen",
+            "hu": "nem fogékony"
         },
         "laza_kozet_7": {
-            "de": "keine Angabe"
+            "de": "keine Angabe",
+            "hu": "nincs adat"
         }
     },
     "lejtes_formaja": {
         "lejtes_formaja_0": {
-            "de": "konkav"
+            "de": "konkav",
+            "hu": "homorú"
         },
         "lejtes_formaja_1": {
-            "de": "konvex"
+            "de": "konvex",
+            "hu": "domború"
         },
         "lejtes_formaja_2": {
-            "de": "keine Angaben"
+            "de": "keine Angaben",
+            "hu": "nincs adat"
         }
     },
     "lelet_elhelyezkedese": {
         "lelet_elhelyezkedese_0": {
-            "de": "Oberflächenfund"
+            "de": "Oberflächenfund",
+            "hu": "felületen"
         },
         "lelet_elhelyezkedese_1": {
-            "de": "Anlage Profil"
+            "de": "Anlage Profil",
+            "hu": "profilon"
         },
         "lelet_elhelyezkedese_2": {
-            "de": "Entnahme Restbefund"
+            "de": "Entnahme Restbefund",
+            "hu": "kivétel"
         },
         "lelet_elhelyezkedese_3": {
-            "de": "Streufund"
+            "de": "Streufund",
+            "hu": "szétszórva"
         }
     },
     "lelet_megnevezese": {
         "lelet_megnevezese_0": {
-            "de": "Wandscherbe"
+            "de": "Wandscherbe",
+            "hu": "falban lévő cserép"
         },
         "lelet_megnevezese_1": {
-            "de": "Bodenscherbe"
+            "de": "Bodenscherbe",
+            "hu": "talajt fedő cserépdarab"
         },
         "lelet_megnevezese_2": {
-            "de": "Randscherbe"
+            "de": "Randscherbe",
+            "hu": "írás"
         },
         "lelet_megnevezese_3": {
-            "de": "Keramikbruch"
+            "de": "Keramikbruch",
+            "hu": "kerámiatöredék"
         },
         "lelet_megnevezese_4": {
-            "de": "Spinnwirtel"
+            "de": "Spinnwirtel",
+            "hu": "rokka kereke"
         },
         "lelet_megnevezese_5": {
-            "de": "Webgewicht"
+            "de": "Webgewicht",
+            "hu": "fríz"
         },
         "lelet_megnevezese_6": {
-            "de": "Beil"
+            "de": "Beil",
+            "hu": "balta"
         },
         "lelet_megnevezese_7": {
-            "de": "Dechsel"
+            "de": "Dechsel",
+            "hu": "bárd"
         },
         "lelet_megnevezese_8": {
-            "de": "Axt"
+            "de": "Axt",
+            "hu": "fejsze"
         },
         "lelet_megnevezese_9": {
-            "de": "Meißel"
+            "de": "Meißel",
+            "hu": "véső"
         },
         "lelet_megnevezese_10": {
-            "de": "Flachhacke"
+            "de": "Flachhacke",
+            "hu": "lapos kapa"
         },
         "lelet_megnevezese_11": {
-            "de": "Schuhleistenkeil"
+            "de": "Schuhleistenkeil",
+            "hu": "sámfa"
         },
         "lelet_megnevezese_12": {
-            "de": "Schleifstein"
+            "de": "Schleifstein",
+            "hu": "csiszolókő"
         },
         "lelet_megnevezese_13": {
-            "de": "Klopfstein"
+            "de": "Klopfstein",
+            "hu": "kőütő"
         },
         "lelet_megnevezese_14": {
-            "de": "Pfeilschaftgletter"
+            "de": "Pfeilschaftgletter",
+            "hu": "nyíl"
         },
         "lelet_megnevezese_15": {
-            "de": "Keule"
+            "de": "Keule",
+            "hu": "buzogány"
         },
         "lelet_megnevezese_16": {
-            "de": "Rillenstein"
+            "de": "Rillenstein",
+            "hu": "hornyolt kő"
         },
         "lelet_megnevezese_17": {
-            "de": "Geröllgeräte mit Schaftungsrille"
+            "de": "Geröllgeräte mit Schaftungsrille",
+            "hu": "törmelék feldolgozása"
         },
         "lelet_megnevezese_18": {
-            "de": "Politeur / Glettstein"
+            "de": "Politeur / Glettstein",
+            "hu": "fényes / sima kő"
         },
         "lelet_megnevezese_19": {
-            "de": "Netzsenker"
+            "de": "Netzsenker",
+            "hu": "szűkítő"
         },
         "lelet_megnevezese_20": {
-            "de": "Gewichte"
+            "de": "Gewichte",
+            "hu": "atomsúly"
         },
         "lelet_megnevezese_21": {
-            "de": "Anhänger"
+            "de": "Anhänger",
+            "hu": "utánfutó"
         },
         "lelet_megnevezese_22": {
-            "de": "Mahlstein"
+            "de": "Mahlstein",
+            "hu": "malomkő"
         },
         "lelet_megnevezese_23": {
-            "de": "Silexklinge"
+            "de": "Silexklinge",
+            "hu": "kovamag"
         },
         "lelet_megnevezese_24": {
-            "de": "Silexkern"
+            "de": "Silexkern",
+            "hu": "kovakő mag"
         },
         "lelet_megnevezese_25": {
-            "de": "Abschlag"
+            "de": "Abschlag",
+            "hu": "csökkentés"
         },
         "lelet_megnevezese_26": {
-            "de": "Silexwerkzeug"
+            "de": "Silexwerkzeug",
+            "hu": "kovakő szerszám"
         },
         "lelet_megnevezese_27": {
-            "de": "Fibel"
+            "de": "Fibel",
+            "hu": "alapozó"
         },
         "lelet_megnevezese_28": {
-            "de": "Nadel"
+            "de": "Nadel",
+            "hu": "tű"
         },
         "lelet_megnevezese_29": {
-            "de": "Pfeilspitze"
+            "de": "Pfeilspitze",
+            "hu": "nyílhegy"
         },
         "lelet_megnevezese_30": {
-            "de": "Gürtelschnalle"
+            "de": "Gürtelschnalle",
+            "hu": "övcsat"
         },
         "lelet_megnevezese_egyeb": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": "egyéb"
         }
     },
     "leletcsoport": {
         "leletcsoport_0": {
-            "de": "Funde"
+            "de": "Funde",
+            "hu": "lelet"
         },
         "leletcsoport_1": {
-            "de": "menschliche Knochen"
+            "de": "menschliche Knochen",
+            "hu": "emberi csont"
         },
         "leletcsoport_2": {
-            "de": "tierische Reste"
+            "de": "tierische Reste",
+            "hu": "állati maradványok"
         },
         "leletcsoport_3": {
-            "de": "Proben"
+            "de": "Proben",
+            "hu": "minta"
         }
     },
     "leletcsoport_alt": {
         "leletcsoport_alt_0": {
-            "de": "Funde"
+            "de": "Funde",
+            "hu": "lelet"
         },
         "leletcsoport_alt_1": {
-            "de": "menschl. Knochen"
+            "de": "menschl. Knochen",
+            "hu": "emberi csont"
         },
         "leletcsoport_alt_2": {
-            "de": "tierische Reste"
+            "de": "tierische Reste",
+            "hu": "állati maradványok"
         },
         "leletcsoport_alt_3": {
-            "de": "Proben"
+            "de": "Proben",
+            "hu": "minta"
         }
     },
     "magaba_foglalt_leletek_1": {
         "magaba_foglalt_leletek_1_0": {
-            "de": "Partikel"
+            "de": "Partikel",
+            "hu": "részecske"
         },
         "magaba_foglalt_leletek_1_1": {
-            "de": "Flitter"
+            "de": "Flitter",
+            "hu": "csillogó lemezke"
         },
         "magaba_foglalt_leletek_1_2": {
-            "de": "Brocken"
+            "de": "Brocken",
+            "hu": "nagy darab"
         },
         "magaba_foglalt_leletek_1_3": {
-            "de": "Linsen"
+            "de": "Linsen",
+            "hu": "lencse"
         },
         "magaba_foglalt_leletek_1_4": {
-            "de": "Schichten"
+            "de": "Schichten",
+            "hu": "réteg"
         },
         "magaba_foglalt_leletek_1_5": {
-            "de": "Bänder"
+            "de": "Bänder",
+            "hu": "kötet"
         },
         "magaba_foglalt_leletek_1_6": {
-            "de": "Flecken"
+            "de": "Flecken",
+            "hu": "folt"
         },
         "magaba_foglalt_leletek_1_7": {
-            "de": "Nester"
+            "de": "Nester",
+            "hu": "fészek"
         },
         "magaba_foglalt_leletek_1_8": {
-            "de": "Adern"
+            "de": "Adern",
+            "hu": "erezet"
         },
         "magaba_foglalt_leletek_1_9": {
-            "de": "Keile"
+            "de": "Keile",
+            "hu": "ék"
         }
     },
     "magaba_foglalt_leletek_2": {
         "magaba_foglalt_leletek_2_egyeb": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": "egyéb"
         },
         "magaba_foglalt_leletek_2_1": {
-            "de": "Holz"
+            "de": "Holz",
+            "hu": "fa"
         },
         "magaba_foglalt_leletek_2_2": {
-            "de": "Holzkohle"
+            "de": "Holzkohle",
+            "hu": "faszén"
         },
         "magaba_foglalt_leletek_2_3": {
-            "de": "gebrannter Lehm"
+            "de": "gebrannter Lehm",
+            "hu": "égetett agyag"
         },
         "magaba_foglalt_leletek_2_4": {
-            "de": "Rotlehm"
+            "de": "Rotlehm",
+            "hu": "vörösagyag"
         },
         "magaba_foglalt_leletek_2_5": {
-            "de": "Hüttenlehm"
+            "de": "Hüttenlehm",
+            "hu": "mázolt agyag"
         },
         "magaba_foglalt_leletek_2_6": {
-            "de": "Mörtelresten"
+            "de": "Mörtelresten",
+            "hu": "habarcs maradványok"
         },
         "magaba_foglalt_leletek_2_7": {
-            "de": "Ziegelresten"
+            "de": "Ziegelresten",
+            "hu": "tégla maradékok"
         },
         "magaba_foglalt_leletek_2_8": {
-            "de": "Steinen"
+            "de": "Steinen",
+            "hu": "kövek"
         },
         "magaba_foglalt_leletek_2_9": {
-            "de": "Keramik"
+            "de": "Keramik",
+            "hu": "kerámia"
         },
         "magaba_foglalt_leletek_2_10": {
-            "de": "Knochen"
+            "de": "Knochen",
+            "hu": "csont"
         },
         "magaba_foglalt_leletek_2_11": {
-            "de": "Konkretionen"
+            "de": "Konkretionen",
+            "hu": "megkeményedés"
         },
         "magaba_foglalt_leletek_2_12": {
-            "de": "Oxyde"
+            "de": "Oxyde",
+            "hu": "oxid"
         }
     },
     "profil_forma": {
         "profil_forma_0": {
-            "de": "rechteckig / kastenförmig"
+            "de": "rechteckig / kastenförmig",
+            "hu": "négyszögletes / doboz alakú"
         },
         "profil_forma_1": {
-            "de": "kesselförmig"
+            "de": "kesselförmig",
+            "hu": "katlan alakú"
         },
         "profil_forma_2": {
-            "de": "trapezförmig schräg"
+            "de": "trapezförmig schräg",
+            "hu": "ferde trapéz alakú"
         },
         "profil_forma_3": {
-            "de": "trichterförmig schräg"
+            "de": "trichterförmig schräg",
+            "hu": "ferde tölcsér alakú"
         },
         "profil_forma_4": {
-            "de": "trapezförmig überkippt"
+            "de": "trapezförmig überkippt",
+            "hu": "trapéz alakú"
         },
         "profil_forma_5": {
-            "de": "trichterförmig überkippt"
+            "de": "trichterförmig überkippt",
+            "hu": "tölcsér alakú"
         },
         "profil_forma_6": {
-            "de": "wannenförmig"
+            "de": "wannenförmig",
+            "hu": "kád alakú"
         },
         "profil_forma_7": {
-            "de": "keilförmig"
+            "de": "keilförmig",
+            "hu": "ék alakú"
         },
         "profil_forma_8": {
-            "de": "linsenförmig"
+            "de": "linsenförmig",
+            "hu": "lencsealakú"
         },
         "profil_forma_9": {
-            "de": "U-förmig"
+            "de": "U-förmig",
+            "hu": "U alakú"
         },
         "profil_forma_10": {
-            "de": "V-förmig"
+            "de": "V-förmig",
+            "hu": "V alakú"
         },
         "profil_forma_11": {
-            "de": "sanduhrförmig"
+            "de": "sanduhrförmig",
+            "hu": "homokóra alakú"
         },
         "profil_forma_12": {
-            "de": "unregelmäßig"
+            "de": "unregelmäßig",
+            "hu": "szabálytalan alakú"
         }
     },
     "reteghatarok_formaja": {
         "reteghatarok_formaja_0": {
-            "de": "glatt"
+            "de": "glatt",
+            "hu": "sima"
         },
         "reteghatarok_formaja_1": {
-            "de": "wellig"
+            "de": "wellig",
+            "hu": "hullámzó"
         },
         "reteghatarok_formaja_2": {
-            "de": "keilförmig"
+            "de": "keilförmig",
+            "hu": "ék alakú"
         },
         "reteghatarok_formaja_3": {
-            "de": "zungen-, taschenförmig"
+            "de": "zungen-, taschenförmig",
+            "hu": "nyelv-, táskaalakú"
         },
         "reteghatarok_formaja_4": {
-            "de": "unregelmäßiger Fleck"
+            "de": "unregelmäßiger Fleck",
+            "hu": "szabálytalan alakú folt"
         }
     },
     "sarokforma": {
         "sarokforma_0": {
-            "de": "fließend, keine Ecken"
+            "de": "fließend, keine Ecken",
+            "hu": "elmosódott, nincs sarok"
         },
         "sarokforma_1": {
-            "de": "gerundet"
+            "de": "gerundet",
+            "hu": "lekerekített"
         },
         "sarokforma_2": {
-            "de": "scharf"
+            "de": "scharf",
+            "hu": "éles"
         }
     },
     "sirforma": {
         "sirforma_0": {
-            "de": "Flachgrab"
+            "de": "Flachgrab",
+            "hu": "sekély"
         },
         "sirforma_1": {
-            "de": "Megalithgrab"
+            "de": "Megalithgrab",
+            "hu": "megalit"
         },
         "sirforma_2": {
-            "de": "Hügelgrab"
+            "de": "Hügelgrab",
+            "hu": "domb"
         },
         "sirforma_3": {
-            "de": "Felsgrab"
+            "de": "Felsgrab",
+            "hu": "szikla"
         }
     },
     "stratigrafiai_kapcsolat": {
         "stratigrafiai_kapcsolat_0": {
-            "de": "gehört zu"
+            "de": "gehört zu",
+            "hu": "vonatkozó"
         },
         "stratigrafiai_kapcsolat_1": {
-            "de": "liegt über"
+            "de": "liegt über",
+            "hu": "felette"
         },
         "stratigrafiai_kapcsolat_2": {
-            "de": "liegt unter"
+            "de": "liegt unter",
+            "hu": "alatta"
         },
         "stratigrafiai_kapcsolat_3": {
-            "de": "schneidet"
+            "de": "schneidet",
+            "hu": "vágások"
         },
         "stratigrafiai_kapcsolat_4": {
-            "de": "verfüllt"
+            "de": "verfüllt",
+            "hu": "megtöltött"
         },
         "stratigrafiai_kapcsolat_5": {
-            "de": "verfüllt durch"
+            "de": "verfüllt durch",
+            "hu": "alul kitöltött"
         },
         "stratigrafiai_kapcsolat_6": {
-            "de": "wird geschnitten von"
+            "de": "wird geschnitten von",
+            "hu": "vágva van"
         },
         "stratigrafiai_kapcsolat_7": {
-            "de": "zeitgleich mit"
+            "de": "zeitgleich mit",
+            "hu": "egyidejű"
         }
     },
     "szaritas_modja": {
         "szaritas_modja_0": {
-            "de": "im Freien"
+            "de": "im Freien",
+            "hu": "szabadban"
         },
         "szaritas_modja_1": {
-            "de": "im geschlossenen Raum"
+            "de": "im geschlossenen Raum",
+            "hu": "zárt térben"
         }
     },
     "szerepek": {
         "szerepek_0": {
-            "de": "Grabungstechniker"
+            "de": "Grabungstechniker",
+            "hu": "dig technikus"
         },
         "szerepek_1": {
-            "de": "Zeichner"
+            "de": "Zeichner",
+            "hu": "fogalmazó"
         },
         "szerepek_2": {
-            "de": "Arbeiter / Hilfskräfte"
+            "de": "Arbeiter / Hilfskräfte",
+            "hu": "munkás / ideiglenes munkavállalók"
         }
     },
     "szilard_kozet": {
         "szilard_kozet_0": {
-            "de": "Sedimentgestein (Sand- / Schluff- / Ton- / Kalkstein usw)"
+            "de": "Sedimentgestein (Sand- / Schluff- / Ton- / Kalkstein usw)",
+            "hu": "üledékes (homok- / iszap- / agyag- / mészkő használat)"
         },
         "szilard_kozet_1": {
-            "de": "Magmatit (Tiefengestein: Granit / Gabbro, Vulkanit usw.)"
+            "de": "Magmatit (Tiefengestein: Granit / Gabbro, Vulkanit usw.)",
+            "hu": "magnetit (plutonikus szikla: gránit / gabbró / vulkanikus használat)"
         },
         "szilard_kozet_2": {
-            "de": "Metamorphit (kristalliner Schiefer / Tonschiefer usw.)"
+            "de": "Metamorphit (kristalliner Schiefer / Tonschiefer usw.)",
+            "hu": "metamorph (kristályos pala / palák)"
         },
         "szilard_kozet_3": {
-            "de": "nicht aufgeschlossen"
+            "de": "nicht aufgeschlossen",
+            "hu": "nem fogékony"
         },
         "szilard_kozet_4": {
-            "de": "keine Angaben"
+            "de": "keine Angaben",
+            "hu": "nincs adat"
         }
     },
     "szin_tendencia": {
         "szin_tendencia_0": {
-            "de": "blau-"
+            "de": "blau-",
+            "hu": "kék-"
         },
         "szin_tendencia_1": {
-            "de": "braun-"
+            "de": "braun-",
+            "hu": "barna-"
         },
         "szin_tendencia_2": {
-            "de": "gelb-"
+            "de": "gelb-",
+            "hu": "sárga-"
         },
         "szin_tendencia_3": {
-            "de": "grün-"
+            "de": "grün-",
+            "hu": "zöld-"
         },
         "szin_tendencia_4": {
-            "de": "rot-"
+            "de": "rot-",
+            "hu": "piros-"
         },
         "szin_tendencia_5": {
-            "de": "grau-"
+            "de": "grau-",
+            "hu": "szürke-"
         },
         "szin_tendencia_6": {
-            "de": "violett-"
+            "de": "violett-",
+            "hu": "lila-"
         },
         "szin_tendencia_7": {
-            "de": "orange-"
+            "de": "orange-",
+            "hu": "narancs-"
         },
         "szin_tendencia_8": {
-            "de": "oliv-"
+            "de": "oliv-",
+            "hu": "olíva-"
         },
         "szin_tendencia_9": {
-            "de": "türkis-"
+            "de": "türkis-",
+            "hu": "türkiz-"
         },
         "szin_tendencia_10": {
-            "de": "ocker-"
+            "de": "ocker-",
+            "hu": "okkersárga-"
         }
     },
     "szinmegoszlas": {
         "szinmegoszlas_0": {
-            "de": "marmoriert"
+            "de": "marmoriert",
+            "hu": "márványozott"
         },
         "szinmegoszlas_1": {
-            "de": "fleckig"
+            "de": "fleckig",
+            "hu": "piros foltos"
         },
         "szinmegoszlas_2": {
-            "de": "gebändert"
+            "de": "gebändert",
+            "hu": "csíkos"
         },
         "szinmegoszlas_3": {
-            "de": "gestreift, geadert"
+            "de": "gestreift, geadert",
+            "hu": "csíkos, erezett"
         }
     },
     "szintkulonbseg": {
         "szintkulonbseg_0": {
-            "de": "eben (<1°)"
+            "de": "eben (<1°)",
+            "hu": "egyenletes (<1°)"
         },
         "szintkulonbseg_1": {
-            "de": "schwach-mittel (1-10°)"
+            "de": "schwach-mittel (1-10°)",
+            "hu": "közepes gyenge (1-10°)"
         },
         "szintkulonbseg_2": {
-            "de": "stark geneigt (10-20°)"
+            "de": "stark geneigt (10-20°)",
+            "hu": "nagyon ferde (10-20°)"
         },
         "szintkulonbseg_3": {
-            "de": "steil (>20°)"
+            "de": "steil (>20°)",
+            "hu": "meredek (>20°)"
         },
         "szintkulonbseg_4": {
-            "de": "keine Angaben"
+            "de": "keine Angaben",
+            "hu": "nincs adat"
         }
     },
     "temetkezesi_forma": {
         "temetkezesi_forma_0": {
-            "de": "Einzelbestattung"
+            "de": "Einzelbestattung",
+            "hu": "egy személyes temetés"
         },
         "temetkezesi_forma_1": {
-            "de": "Doppelbesttatung"
+            "de": "Doppelbesttatung",
+            "hu": "kettős temetés"
         },
         "temetkezesi_forma_2": {
-            "de": "Mehrpersonenbestattung"
+            "de": "Mehrpersonenbestattung",
+            "hu": "több személyes temetés"
         },
         "temetkezesi_forma_3": {
-            "de": "Massengrab"
+            "de": "Massengrab",
+            "hu": "tömegsír"
         },
         "temetkezesi_forma_4": {
-            "de": "Kollektivbestattung"
+            "de": "Kollektivbestattung",
+            "hu": "együttes temetés"
         },
         "temetkezesi_forma_5": {
-            "de": "Urnengrab"
+            "de": "Urnengrab",
+            "hu": "urna sír"
         },
         "temetkezesi_forma_6": {
-            "de": "Brandschüttungsgrab"
+            "de": "Brandschüttungsgrab",
+            "hu": "égetett sír"
         },
         "temetkezesi_forma_7": {
-            "de": "Brandgrubengrab"
+            "de": "Brandgrubengrab",
+            "hu": "tűz sír"
         },
         "temetkezesi_forma_8": {
-            "de": "Leichenbrandnest"
+            "de": "Leichenbrandnest",
+            "hu": "temetés"
         },
         "temetkezesi_forma_9": {
-            "de": "Ossuar"
+            "de": "Ossuar",
+            "hu": "csontrakás"
         },
         "temetkezesi_forma_10": {
-            "de": "Kenotaph"
+            "de": "Kenotaph",
+            "hu": "más sírján sírkő"
         },
         "temetkezesi_forma_11": {
-            "de": "Grabdeponat"
+            "de": "Grabdeponat",
+            "hu": "őrzött sír"
         }
     },
     "temetkezesi_szokas": {
         "temetkezesi_szokas_0": {
-            "de": "Körperbestattung"
+            "de": "Körperbestattung",
+            "hu": "test temetés"
         },
         "temetkezesi_szokas_1": {
-            "de": "Brandbestattung"
+            "de": "Brandbestattung",
+            "hu": "égetés"
         },
         "temetkezesi_szokas_2": {
-            "de": "birituelle Bestattung"
+            "de": "birituelle Bestattung",
+            "hu": "rituális temetés"
         },
         "temetkezesi_szokas_3": {
-            "de": "mehrstufige Bestattung / Sekundärbestattung"
+            "de": "mehrstufige Bestattung / Sekundärbestattung",
+            "hu": "többlépcsős temetés / második temetés"
         }
     },
     "termeszetes_lerakodas": {
         "termeszetes_lerakodas_0": {
-            "de": "ja"
+            "de": "ja",
+            "hu": "igen"
         },
         "termeszetes_lerakodas_1": {
-            "de": "nein"
+            "de": "nein",
+            "hu": "nem"
         },
         "termeszetes_lerakodas_2": {
-            "de": "keine Angaben"
+            "de": "keine Angaben",
+            "hu": "nincs adat"
         }
     },
     "test_elhelyezkedes": {
         "test_elhelyezkedes_0": {
-            "de": "Rückenlage"
+            "de": "Rückenlage",
+            "hu": "fekvő helyzet"
         },
         "test_elhelyezkedes_1": {
-            "de": "Bauchlage"
+            "de": "Bauchlage",
+            "hu": "hason fekve"
         },
         "test_elhelyezkedes_2": {
-            "de": "Seitenlage links"
+            "de": "Seitenlage links",
+            "hu": "balra oldalfekve"
         },
         "test_elhelyezkedes_3": {
-            "de": "Seitenlage rechts"
+            "de": "Seitenlage rechts",
+            "hu": "jobbra oldalfekve"
         }
     },
     "tisztitas_eszkoze": {
         "tisztitas_eszkoze_0": {
-            "de": "Schwamm"
+            "de": "Schwamm",
+            "hu": "szivacs"
         },
         "tisztitas_eszkoze_1": {
-            "de": "weiche Bürste"
+            "de": "weiche Bürste",
+            "hu": "lágy kefével"
         }
     },
     "topografia": {
         "topografia_0": {
-            "de": "Aue"
+            "de": "Aue",
+            "hu": "folyópart"
         },
         "topografia_1": {
-            "de": "Terrasse"
+            "de": "Terrasse",
+            "hu": "fennsík"
         },
         "topografia_2": {
-            "de": "Löss-Hochfläche"
+            "de": "Löss-Hochfläche",
+            "hu": "nagy löszterület"
         },
         "topografia_3": {
-            "de": "Mittelgebirge"
+            "de": "Mittelgebirge",
+            "hu": "felföld"
         },
         "topografia_4": {
-            "de": "Alp"
+            "de": "Alp",
+            "hu": "havasi levegő"
         },
         "topografia_egyeb": {
-            "de": "sonstiges, und zwar"
+            "de": "sonstiges, und zwar",
+            "hu": "egyéb"
         }
     },
     "visszaigazolas": {
         "visszaigazolas_0": {
-            "de": "vorgelegt"
+            "de": "vorgelegt",
+            "hu": "benyújtott"
         },
         "visszaigazolas_1": {
-            "de": "vorhanden / zugesagt"
+            "de": "vorhanden / zugesagt",
+            "hu": "elérhető / hozzáadott"
         }
     },
     "vizsgalt_terulet": {
         "vizsgalt_terulet_0": {
-            "de": "ganze Parzelle"
+            "de": "ganze Parzelle",
+            "hu": "egész telek"
         },
         "vizsgalt_terulet_1": {
-            "de": "Baufenster"
+            "de": "Baufenster",
+            "hu": "épület ablakban"
         },
         "vizsgalt_terulet_2": {
-            "de": "Teilfläche"
+            "de": "Teilfläche",
+            "hu": "lakásrész"
         }
     },
     "zavaras_emberi_beavatkozas": {
         "zavaras_emberi_beavatkozas_0": {
-            "de": "profilverändernde Maßnahme (z.B. Tiefenlockerung, Drainage)"
+            "de": "profilverändernde Maßnahme (z.B. Tiefenlockerung, Drainage)",
+            "hu": "változó profil intézkedés ( z. B. mélylazítás, csatornázás)"
         },
         "zavaras_emberi_beavatkozas_1": {
-            "de": "Bodenauftrag (z.B. Kulturschicht, humoser Oberbode)"
+            "de": "Bodenauftrag (z.B. Kulturschicht, humoser Oberbode)",
+            "hu": "földi (z.B. kulturális réteg, felső házak)"
         },
         "zavaras_emberi_beavatkozas_2": {
-            "de": "Bodenabtrag (z.B. Abgrabung)"
+            "de": "Bodenabtrag (z.B. Abgrabung)",
+            "hu": "talajelpusztulás (z.B. kiásás)"
         }
     },
     "szerep_a_projektben": {
         "szerep_a_projektben_0": {
-            "de": "Wissenschaftler"
+            "de": "Wissenschaftler",
+            "hu": "tudós"
         },
         "szerep_a_projektben_1": {
-            "de": "Techniker/Technischer Assistent"
+            "de": "Techniker/Technischer Assistent",
+            "hu": "mérnök/műszaki asszisztens"
         },
         "szerep_a_projektben_2": {
-            "de": "Zeichner"
+            "de": "Zeichner",
+            "hu": "fogalmazó"
         },
         "szerep_a_projektben_3": {
-            "de": "Fachkraft"
+            "de": "Fachkraft",
+            "hu": "szakértő"
         },
         "szerep_a_projektben_4": {
-            "de": "Hilfskraft"
+            "de": "Hilfskraft",
+            "hu": "helyettes"
         }
     },
     "objektum_jellege": {
         "objektum_jellege_0": {
-            "de": "Positivbefund"
+            "de": "Positivbefund",
+            "hu": "pozitív diagnózis"
         },
         "objektum_jellege_1": {
-            "de": "Negativbefund"
+            "de": "Negativbefund",
+            "hu": "negatív diagnózis"
         },
         "objektum_jellege_2": {
-            "de": "Holzbefund"
+            "de": "Holzbefund",
+            "hu": "fa diagnózis"
         },
         "objektum_jellege_3": {
-            "de": "Mauerbefund"
+            "de": "Mauerbefund",
+            "hu": "fal diagnózis"
         },
         "objektum_jellege_4": {
-            "de": "Grab"
+            "de": "Grab",
+            "hu": "sír"
         },
         "objektum_jellege_egyeb": {
-            "de": "anderes"
+            "de": "anderes",
+            "hu": "más"
         }
     },
     "objektum_pozitiv": {
         "objektum_pozitiv_0": {
-            "de": "Abbruchhorizont"
+            "de": "Abbruchhorizont",
+            "hu": "bontási horizont"
         },
         "objektum_pozitiv_1": {
-            "de": "Bauhorizont"
+            "de": "Bauhorizont",
+            "hu": "barlang horizont"
         },
         "objektum_pozitiv_2": {
-            "de": "Brandschicht/Brandstelle"
+            "de": "Brandschicht/Brandstelle",
+            "hu": "tűzréteg/tűzhely"
         },
         "objektum_pozitiv_3": {
-            "de": "Erdbefund"
+            "de": "Erdbefund",
+            "hu": "talaj-objektum"
         },
         "objektum_pozitiv_4": {
-            "de": "Fußboden"
+            "de": "Fußboden",
+            "hu": "emelet"
         },
         "objektum_pozitiv_5": {
-            "de": "Pfostenverfüllung"
+            "de": "Pfostenverfüllung",
+            "hu": "későbbi feltöltés"
         },
         "objektum_pozitiv_6": {
-            "de": "Humusschicht"
+            "de": "Humusschicht",
+            "hu": "humuszréteg"
         },
         "objektum_pozitiv_7": {
-            "de": "Estrich"
+            "de": "Estrich",
+            "hu": "esztrich"
         },
         "objektum_pozitiv_8": {
-            "de": "Stampflehm"
+            "de": "Stampflehm",
+            "hu": "döngölt agyag"
         },
         "objektum_pozitiv_9": {
-            "de": "Straßenbelag"
+            "de": "Straßenbelag",
+            "hu": "útburkolat"
         },
         "objektum_pozitiv_10": {
-            "de": "Laufhorizont"
+            "de": "Laufhorizont",
+            "hu": "futó horizont"
         },
         "objektum_pozitiv_11": {
-            "de": "Bauschicht"
+            "de": "Bauschicht",
+            "hu": "építési szint"
         },
         "objektum_pozitiv_12": {
-            "de": "Bauschuttschicht"
+            "de": "Bauschuttschicht",
+            "hu": "építési hulladék"
         },
         "objektum_pozitiv_13": {
-            "de": "Planierschicht"
+            "de": "Planierschicht",
+            "hu": "kiegyenlítő réteg"
         },
         "objektum_pozitiv_14": {
-            "de": "Brandschuttschicht"
+            "de": "Brandschuttschicht",
+            "hu": "égési törmelék réteg"
         },
         "objektum_pozitiv_15": {
-            "de": "Planierschicht"
+            "de": "Planierschicht",
+            "hu": "kiegyenlítő réteg"
         },
         "objektum_pozitiv_16": {
-            "de": "Einfüllschicht"
+            "de": "Einfüllschicht",
+            "hu": "felöntött réteg"
         },
         "objektum_pozitiv_17": {
-            "de": "geologischer Befund"
+            "de": "geologischer Befund",
+            "hu": "geológiai objektum"
         },
         "objektum_pozitiv_18": {
-            "de": "biologischer Befund"
+            "de": "biologischer Befund",
+            "hu": "biológiai objektum"
         },
         "objektum_pozitiv_19": {
-            "de": "Störung"
+            "de": "Störung",
+            "hu": "rendellenesség"
         },
         "objektum_pozitiv_egyeb": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": "egyéb"
         }
     },
     "objektum_negativ": {
         "objektum_negativ_0": {
-            "de": "Baugrube"
+            "de": "Baugrube",
+            "hu": "építketézési ásatás"
         },
         "objektum_negativ_1": {
-            "de": "Ausbruchgraben"
+            "de": "Ausbruchgraben",
+            "hu": "kitörés"
         },
         "objektum_negativ_2": {
-            "de": "Pfostenloch"
+            "de": "Pfostenloch",
+            "hu": "cöveklyuk"
         },
         "objektum_negativ_3": {
-            "de": "Pfostengräbchen"
+            "de": "Pfostengräbchen",
+            "hu": "bemélyedés"
         },
         "objektum_negativ_4": {
-            "de": "Balkengräbchen"
+            "de": "Balkengräbchen",
+            "hu": "híd"
         },
         "objektum_negativ_5": {
-            "de": "Grab"
+            "de": "Grab",
+            "hu": "sír"
         },
         "objektum_negativ_6": {
-            "de": "Grube"
+            "de": "Grube",
+            "hu": "árok"
         },
         "objektum_negativ_7": {
-            "de": "Grubenkomplex"
+            "de": "Grubenkomplex",
+            "hu": "bánya"
         },
         "objektum_negativ_8": {
-            "de": "Grubenhaus"
+            "de": "Grubenhaus",
+            "hu": "veremház"
         },
         "objektum_negativ_9": {
-            "de": "Graben"
+            "de": "Graben",
+            "hu": "kiásott objektum"
         },
         "objektum_negativ_10": {
-            "de": "Grabengrube"
+            "de": "Grabengrube",
+            "hu": "ásott árok"
         },
         "objektum_negativ_11": {
-            "de": "Latrine"
+            "de": "Latrine",
+            "hu": "latrina"
         },
         "objektum_negativ_12": {
-            "de": "Wandgräbchen"
+            "de": "Wandgräbchen",
+            "hu": "földhányás"
         },
         "objektum_negativ_13": {
-            "de": "geologischer Befund"
+            "de": "geologischer Befund",
+            "hu": "geológiai objektum"
         },
         "objektum_negativ_14": {
-            "de": "biologischer Befund"
+            "de": "biologischer Befund",
+            "hu": "biológiai objektum"
         },
         "objektum_negativ_15": {
-            "de": "Störung"
+            "de": "Störung",
+            "hu": "bontás"
         },
         "objektum_negativ_egyeb": {
-            "de": "anderes, und zwar"
+            "de": "anderes, und zwar",
+            "hu": "egyéb"
         }
     },
     "megszolitas": {
         "megszolitas_0": {
-            "de": "Frau"
+            "de": "Frau",
+            "hu": "nő"
         },
         "megszolitas_1": {
-            "de": "Herr"
+            "de": "Herr",
+            "hu": "úr"
         }
     },
     "titulus": {
         "titulus_0": {
-            "de": "Prof."
+            "de": "Prof.",
+            "hu": "Prof."
         },
         "titulus_1": {
-            "de": "Mag."
+            "de": "Mag.",
+            "hu": "Mag."
         },
         "titulus_2": {
-            "de": "Dr."
+            "de": "Dr.",
+            "hu": "Dr."
         }
     },
     "kapcsolt_ceg_tipus": {
