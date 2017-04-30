@@ -2,6 +2,7 @@
  * Created by bence on 2017.02.10..
  */
 import { Styles } from '/imports/api/styles/styles.collection.js';
+import { CommonStyle, colors } from '/imports/ui/common/common.style.js';
 
 class DefaultStylesContainerClass {
     addStyle(style) {
@@ -27,3 +28,12 @@ export const getStyle = (databaseStyle, localRadiumObject) => {
 };
 
 export const DefaultStylesContainer = new DefaultStylesContainerClass();
+DefaultStylesContainer.addStyle(CommonStyle);
+
+
+export const resolveColor = (color) => {
+    if (colors.hasOwnProperty(color)) {
+        return colors[color].backgroundColor;
+    }
+    return color;
+};

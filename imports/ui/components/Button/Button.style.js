@@ -22,13 +22,6 @@ export const ButtonStyle = {
                 backgroundColor: common.colors.lightestGray.backgroundColor,
             },
         },
-        yellowButton: {
-            backgroundColor: common.colors.yellow.backgroundColor,
-            ':focus': {
-                outline: 0,
-                backgroundColor: common.colors.yellow.backgroundColor,
-            },
-        },
     },
 };
 

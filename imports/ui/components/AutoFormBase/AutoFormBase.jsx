@@ -3,11 +3,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { AutoForm } from 'meteor/aldeed:autoform';
 
+import Button from '../Button/Button.jsx';
+
 import '/imports/ui/BlazeTemplates/ProjectFormTemplate/ProjectFormTemplate.js';
 
 export default class AutoFormBase extends Component {
     constructor(props) {
         super(props);
+
+        this.deleteDoc = this.deleteDoc.bind(this);
 
         this.state = { random: 0 };
         this.mounted = false;
@@ -66,22 +70,43 @@ export default class AutoFormBase extends Component {
         AutoForm.addHooks(formId, callbackObject, overwrite);
     }
 
+    deleteDoc() {
+        const { doc, collection } = this.props;
+
+        console.log(collection);
+        if (doc && doc._id && collection) {
+            collection.remove({ _id: doc._id });
+        }
+    }
+
     render() {
         let type = this.props.type;
         if (!type) {
             type = this.props.doc ? 'update' : 'insert';
         }
 
+        let deleteButton;
+        if (this.props.showDeleteButton) {
+            deleteButton =
+                (<Button color="red" handleClick={this.deleteDoc}>
+                    <span className="glyphicon glyphicon-remove" />
+                    <span>Törlés</span>
+                </Button>);
+        }
+
         return (
-            <Blaze
-              template="ProjectForm"
-              formId={this.props.formId}
-              collection={this.props.collection}
-              schema={this.props.schema}
-              type={type}
-              doc={this.props.doc}
-              omitFields={this.props.omitFields}
-              state={this.state.random} />
+            <div>
+                {deleteButton}
+                <Blaze
+                  template="ProjectForm"
+                  formId={this.props.formId}
+                  collection={this.props.collection}
+                  schema={this.props.schema}
+                  type={type}
+                  doc={this.props.doc}
+                  omitFields={this.props.omitFields}
+                  state={this.state.random} />
+            </div>
         );
     }
 }
@@ -94,4 +119,9 @@ AutoFormBase.propTypes = {
     hooksObject: PropTypes.object,
     omitFields: PropTypes.arrayOf(PropTypes.string),
     type: PropTypes.string,
+    showDeleteButton: PropTypes.bool,
+};
+
+AutoFormBase.defaultProps = {
+    showDeleteButton: true,
 };

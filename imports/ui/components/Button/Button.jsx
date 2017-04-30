@@ -6,7 +6,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 
 import DropdownItem from './DropdownItem/DropdownItem.jsx';
 
-import { getStyle } from '/imports/ui/common/StyleHelpers.js';
+import { getStyle, resolveColor } from '/imports/ui/common/StyleHelpers.js';
 import { ButtonStyle } from './Button.style.js';
 
 class Button extends Component {
@@ -17,30 +17,33 @@ class Button extends Component {
             this.handleClick = this.props.handleClick.bind(this);
         }
     }
+
     render() {
         let classes = { 'btn': true, 'btn-default': true };
-        let style = Object.assign({}, this.props.privStyle.button, this.props.style);
+        const style = Object.assign({}, this.props.privStyle.button, this.props.style);
         let dropdownItemsContainer = false;
         let caret = false;
         const extraAttributes = {};
 
-        if (this.props.type) {
-            if (this.props.type.yellow) {
-                style = Object.assign({}, style, this.props.privStyle.yellowButton);
-            }
-            if (this.props.dropdown) {
-                classes['dropdown-toggle'] = true;
-                const dropdownItems = _.map(this.props.dropdownItems, (item, index) =>
-                    (<DropdownItem separator={item.separator} key={index} href={item.href} text={item.text} />));
+        if (this.props.color) {
+            const color = resolveColor(this.props.color);
 
-                dropdownItemsContainer = <ul className="dropdown-menu">{dropdownItems}</ul>;
+            style.backgroundColor = color;
+            style[':focus'].backgroundColor = color;
+        }
 
-                extraAttributes['data-toggle'] = 'dropdown';
-                extraAttributes['aria-haspopup'] = 'true';
-                extraAttributes['aria-expanded'] = 'false';
+        if (this.props.dropdown) {
+            classes['dropdown-toggle'] = true;
+            const dropdownItems = _.map(this.props.dropdownItems, (item, index) =>
+                (<DropdownItem separator={item.separator} key={index} href={item.href} text={item.text} />));
 
-                caret = <span className="caret" />;
-            }
+            dropdownItemsContainer = <ul className="dropdown-menu">{dropdownItems}</ul>;
+
+            extraAttributes['data-toggle'] = 'dropdown';
+            extraAttributes['aria-haspopup'] = 'true';
+            extraAttributes['aria-expanded'] = 'false';
+
+            caret = <span className="caret" />;
         }
 
         classes = classNames(classes);
@@ -73,9 +76,10 @@ Button.propTypes = {
     style: PropTypes.object,
     type: PropTypes.object,
     children: PropTypes.oneOfType([
-        React.PropTypes.arrayOf(React.PropTypes.node),
-        React.PropTypes.node,
+        PropTypes.arrayOf(React.PropTypes.node),
+        PropTypes.node,
     ]),
+    color: PropTypes.string,
 };
 
 export default createContainer(() => {

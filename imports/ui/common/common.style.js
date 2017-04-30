@@ -1,9 +1,7 @@
 /**
  * Created by bence on 2017.02.10..
  */
-import { DefaultStylesContainer } from '/imports/ui/common/StyleHelpers.js';
-
-export const CommonStyle = {
+const CommonStyle = {
     targetComponent: 'Common',
     style: {
         common: {
@@ -54,4 +52,9 @@ export const CommonStyle = {
     },
 };
 
-DefaultStylesContainer.addStyle(CommonStyle);
+const colors = CommonStyle.style.common.colors;
+
+export {
+    CommonStyle,
+    colors,
+};
