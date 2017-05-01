@@ -1,6 +1,7 @@
 import SimpleSchema from 'simpl-schema';
 import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
 import { getOmittedFields } from '/imports/api/CollectionHelpers/CollectionHelpers.js';
+import { check } from 'meteor/check';
 
 const Artefacts = new Meteor.Collection('leletek');
 
@@ -186,6 +187,14 @@ Artefacts.allow({
 });
 
 const omitFields = getOmittedFields(ArtefactSchema);
+
+Meteor.methods({
+    deleteArtefactsOfObject(objectId) {
+        check(objectId, String);
+
+        Artefacts.remove({ objektum_id: objectId });
+    },
+});
 
 export {
     Artefacts as default,

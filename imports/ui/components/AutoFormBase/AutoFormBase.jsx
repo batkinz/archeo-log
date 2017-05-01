@@ -11,8 +11,6 @@ export default class AutoFormBase extends Component {
     constructor(props) {
         super(props);
 
-        this.deleteDoc = this.deleteDoc.bind(this);
-
         this.state = { random: 0 };
         this.mounted = false;
     }
@@ -70,15 +68,6 @@ export default class AutoFormBase extends Component {
         AutoForm.addHooks(formId, callbackObject, overwrite);
     }
 
-    deleteDoc() {
-        const { doc, collection } = this.props;
-
-        console.log(collection);
-        if (doc && doc._id && collection) {
-            collection.remove({ _id: doc._id });
-        }
-    }
-
     render() {
         let type = this.props.type;
         if (!type) {
@@ -88,7 +77,7 @@ export default class AutoFormBase extends Component {
         let deleteButton;
         if (this.props.showDeleteButton) {
             deleteButton =
-                (<Button color="red" handleClick={this.deleteDoc}>
+                (<Button color="red" handleClick={this.props.deleteDoc}>
                     <span className="glyphicon glyphicon-remove" />
                     <span>Törlés</span>
                 </Button>);
@@ -119,6 +108,7 @@ AutoFormBase.propTypes = {
     hooksObject: PropTypes.object,
     omitFields: PropTypes.arrayOf(PropTypes.string),
     type: PropTypes.string,
+    deleteDoc: PropTypes.func,
     showDeleteButton: PropTypes.bool,
 };
 

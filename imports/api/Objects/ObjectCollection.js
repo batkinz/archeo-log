@@ -1,6 +1,7 @@
 import SimpleSchema from 'simpl-schema';
 import StaticFormOptionProvider from '../StaticFormOptions/StaticFormOptionProvider.js';
 import { getOmittedFields } from '/imports/api/CollectionHelpers/CollectionHelpers.js';
+import { check } from 'meteor/check';
 
 import GraveSchema from './GraveSchema.js';
 
@@ -208,6 +209,15 @@ Objects.allow({
 });
 
 const omitFields = getOmittedFields(ObjectSchema);
+
+Meteor.methods({
+    deleteObjectAndArtefacts(objectId) {
+        check(objectId, String);
+
+        Meteor.call('deleteArtefactsOfObject', objectId);
+        Objects.remove({ _id: objectId });
+    },
+});
 
 export {
     Objects as default,

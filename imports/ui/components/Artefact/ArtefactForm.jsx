@@ -3,18 +3,33 @@ import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import AutoFormBase from '../AutoFormBase/AutoFormBase.jsx';
+import Navigation from '/imports/api/Navigation/Navigation.js';
 
 import Objects from '/imports/api/Objects/ObjectCollection.js';
 import Artefacts from '/imports/api/Artefacts/ArtefactCollection.js';
 
 class ArtefactForm extends Component {
+    get deleteDocFunc() {
+        const self = this;
+        return function deleteDoc() {
+            const { doc } = self.props;
+
+            if (doc && doc._id) {
+                Artefacts.remove({ _id: doc._id });
+                Navigation.goBack();
+            }
+        };
+    }
+
     render() {
         return (
             <AutoFormBase
               formId="artefactForm"
               collection={Artefacts}
               doc={this.props.doc}
-              type={this.props.type} />
+              type={this.props.type}
+              deleteDoc={this.deleteDocFunc}
+              showDeleteButton={!!this.props.doc && !!this.props.doc._id} />
         );
     }
 }

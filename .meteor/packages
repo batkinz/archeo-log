@@ -32,3 +32,4 @@ useraccounts:bootstrap
 npm-bcrypt
 accounts-password
 practicalmeteor:chai
+check

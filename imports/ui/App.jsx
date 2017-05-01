@@ -2,15 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 import Radium from 'radium';
-import {
-    BrowserRouter as Router,
-    Route,
-    Switch,
-} from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
 import { getStyle } from '/imports/ui/common/StyleHelpers.js';
 import { AppStyle } from './App.style.js';
 import { CommonStyle } from '/imports/ui/common/common.style.js';
+import Navigation from '/imports/api/Navigation/Navigation.js';
 
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
 import MainMenu from './components/MainMenu/MainMenu.jsx';
@@ -26,6 +23,8 @@ class App extends Component {
         this.getVersion = this.getVersion.bind(this);
         this.setVersion = this.setVersion.bind(this);
         this.version = '';
+
+        Navigation.history = this.props.history;
     }
 
     getVersion() {
